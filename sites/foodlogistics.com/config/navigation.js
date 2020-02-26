@@ -21,7 +21,7 @@ module.exports = {
       { href: '/contact-us', label: 'Contact Us' },
       { href: '/webinars', label: 'Webinars' },
       { href: 'https://www.supplychainlearningcenter.com/', label: 'Supply Chain Learning Center', target: '_blank' },
-      { href: '/sponsored-content', label: 'Sponsored Research' },
+      { href: 'https://foodlog.tradepub.com/', label: 'Sponsored Research', target: '_blank' },
     ],
   },
   tertiary: {
@@ -69,7 +69,7 @@ module.exports = {
       items: [
         { href: '/magazine', label: 'Magazine' },
         { href: '/awards', label: 'Awards' },
-        { href: '/sponsored-content', label: 'Sponsored Research' },
+        { href: 'https://foodlog.tradepub.com/', label: 'Sponsored Research', target: '_blank' },
         { href: '/blogs', label: 'Expert Columnists' },
         { href: '/case-studies', label: 'Case Studies' },
         { href: '/modex', label: 'MODEX' },
