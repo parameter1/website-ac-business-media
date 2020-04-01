@@ -1,23 +1,122 @@
+import hierarchyAliases from "@base-cms/marko-web/utils/hierarchy-aliases";
+import queryFragment from "../../graphql/fragments/content-list";
+
+$ const { GAM } = out.global;
+
 $ const {
   id,
   alias,
   name,
   pageNode
 } = data;
+$ const adSlots = ({ aliases }) => ({
+  "gpt-ad-lb1": GAM.getAdUnit({ name: "lb1", aliases }),
+  "gpt-ad-lb2": GAM.getAdUnit({ name: "lb1", aliases }),
+  "gpt-ad-lb3": GAM.getAdUnit({ name: "lb1", aliases }),
+});
+$ const now = Date.now();
+<marko-web-website-section-page-layout id=id alias=alias name=name>
+<@head>
+    <marko-web-gtm-website-section-context|{ context }| alias=alias>
+      <marko-web-gtm-push data=context />
+    </marko-web-gtm-website-section-context>
+    <marko-web-resolve-page|{ data: section }| node=pageNode>
+      $ const aliases = hierarchyAliases(section);
+      <marko-web-gam-slots slots=adSlots({ aliases }) />
+    </marko-web-resolve-page>
+  </@head>
+  <@above-container>
+    <marko-web-resolve-page|{ data: section }| node=pageNode>
+      $ const aliases = hierarchyAliases(section);
+      <marko-web-gam-out-of-page-ad ...GAM.getAdUnit({ name: "reskin", aliases }) />
+    </marko-web-resolve-page>
+  </@above-container>
+  <@page>
+    <marko-web-resolve-page|{ data: section, resolved }| node=pageNode>
+      <marko-web-page-wrapper modifiers=["no-bottom-padding"]>
+        <@section>
+          <div class="row">
+            <div class="col">
+              <h1 class="page-wrapper__title">${section.name}</h1>
+              <div class="page-wrapper__deck">${section.description}</div>
+            </div>
+          </div>
+        </@section>
+        <@section>
+          <div class="row">
+            <div class="col">
+              <marko-web-query|{ nodes }|
+                name="all-published-content"
+                params={
+                  contentTypes: ["Webinar"],
+                  limit: 0,
+                  upcoming: true,
+                  sortField: "startDate",
+                  sortOrder: "asc",
+                  queryFragment
+                }
+              >
+                <refresh-theme-latest-content-list-flow nodes=nodes with-header=true header="Upcoming" />
+              </marko-web-query>
+            </div>
+          </div>
+        </@section>
+        <@section>
+          <div class="row">
+            <div class="col">
+              <marko-web-query|{ nodes }|
+                name="all-published-content"
+                params={
+                  contentTypes: ["Webinar"],
+                  limit: 4,
+                  archived: true,
+                  sortField: "startDate",
+                  sortOrder: "desc",
+                  queryFragment
+                }
+              >
+                <refresh-theme-latest-content-list-flow nodes=nodes with-header=true header="Archived" />
+              </marko-web-query>
+            </div>
+          </div>
+        </@section>
 
-<refresh-theme-website-section-published-content-layout
-  id=id
-  alias=alias
-  name=name
-  page-node=pageNode
->
-  <@query
-    name="all-published-content"
-    params={
-      contentTypes: ["Webinar"],
-      limit: 12,
-      sortField: "startDate",
-      sortOrder: "desc",
-    }
-  />
-</refresh-theme-website-section-published-content-layout>
+      </marko-web-page-wrapper>
+    </marko-web-resolve-page>
+  </@page>
+
+  <@below-page>
+    <marko-web-page-container for="website-section" tag="div" id=id modifiers=["below"]>
+      <!-- Refresh sticky, right-rail infinite scroll ad -->
+
+      <marko-web-resolve-page|{ data: section, resolved }| node=pageNode>
+        $ const aliases = hierarchyAliases(section);
+        <marko-web-page-wrapper>
+          <@section>
+            <div class="row">
+              <div class="col infinite-scroll-target">
+                <refresh-theme-latest-content-load-more-block max-pages=0>
+                  <@query
+                    name="all-published-content"
+                    params={
+                      contentTypes: ["Webinar"],
+                      skip: 4,
+                      limit: 4,
+                      archived: true,
+                      sortField: "startDate",
+                      sortOrder: "desc",
+                      queryFragment
+                    }
+                  />
+                  <@page for="website-section" id=id />
+                </refresh-theme-latest-content-load-more-block>
+              </div>
+            </div>
+          </@section>
+        </marko-web-page-wrapper>
+      </marko-web-resolve-page>
+
+    </marko-web-page-container>
+  </@below-page>
+
+</marko-web-website-section-page-layout>
