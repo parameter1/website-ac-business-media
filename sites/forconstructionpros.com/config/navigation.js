@@ -1,26 +1,18 @@
 module.exports = {
   primary: {
     items: [
-      { href: '/equipment', label: 'Equipment' },
-      { href: '/trucks', label: 'Trucks' },
-      { href: '/rental', label: 'Rental' },
-      { href: '/concrete', label: 'Concrete' },
-      { href: '/asphalt', label: 'Asphalt' },
-      { href: '/pavement-maintenance', label: 'Pavement & Maintenance' },
-      { href: '/profit-matters', label: 'Profit Matters' },
-      { href: '/equipment-management', label: 'Equipment Management' },
     ],
   },
   secondary: {
     items: [
-      { href: '/directory', label: 'New Equipment Directory' },
-      { href: '/construction-technology', label: 'Technology' },
+      { href: '/equipment', label: 'Equipment' },
+      { href: '/rental', label: 'Rental' },
       { href: '/business', label: 'Business' },
-      { href: '/specguide', label: 'Spec Guides' },
-      { href: '/video', label: 'Video Network' },
-      { href: '/magazine', label: 'Magazine' },
-      { href: '/events', label: 'Events' },
-      { href: 'https://www.constructionnetworkmediakit.com/', label: 'Advertise', target: '_blank' },
+      { href: '/concrete', label: 'Concrete' },
+      { href: '/asphalt', label: 'Asphalt' },
+      { href: '/pavement-maintenance', label: 'Pavement Maintenance' },
+      { href: '/profit-matters', label: 'Profit Matters' },
+      { href: '/equipment-management', label: 'Equipment Management' },
     ],
   },
   tertiary: {
@@ -57,7 +49,7 @@ module.exports = {
         { href: '/rental', label: 'Rental' },
         { href: '/concrete', label: 'Concrete' },
         { href: '/asphalt', label: 'Asphalt' },
-        { href: '/pavement-maintenance', label: 'Pavement & Maintenance' },
+        { href: '/pavement-maintenance', label: 'Pavement Maintenance' },
         { href: '/profit-matters', label: 'Profit Matters' },
         { href: '/equipment-management', label: 'Equipment Management' },
       ],
