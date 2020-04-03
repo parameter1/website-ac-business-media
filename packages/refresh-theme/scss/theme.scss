@@ -289,6 +289,19 @@ $theme-related-content-border-color: #dee2e6;
       }
     }
   }
+
+  &--contextual {
+    @each $section, $color in $website-section-colors {
+      &[data-path^="/#{$section}"] {
+        background-color: $color;
+        #{ $self } {
+          &__link {
+            color: $theme-site-navbar-light-color;
+          }
+        }
+      }
+    }
+  }
 }
 
 .page-wrapper {
