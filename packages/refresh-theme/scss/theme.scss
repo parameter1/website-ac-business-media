@@ -280,16 +280,11 @@ $theme-related-content-border-color: #dee2e6;
       &__link {
         &--active {
           font-weight: 700;
-        }
-      }
-    }
-  }
-
-  &--primary {
-    @each $section, $color in $website-section-colors {
-      #{ $self } {
-        &__link--active[href*="#{$section}"] {
-          color: $color;
+          @each $section, $color in $website-section-colors {
+            &[href^="/#{$section}"] {
+              color: $color;
+            }
+          }
         }
       }
     }
