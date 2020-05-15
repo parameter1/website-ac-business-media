@@ -7,7 +7,6 @@ module.exports = {
       { href: '/electronics', label: 'Electronics' },
       { href: '/operator-cab', label: 'Operator Cab' },
       { href: '/engineering-manufacturing', label: 'Engineering & Manufacturing' },
-      { href: '/ifpe-conexpo', label: 'IFPE & CONEXPO' },
     ],
   },
   secondary: {
