@@ -86,6 +86,7 @@ module.exports = {
         { href: '/blogs', label: 'Expert Columnists' },
         { href: '/multimedia', label: 'Multimedia' },
         { href: '/directory', label: 'Directory' },
+        { href: '/scn-summit', label: 'SCN Summit' },
       ],
     },
     {
