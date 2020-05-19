@@ -9,6 +9,7 @@ module.exports = {
       { href: '/sustainability', label: 'Sustainability' },
       { href: '/3pl-4pl', label: '3PL/4PL' },
       { href: '/professional-development', label: 'Prof Development' },
+      { href: '/scn-summit', label: 'SCN Summit' },
     ],
   },
   secondary: {
@@ -87,6 +88,7 @@ module.exports = {
         { href: '/multimedia', label: 'Multimedia' },
         { href: '/directory', label: 'Directory' },
         { href: '/scn-summit', label: 'SCN Summit' },
+        { href: '/20-year-anniversary', label: '20 Year Anniversary Coverage' },
       ],
     },
     {
