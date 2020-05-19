@@ -28,6 +28,45 @@ module.exports = {
       },
     },
     {
+      alias: 'equipment/earthmoving-compact',
+      map: {
+        lb1: 'equipment/earthmoving-compact/lb1',
+        'lb-sticky-bottom': 'equipment/earthmoving-compact/lb1',
+        rail1: 'equipment/earthmoving-compact/rail1',
+        rail2: 'equipment/earthmoving-compact/rail1',
+        'infinite-rail': 'equipment/earthmoving-compact/rail1',
+        'infinite-interstitial': 'equipment/earthmoving-compact/rail1',
+        'in-content': 'equipment/earthmoving-compact/rail1',
+        reskin: 'equipment/earthmoving-compact/reskin',
+      },
+    },
+    {
+      alias: 'equipment/earthmoving',
+      map: {
+        lb1: 'equipment/earthmoving/lb1',
+        'lb-sticky-bottom': 'equipment/earthmoving/lb1',
+        rail1: 'equipment/earthmoving/rail1',
+        rail2: 'equipment/earthmoving/rail1',
+        'infinite-rail': 'equipment/earthmoving/rail1',
+        'infinite-interstitial': 'equipment/earthmoving/rail1',
+        'in-content': 'equipment/earthmoving/rail1',
+        reskin: 'equipment/earthmoving/reskin',
+      },
+    },
+    {
+      alias: 'equipment/fleet-maintenance',
+      map: {
+        lb1: 'equipment/fleet-maintenance/lb1',
+        'lb-sticky-bottom': 'equipment/fleet-maintenance/lb1',
+        rail1: 'equipment/fleet-maintenance/rail1',
+        rail2: 'equipment/fleet-maintenance/rail1',
+        'infinite-rail': 'equipment/fleet-maintenance/rail1',
+        'infinite-interstitial': 'equipment/fleet-maintenance/rail1',
+        'in-content': 'equipment/fleet-maintenance/rail1',
+        reskin: 'equipment/fleet-maintenance/reskin',
+      },
+    },
+    {
       alias: 'trucks',
       map: {
         lb1: 'trucks/lb1',
@@ -51,6 +90,19 @@ module.exports = {
         'infinite-interstitial': 'rental/rail1',
         'in-content': 'rental/rail1',
         reskin: 'rental/reskin',
+      },
+    },
+    {
+      alias: 'rental/lifting-equipment',
+      map: {
+        lb1: 'rental/lifting-equipment/lb1',
+        'lb-sticky-bottom': 'rental/lb1',
+        rail1: 'rental/lifting-equipment/rail1',
+        rail2: 'rental/lifting-equipment/rail1',
+        'infinite-rail': 'rental/lifting-equipment/rail1',
+        'infinite-interstitial': 'rental/lifting-equipment/rail1',
+        'in-content': 'rental/lifting-equipment/rail1',
+        reskin: 'rental/lifting-equipment/reskin',
       },
     },
     {
