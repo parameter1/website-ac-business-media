@@ -86,7 +86,6 @@ module.exports = {
         { href: '/podcast', label: 'Podcasts' },
         { href: '/blogs', label: 'Expert Columnists' },
         { href: '/multimedia', label: 'Multimedia' },
-        { href: '/directory', label: 'Directory' },
         { href: '/scn-summit', label: 'SCN Summit' },
         { href: '/20-year-anniversary', label: '20 Year Anniversary Coverage' },
       ],
