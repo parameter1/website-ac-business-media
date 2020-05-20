@@ -14,7 +14,6 @@ module.exports = {
   },
   secondary: {
     items: [
-      { href: '/magazine', label: 'Magazine' },
       { href: '/awards', label: 'Awards' },
       { href: '/events', label: 'Events' },
       { href: '/blogs', label: 'Expert Columnists' },
