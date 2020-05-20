@@ -10,6 +10,7 @@ module.exports = {
       { href: '/3pl-4pl', label: '3PL/4PL' },
       { href: '/risk-compliance', label: 'Risk/Compliance' },
       { href: '/ocean-ports-carriers', label: 'Maritime' },
+      { href: '/scn-summit', label: 'SCN Summit' },
     ],
   },
   secondary: {
