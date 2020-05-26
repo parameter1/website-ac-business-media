@@ -14,7 +14,6 @@ module.exports = {
   },
   secondary: {
     items: [
-      { href: '/magazine', label: 'Magazine' },
       { href: '/awards', label: 'Awards' },
       { href: '/events', label: 'Events' },
       { href: '/blogs', label: 'Expert Columnists' },
@@ -79,7 +78,6 @@ module.exports = {
         { href: 'https://sdcexec.tradepub.com/?pt=dir&page=sdcexec', label: 'Sponsored Research', target: '_blank' },
         { href: '/case-studies', label: 'Case Studies' },
         { href: '/modex', label: 'MODEX' },
-        { href: '/podcast', label: 'Podcasts' },
         { href: '/events', label: 'Events' },
         { href: '/webinars', label: 'Webinars' },
         { href: 'http://www.supplychainlearningcenter.com/', label: 'Learning Center', target: '_blank' },
