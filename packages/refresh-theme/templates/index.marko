@@ -18,8 +18,6 @@ $ const excludeContentTypes = [
   "Promotion",
 ];
 
-$ const displayLeaders = site.get("leaders.enabled") ? true : false;
-
 $ const adSlots = ({ aliases }) => ({
   "gpt-ad-lb1": GAM.getAdUnit({ name: "lb1", aliases }),
   "gpt-ad-lb2": GAM.getAdUnit({ name: "lb1", aliases }),
@@ -99,7 +97,7 @@ $ const adSlots = ({ aliases }) => ({
           </div>
         </@section>
 
-        <if(displayLeaders)>
+        <if(site.get("leaders.enabled"))>
           <@section>
             <div class="row">
               <div class="col-lg-8 mb-block">
