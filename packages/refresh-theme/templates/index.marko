@@ -1,8 +1,9 @@
 import hierarchyAliases from "@base-cms/marko-web/utils/hierarchy-aliases";
+import { get } from "@base-cms/object-path";
 import queryFragment from "../graphql/fragments/content-list";
 import latestQueryFragment from "../graphql/fragments/content-latest";
 
-$ const { GAM } = out.global;
+$ const { site, GAM } = out.global;
 
 $ const {
   id,
@@ -16,6 +17,8 @@ $ const excludeContentTypes = [
   "Contact",
   "Promotion",
 ];
+
+$ const displayLeaders = site.get("leaders.enabled") ? true : false;
 
 $ const adSlots = ({ aliases }) => ({
   "gpt-ad-lb1": GAM.getAdUnit({ name: "lb1", aliases }),
@@ -95,6 +98,19 @@ $ const adSlots = ({ aliases }) => ({
             </div>
           </div>
         </@section>
+
+        <if(displayLeaders)>
+          <@section>
+            <div class="row">
+              <div class="col-lg-8 mb-block">
+                <leaders-home-page />
+              </div>
+              <div class="col-lg-4 mb-block">
+                <!-- @todo Add eNL signup block -->
+              </div>
+            </div>
+          </@section>
+        </if>
 
         <@section>
           <div class="row">
