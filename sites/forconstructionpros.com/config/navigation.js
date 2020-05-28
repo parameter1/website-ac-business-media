@@ -164,6 +164,7 @@ module.exports = {
         { href: '/magazine', label: 'Magazine' },
         { href: '/events', label: 'Events' },
         { href: 'https://www.constructionnetworkmediakit.com/', label: 'Advertise', target: '_blank' },
+        { href: '/webinars', label: 'Webinars' },
       ],
     },
     {
