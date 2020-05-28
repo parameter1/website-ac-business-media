@@ -1,8 +1,9 @@
 import hierarchyAliases from "@base-cms/marko-web/utils/hierarchy-aliases";
+import { get } from "@base-cms/object-path";
 import queryFragment from "../graphql/fragments/content-list";
 import latestQueryFragment from "../graphql/fragments/content-latest";
 
-$ const { GAM } = out.global;
+$ const { site, GAM } = out.global;
 
 $ const {
   id,
@@ -95,6 +96,19 @@ $ const adSlots = ({ aliases }) => ({
             </div>
           </div>
         </@section>
+
+        <if(site.get("leaders.enabled"))>
+          <@section>
+            <div class="row">
+              <div class="col-lg-8 mb-block">
+                <leaders-home-page />
+              </div>
+              <div class="col-lg-4 mb-block">
+                <!-- @todo Add eNL signup block -->
+              </div>
+            </div>
+          </@section>
+        </if>
 
         <@section>
           <div class="row">
