@@ -23,11 +23,11 @@ x-env-defaults: &env
   SENDGRID_DEV_TO: developer@endeavorb2b.com
   YARN_CACHE_FOLDER: /.yarn-cache
 
-x-env-caprica: &env-caprica
-  GRAPHQL_URI: ${GRAPHQL_URI-https://caprica.graphql.base-cms.io}
-  OEMBED_URI: ${OEMBED_URI-https://caprica.oembed.base-cms.io}
-  RSS_URI: ${RSS_URI-https://caprica.rss.base-cms.io}
-  SITEMAPS_URI: ${SITEMAPS_URI-https://caprica.sitemaps.base-cms.io}
+x-env-tauron: &env-tauron
+  GRAPHQL_URI: ${GRAPHQL_URI-https://tauron.graphql.base.parameter1.com}
+  OEMBED_URI: ${OEMBED_URI-https://tauron.oembed.base.parameter1.com}
+  RSS_URI: ${RSS_URI-https://tauron.rss.base.parameter1.com}
+  SITEMAPS_URI: ${SITEMAPS_URI-https://tauron.sitemaps.base.parameter1.com}
 
 x-env-development: &env-development
   GRAPHQL_URI: ${GRAPHQL_URI-http://host.docker.internal:10002}
@@ -63,7 +63,7 @@ services:
     working_dir: /root/sites/greenindustrypros.com
     environment:
       <<: *env
-      <<: *env-caprica
+      <<: *env-tauron
       PORT: 80
       EXPOSED_PORT: 9710
       LIVERELOAD_PORT: 19710
@@ -79,7 +79,7 @@ services:
     working_dir: /root/sites/sdcexec.com
     environment:
       <<: *env
-      <<: *env-caprica
+      <<: *env-tauron
       PORT: 80
       EXPOSED_PORT: 9711
       LIVERELOAD_PORT: 19711
@@ -95,11 +95,11 @@ services:
     working_dir: /root/sites/mixequipmentmag.com
     environment:
       <<: *env
-      <<: *env-caprica
+      <<: *env-tauron
       PORT: 80
       EXPOSED_PORT: 9712
       LIVERELOAD_PORT: 19712
-      TENANT_KEY: acbm_mixequipmentmag
+      TENANT_KEY: acbm_mix
       SITE_ID: 5de563de8f2d172b008b4598
     ports:
       - "9712:80"
@@ -111,7 +111,7 @@ services:
     working_dir: /root/sites/foodlogistics.com
     environment:
       <<: *env
-      <<: *env-caprica
+      <<: *env-tauron
       PORT: 80
       EXPOSED_PORT: 9713
       LIVERELOAD_PORT: 19713
@@ -127,7 +127,7 @@ services:
     working_dir: /root/sites/oemoffhighway.com
     environment:
       <<: *env
-      <<: *env-caprica
+      <<: *env-tauron
       PORT: 80
       EXPOSED_PORT: 9714
       LIVERELOAD_PORT: 19714
@@ -143,7 +143,7 @@ services:
     working_dir: /root/sites/dmnews.com
     environment:
       <<: *env
-      <<: *env-caprica
+      <<: *env-tauron
       PORT: 80
       EXPOSED_PORT: 9715
       LIVERELOAD_PORT: 19715
@@ -159,7 +159,7 @@ services:
     working_dir: /root/sites/forconstructionpros.com
     environment:
       <<: *env
-      <<: *env-caprica
+      <<: *env-tauron
       PORT: 80
       EXPOSED_PORT: 9716
       LIVERELOAD_PORT: 19716
