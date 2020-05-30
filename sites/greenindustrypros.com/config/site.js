@@ -1,10 +1,12 @@
 const navigation = require('./navigation');
 const gam = require('./gam');
 const nativeX = require('./native-x');
+const dragonForms = require('./dragon-forms');
 
 module.exports = {
   gam,
   nativeX,
+  dragonForms,
   navigation,
   company: 'AC Business Media, LLC',
   logos: {
