@@ -9,7 +9,7 @@ module.exports = {
   ],
   seeAlso: '<p>Also check out the interactive <a href="/specguide/excavator"><strong><u>Excavator Spec Guide</u></strong></a>, and the components that go into your equipment using the <a href="https://www.oemoffhighway.com/specguide" target="_blank" rel="nofollow"><strong><u>OEM Off-Highway Spec Guides</u></strong></a>.</p>',
   image: {
-    src: 'https://img.forconstructionpros.com/files/base/acbm/fcp/image/static/skidsteerlarge.jpg',
+    src: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/fcp/image/static/skidsteerlarge.jpg',
   },
   downloadLink: '/21070764',
   sheetSrc: 'https://spreadsheets.google.com/feeds/list/12TC912nI227058ho8_zrLwYYzp7P2T7zZDCXO0ZTSZw/1/public/values?alt=json',
