@@ -80,5 +80,8 @@
       "type": "string",
       "required": true
     }
+  },
+  "<refresh-theme-newsletter-signup-block>": {
+    "template": "./omeda-newsletter-signup.marko"
   }
 }
