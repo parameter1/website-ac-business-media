@@ -11,15 +11,15 @@ module.exports = {
   company: 'AC Business Media, LLC',
   logos: {
     navbar: {
-      src: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/sdce/image/static/logo/site_logo_og.png?h=45',
+      src: 'https://img.sdcexec.com/files/base/acbm/sdce/image/static/logo/site_logo_og.png?h=45',
       srcset: [
-        'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/sdce/image/static/logo/site_logo_og.png?h=90 2x',
+        'https://img.sdcexec.com/files/base/acbm/sdce/image/static/logo/site_logo_og.png?h=90 2x',
       ],
     },
     footer: {
-      src: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/sdce/image/static/logo/site_logo_og.png?h=60',
+      src: 'https://img.sdcexec.com/files/base/acbm/sdce/image/static/logo/site_logo_og.png?h=60',
       srcset: [
-        'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/sdce/image/static/logo/site_logo_og.png?h=120 2x',
+        'https://img.sdcexec.com/files/base/acbm/sdce/image/static/logo/site_logo_og.png?h=120 2x',
       ],
     },
   },
@@ -53,7 +53,7 @@ module.exports = {
   contactUs: {
     branding: {
       bgColor: '#ec131c',
-      logo: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/sdce/image/static/logo/site_logo_og.png?h=60',
+      logo: 'https://img.sdcexec.com/files/base/acbm/sdce/image/static/logo/site_logo_og.png?h=60',
     },
     to: 'jsage@acbusinessmedia.com',
   },
@@ -63,7 +63,7 @@ module.exports = {
     sendTo: 'jsage@acbusinessmedia.com',
     sendFrom: 'Supply & Demand Chain Executive <noreply@baseplatform.io>',
     sendBcc: 'emailactivity@cygnus.com',
-    logo: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/sdce/image/static/logo/site_logo_og.png?h=60',
+    logo: 'https://img.sdcexec.com/files/base/acbm/sdce/image/static/logo/site_logo_og.png?h=60',
     bgColor: '#ec131c',
   },
   leaders: {
@@ -72,7 +72,7 @@ module.exports = {
     alias: 'leaders/2020',
     calloutValue: 'Leading Companies',
     header: {
-      imgSrc: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/sdce/image/static/sdc-leaders.png?h=85',
+      imgSrc: 'https://img.sdcexec.com/files/base/acbm/sdce/image/static/sdc-leaders.png?h=85',
     },
   },
 };

@@ -17,7 +17,7 @@ module.exports = {
     'Centrifugal Force',
   ],
   image: {
-    src: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/fcp/image/static/tandem-roller.jpg',
+    src: 'https://img.forconstructionpros.com/files/base/acbm/fcp/image/static/tandem-roller.jpg',
   },
   downloadLink: '/20973242',
   sheetSrc: 'https://spreadsheets.google.com/feeds/list/1BtttRyP7IT3IkpYZ7_paT3o_LJhtijyRBmODO0V2I9I/1/public/values?alt=json',
