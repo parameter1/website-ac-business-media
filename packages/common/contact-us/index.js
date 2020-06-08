@@ -3,8 +3,13 @@ const bodyParser = require('body-parser');
 const sgMail = require('@sendgrid/mail');
 const fetch = require('node-fetch');
 const { URLSearchParams } = require('url');
-const { SENDGRID_API_KEY, RECAPTCHA_SECRET_KEY } = require('../env');
 const emailTemplate = require('./email.marko');
+const {
+  SENDGRID_API_KEY,
+  RECAPTCHA_SECRET_KEY,
+  SENDGRID_DEV_TO,
+  isDevelopment,
+} = require('../env');
 
 const { error } = console;
 
@@ -27,11 +32,11 @@ const send = async (res, domain, payload) => {
     ...payload,
   };
   const html = emailTemplate.renderToString(input);
+  const address = res.app.locals.site.get('contactUs.to', 'contact@parameter1.com');
 
   return sgMail.send({
     from: 'Base CMS <noreply@base-cms.io>',
-    to: res.app.locals.site.get('contactUs.to', 'base@endeavorb2b.com'),
-    bcc: 'emailactivity@cygnus.com',
+    to: isDevelopment ? SENDGRID_DEV_TO : address,
     subject,
     html,
   });
