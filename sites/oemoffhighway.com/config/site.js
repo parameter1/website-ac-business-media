@@ -65,7 +65,6 @@ module.exports = {
     directSend: true,
     sendTo: 'jsage@acbusinessmedia.com',
     sendFrom: 'OEM Off-Highway <noreply@baseplatform.io>',
-    sendBcc: 'emailactivity@cygnus.com',
     logo: 'https://img.oemoffhighway.com/files/base/acbm/static/OEM_Logo2019_Reversed_NoTag.png?h=60',
     bgColor: '#ed1c24',
   },

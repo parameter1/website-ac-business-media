@@ -65,7 +65,6 @@ module.exports = {
     directSend: true,
     sendTo: 'jsage@acbusinessmedia.com',
     sendFrom: 'ForConstructionPros.com <noreply@baseplatform.io>',
-    sendBcc: 'emailactivity@cygnus.com',
     logo: 'https://img.forconstructionpros.com/files/base/acbm/fcp/image/static/logo/site_logo.png?h=45&bg=000000&pad=5',
     bgColor: '#000',
   },

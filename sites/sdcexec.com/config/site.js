@@ -62,7 +62,6 @@ module.exports = {
     directSend: true,
     sendTo: 'jsage@acbusinessmedia.com',
     sendFrom: 'Supply & Demand Chain Executive <noreply@baseplatform.io>',
-    sendBcc: 'emailactivity@cygnus.com',
     logo: 'https://img.sdcexec.com/files/base/acbm/sdce/image/static/logo/site_logo_og.png?h=60',
     bgColor: '#ec131c',
   },
