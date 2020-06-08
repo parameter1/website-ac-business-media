@@ -62,7 +62,6 @@ module.exports = {
     directSend: true,
     sendTo: 'jsage@acbusinessmedia.com',
     sendFrom: 'Food Logistics <noreply@baseplatform.io>',
-    sendBcc: 'emailactivity@cygnus.com',
     logo: 'https://img.foodlogistics.com/files/base/acbm/fl/image/static/logo/site_logo_large.png?h=60',
     bgColor: '#1a93f9',
   },
