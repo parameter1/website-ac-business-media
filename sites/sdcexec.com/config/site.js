@@ -27,6 +27,7 @@ module.exports = {
     { provider: 'facebook', href: 'http://www.facebook.com/sdcexec', target: '_blank' },
     { provider: 'twitter', href: 'http://www.twitter.com/sdcexec', target: '_blank' },
     { provider: 'linkedin', href: 'https://www.linkedin.com/company/supply-demand-chain-executive/', target: '_blank' },
+    { provider: 'flipboard', href: 'https://flipboard.com/@SDCExec', target: '_blank' },
   ],
   radix: {
     enabled: true,

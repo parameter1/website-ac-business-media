@@ -27,6 +27,8 @@ module.exports = {
     { provider: 'linkedin', href: 'https://www.linkedin.com/company/green-industry-pros/', target: '_blank' },
     { provider: 'twitter', href: 'https://twitter.com/greenindpros', target: '_blank' },
     { provider: 'facebook', href: 'https://www.facebook.com/GreenIndustryPros', target: '_blank' },
+    { provider: 'instagram', href: 'https://www.instagram.com/greenindustrypros/', target: '_blank' },
+    { provider: 'flipboard', href: 'https://flipboard.com/@GreenIndustry', target: '_blank' },
   ],
   radix: {
     enabled: true,

@@ -19,6 +19,9 @@ module.exports = {
   },
   socialMediaLinks: [
     { provider: 'facebook', href: 'https://www.facebook.com/AstecInc1', target: '_blank' },
+    { provider: 'linkedin', href: 'https://www.linkedin.com/company/astecinc', target: '_blank' },
+    { provider: 'twitter', href: 'https://twitter.com/astecinc', target: '_blank' },
+    { provider: 'instagram', href: 'https://www.instagram.com/astecinc', target: '_blank' },
   ],
   gtm: {
     containerId: 'GTM-55P9PL4',

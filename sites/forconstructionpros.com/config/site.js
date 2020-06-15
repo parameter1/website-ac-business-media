@@ -30,6 +30,7 @@ module.exports = {
     { provider: 'twitter', href: 'https://www.twitter.com/4ConstructnPros', target: '_blank' },
     { provider: 'linkedin', href: 'https://www.linkedin.com/company/forconstructionpros', target: '_blank' },
     { provider: 'youtube', href: 'https://www.youtube.com/user/ForConstructionPros', target: '_blank' },
+    { provider: 'flipboard', href: 'https://flipboard.com/@FCPnews', target: '_blank' },
   ],
   radix: {
     enabled: true,
