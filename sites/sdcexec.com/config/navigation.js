@@ -81,7 +81,7 @@ module.exports = {
         { href: '/events', label: 'Events' },
         { href: '/webinars', label: 'Webinars' },
         { href: 'http://www.supplychainlearningcenter.com/', label: 'Learning Center', target: '_blank' },
-        { href: '/podcast', label: 'Podcasts' },
+        { href: 'https://cms.megaphone.fm/channel/supplychain', label: 'Podcasts', target: '_blank' },
         { href: '/blogs', label: 'Expert Columnists' },
         { href: '/multimedia', label: 'Multimedia' },
         { href: '/scn-summit', label: 'SCN Summit' },
