@@ -30,6 +30,7 @@ module.exports = {
     { provider: 'twitter', href: 'https://twitter.com/OEMOffHighway', target: '_blank' },
     { provider: 'linkedin', href: 'https://www.linkedin.com/company/oem-off-highway/', target: '_blank' },
     { provider: 'youtube', href: 'https://www.youtube.com/channel/UCuAwQzKyZOqJolRTNYa0ZyA', target: '_blank' },
+    { provider: 'flipboard', href: 'https://flipboard.com/@OEMOffHighway', target: '_blank' },
   ],
   radix: {
     enabled: true,
