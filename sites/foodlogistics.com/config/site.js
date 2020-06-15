@@ -27,6 +27,7 @@ module.exports = {
     { provider: 'facebook', href: 'https://www.facebook.com/FoodLogistics', target: '_blank' },
     { provider: 'twitter', href: 'https://www.twitter.com/FoodLogistics', target: '_blank' },
     { provider: 'linkedin', href: 'https://www.linkedin.com/company/food-logistics-magazine/', target: '_blank' },
+    { provider: 'flipboard', href: 'https://flipboard.com/@FoodLogistics', target: '_blank' },
   ],
   radix: {
     enabled: true,
