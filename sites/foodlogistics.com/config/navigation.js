@@ -82,7 +82,7 @@ module.exports = {
         { href: '/blogs', label: 'Expert Columnists' },
         { href: '/case-studies', label: 'Case Studies' },
         { href: '/modex', label: 'MODEX' },
-        { href: '/podcasts', label: 'Podcasts' },
+        { href: 'https://cms.megaphone.fm/channel/supplychain', label: 'Podcasts', target: '_blank' },
         { href: '/events', label: 'Events' },
         { href: 'https://www.supplychainnetworkmediakit.com/', label: 'Advertise', target: '_blank' },
         { href: '/contact-us', label: 'Contact Us' },
