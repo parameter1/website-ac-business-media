@@ -145,6 +145,19 @@ module.exports = {
       },
     },
     {
+      alias: 'pavement-maintenance/preservation-maintenance',
+      map: {
+        lb1: 'pavement-maintenance/preservation-maintenance/lb1',
+        'lb-sticky-bottom': 'pavement-maintenance/preservation-maintenance/lb1',
+        rail1: 'pavement-maintenance/preservation-maintenance/rail1',
+        rail2: 'pavement-maintenance/preservation-maintenance/rail1',
+        'infinite-rail': 'pavement-maintenance/preservation-maintenance/rail1',
+        'infinite-interstitial': 'pavement-maintenance/preservation-maintenance/rail1',
+        'in-content': 'pavement-maintenance/preservation-maintenance/rail1',
+        reskin: 'pavement-maintenance/preservation-maintenance/reskin',
+      },
+    },
+    {
       alias: 'equipment-management',
       map: {
         lb1: 'equipment-management/lb1',
