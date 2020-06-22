@@ -6,6 +6,7 @@ const channels = [
   { href: '/business', label: 'Business' },
   { href: '/construction-technology', label: 'Technology' },
   { href: '/profit-matters', label: 'Profit Matters' },
+  { href: '/infrastructure', label: 'Infrastructure' },
 ];
 
 const resources = [
@@ -151,6 +152,7 @@ module.exports = {
         { href: '/business', label: 'Business' },
         { href: '/construction-technology', label: 'Technology' },
         { href: '/profit-matters', label: 'Profit Matters' },
+        { href: '/infrastructure', label: 'Infrastructure' },
       ],
     },
     {
