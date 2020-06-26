@@ -15,7 +15,7 @@ const resources = [
   { href: '/video', label: 'Video Network' },
   { href: '/magazine', label: 'Magazine' },
   { href: '/events', label: 'Events' },
-  { href: '/podcast', label: 'Podcasts' },
+  { href: '/podcasts', label: 'Podcasts' },
   { href: 'https://www.constructionnetworkmediakit.com/', label: 'Advertise', target: '_blank' },
 ];
 
@@ -165,6 +165,7 @@ module.exports = {
         { href: '/video', label: 'Video Network' },
         { href: '/magazine', label: 'Magazine' },
         { href: '/events', label: 'Events' },
+        { href: '/podcasts', label: 'Podcasts' },
         { href: 'https://www.constructionnetworkmediakit.com/', label: 'Advertise', target: '_blank' },
         { href: '/webinars', label: 'Webinars' },
       ],
