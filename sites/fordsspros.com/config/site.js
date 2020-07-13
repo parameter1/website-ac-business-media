@@ -11,15 +11,15 @@ module.exports = {
   company: 'AC Business Media, LLC',
   logos: {
     navbar: {
-      src: 'https://img.greenindustrypros.com/files/base/acbm/static/dss-logo.png?h=45',
+      src: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/static/dss-logo.png?h=45',
       srcset: [
-        'https://img.greenindustrypros.com/files/base/acbm/static/dss-logo.png?h=90 2x',
+        'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/static/dss-logo.png?h=90 2x',
       ],
     },
     footer: {
-      src: 'https://img.greenindustrypros.com/files/base/acbm/static/dss-logo.png?h=60',
+      src: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/static/dss-logo.png?h=60',
       srcset: [
-        'https://img.greenindustrypros.com/files/base/acbm/static/dss-logo.png?h=120 2x',
+        'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/static/dss-logo.png?h=120 2x',
       ],
     },
   },
