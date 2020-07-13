@@ -55,7 +55,7 @@ module.exports = {
   contactUs: {
     branding: {
       bgColor: '#164f77',
-      logo: 'https://img.greenindustrypros.com/files/base/acbm/static/dss-logo.png?h=60',
+      logo: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/static/dss-logo.png?h=60',
     },
     to: 'jsage@acbusinessmedia.com',
   },
@@ -64,7 +64,7 @@ module.exports = {
     directSend: true,
     sendTo: 'jsage@acbusinessmedia.com',
     sendFrom: 'GreenIndustryPros.com <noreply@baseplatform.io>',
-    logo: 'https://img.greenindustrypros.com/files/base/acbm/static/dss-logo.png?h=60',
+    logo: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/static/dss-logo.png?h=60',
     bgColor: '#164f77',
   },
 };
