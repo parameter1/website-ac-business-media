@@ -168,3 +168,19 @@ services:
     ports:
       - "9716:80"
       - "19716:19716"
+
+  fordsspros.com:
+    <<: *node
+    <<: *site-cmd
+    working_dir: /root/sites/fordsspros.com
+    environment:
+      <<: *env
+      <<: *env-tauron
+      PORT: 80
+      EXPOSED_PORT: 9717
+      LIVERELOAD_PORT: 19717
+      TENANT_KEY: acbm_fcp
+      SITE_ID: 5f09fe3771f65a24008b456e
+    ports:
+      - "9717:80"
+      - "19717:19717"
