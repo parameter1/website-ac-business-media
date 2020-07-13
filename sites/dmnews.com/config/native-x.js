@@ -1,4 +1,5 @@
 module.exports = {
+  enabled: false,
   placements: {
     default: '5b5f21fe82a75700011d299d',
     agencies: '5b5f236511624800013bf096',
