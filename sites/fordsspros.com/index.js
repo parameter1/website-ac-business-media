@@ -12,5 +12,5 @@ module.exports = startServer({
   coreConfig,
   siteConfig,
   routes,
-  redirectHandler: cufv1('update.greenindustrypros.com'),
+  redirectHandler: cufv1('update.fordsspros.com'),
 }).then(() => log('Website started!')).catch(e => setImmediate(() => { throw e; }));
