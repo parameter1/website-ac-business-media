@@ -1,5 +1,4 @@
 module.exports = {
-  enabled: false,
   placements: {
     default: '5b560a0d2a488f0001ecf2cb',
     'cold-chain': '5b560935a4ac010001bbc4f6',

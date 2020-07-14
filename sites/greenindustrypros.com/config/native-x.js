@@ -1,5 +1,4 @@
 module.exports = {
-  enabled: false,
   placements: {
     default: '5bed868f8e1d72000126d058',
     'mowing-maintenance': '5bed845f8e1d72000126c340',
