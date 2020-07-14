@@ -19,6 +19,12 @@ fragment WebsiteContentLatestFragment on Content {
       path
     }
   }
+  primarySection {
+    id
+    name
+    fullName
+    canonicalPath
+  }
   primaryImage {
     id
     src
