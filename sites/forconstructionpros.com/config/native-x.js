@@ -1,5 +1,4 @@
 module.exports = {
-  enabled: false,
   placements: {
     default: '5b55e1352360050001b77341',
     asphalt: '5b55e26b2360050001b7734a',
