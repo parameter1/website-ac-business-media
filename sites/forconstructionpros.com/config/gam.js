@@ -28,6 +28,19 @@ module.exports = {
       },
     },
     {
+      alias: 'equipment/compaction',
+      map: {
+        lb1: 'equipment/compaction/lb1',
+        'lb-sticky-bottom': 'equipment/compaction/lb1',
+        rail1: 'equipment/compaction/rail1',
+        rail2: 'equipment/compaction/rail1',
+        'infinite-rail': 'equipment/compaction/rail1',
+        'infinite-interstitial': 'equipment/compaction/rail1',
+        'in-content': 'equipment/compaction/rail1',
+        reskin: 'equipment/compaction/reskin',
+      },
+    },
+    {
       alias: 'equipment/earthmoving-compact',
       map: {
         lb1: 'equipment/earthmoving-compact/lb1',
