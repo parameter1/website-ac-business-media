@@ -11,15 +11,15 @@ module.exports = {
   company: 'AC Business Media, LLC',
   logos: {
     navbar: {
-      src: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/static/dss-logo-2.png?h=45',
+      src: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/static/dss-logo-2.png?h=45&auto=format,compress&q=70',
       srcset: [
-        'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/static/dss-logo-2.png?h=90 2x',
+        'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/static/dss-logo-2.png?h=90&auto=format,compress&q=70 2x',
       ],
     },
     footer: {
-      src: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/static/dss-logo-2.png?h=60',
+      src: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/static/dss-logo-2.png?h=60&auto=format,compress&q=70',
       srcset: [
-        'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/static/dss-logo-2.png?h=120 2x',
+        'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/static/dss-logo-2.png?h=120&auto=format,compress&q=70 2x',
       ],
     },
   },
@@ -55,7 +55,7 @@ module.exports = {
   contactUs: {
     branding: {
       bgColor: '#164f77',
-      logo: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/static/dss-logo-2.png?h=60',
+      logo: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/static/dss-logo-2.png?h=60&auto=format,compress&q=70',
     },
     to: 'jsage@acbusinessmedia.com',
   },
@@ -64,7 +64,7 @@ module.exports = {
     directSend: true,
     sendTo: 'jsage@acbusinessmedia.com',
     sendFrom: 'GreenIndustryPros.com <noreply@baseplatform.io>',
-    logo: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/static/dss-logo-2.png?h=60',
+    logo: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/static/dss-logo-2.png?h=60&auto=format,compress&q=70',
     bgColor: '#164f77',
   },
 };
