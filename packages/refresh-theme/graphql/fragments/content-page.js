@@ -20,7 +20,7 @@ fragment ContentPageFragment on Content {
     enableRmi
     primaryImage {
       id
-      src
+      src(input: { options: { auto: "format,compress", q: 70 } })
       alt
       caption
       credit
@@ -39,13 +39,13 @@ fragment ContentPageFragment on Content {
       canonicalPath
       logo {
         id
-        src
+        src(input: { options: { auto: "format,compress", q: 70 } })
       }
     }
   }
   primaryImage {
     id
-    src
+    src(input: { options: { auto: "format,compress", q: 70 } })
     alt
     caption
     credit
@@ -157,7 +157,7 @@ fragment ContentPageFragment on Content {
     edges {
       node {
         id
-        src
+        src(input: { options: { auto: "format,compress", q: 70 } })
         alt
         source {
           width
