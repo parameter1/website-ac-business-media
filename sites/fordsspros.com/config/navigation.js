@@ -12,7 +12,7 @@ module.exports = {
   },
   secondary: {
     items: [
-      { href: '/directory', label: 'Product Directory' },
+      // { href: '/directory', label: 'Product Directory' },
       // { href: '/videos', label: 'Videos' },
       // { href: '/podcasts', label: 'Podcasts' },
       // { href: '/webinars', label: 'Webinars' },
@@ -61,7 +61,7 @@ module.exports = {
     {
       label: 'Resources',
       items: [
-        { href: '/directory', label: 'Product Directory' },
+        // { href: '/directory', label: 'Product Directory' },
         // { href: '/videos', label: 'Videos' },
         // { href: '/podcasts', label: 'Podcasts' },
         // { href: '/webinars', label: 'Webinars' },
