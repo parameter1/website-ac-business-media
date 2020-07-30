@@ -5,15 +5,15 @@ module.exports = {
   company: 'Astec Industries, Inc',
   logos: {
     navbar: {
-      src: 'https://img.mixequipmentmag.com/files/base/acbm/mixequipmentmag/image/static/mix-equipment-logo.svg?h=45',
+      src: 'https://img.mixequipmentmag.com/files/base/acbm/mixequipmentmag/image/static/mix-equipment-logo.svg?h=45&auto=format,compress&q=70',
       srcset: [
-        'https://img.mixequipmentmag.com/files/base/acbm/mixequipmentmag/image/static/mix-equipment-logo.svg?h=90 2x',
+        'https://img.mixequipmentmag.com/files/base/acbm/mixequipmentmag/image/static/mix-equipment-logo.svg?h=90&auto=format,compress&q=70 2x',
       ],
     },
     footer: {
-      src: 'https://img.mixequipmentmag.com/files/base/acbm/mixequipmentmag/image/static/mix-equipment-logo.svg?h=60',
+      src: 'https://img.mixequipmentmag.com/files/base/acbm/mixequipmentmag/image/static/mix-equipment-logo.svg?h=60&auto=format,compress&q=70',
       srcset: [
-        'https://img.mixequipmentmag.com/files/base/acbm/mixequipmentmag/image/static/mix-equipment-logo.svg?h=120 2x',
+        'https://img.mixequipmentmag.com/files/base/acbm/mixequipmentmag/image/static/mix-equipment-logo.svg?h=120&auto=format,compress&q=70 2x',
       ],
     },
   },
@@ -29,7 +29,7 @@ module.exports = {
   contactUs: {
     branding: {
       bgColor: '#ec131c',
-      logo: 'https://img.mixequipmentmag.com/files/base/acbm/mixequipmentmag/image/static/mix-equipment-logo.svg?h=60',
+      logo: 'https://img.mixequipmentmag.com/files/base/acbm/mixequipmentmag/image/static/mix-equipment-logo.svg?h=60&auto=format,compress&q=70',
     },
     to: 'nraether@acbusinessmedia.com',
   },
