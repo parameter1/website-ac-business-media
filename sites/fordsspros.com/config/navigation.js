@@ -12,23 +12,17 @@ module.exports = {
   },
   secondary: {
     items: [
-      // { href: '/directory', label: 'Product Directory' },
-      // { href: '/videos', label: 'Videos' },
-      // { href: '/podcasts', label: 'Podcasts' },
-      // { href: '/webinars', label: 'Webinars' },
       { href: '/events', label: 'Events' },
       { href: '/contact-us', label: 'Contact Us' },
+      {
+        href: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/fcp/document/2020/07/ForDSSPros_MediaKit_2020_LowRes.5f22c236c0523.pdf',
+        label: 'Media Kit',
+        target: '_blank',
+      },
     ],
   },
   tertiary: {
     items: [
-      // {
-      //   href: 'https://acbm.dragonforms.com/loading.do?omedasite=GIP_NL_signup',
-      //   label: 'Newsletter (Sign Up)',
-      //   icon: 'mail',
-      //   forceLabel: true,
-      //   target: '_blank',
-      // },
       {
         href: '/search',
         label: 'Search',
@@ -40,7 +34,11 @@ module.exports = {
   footer: {
     items: [
       { href: '/contact-us', label: 'Contact Us' },
-      // { href: 'https://www.landscapenetworkmediakit.com/', label: 'Advertise', target: '_blank' },
+      {
+        href: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/fcp/document/2020/07/ForDSSPros_MediaKit_2020_LowRes.5f22c236c0523.pdf',
+        label: 'Media Kit',
+        target: '_blank',
+      },
       { href: '/page/privacy-policy', label: 'Privacy Policy', target: '_blank' },
       { href: '/page/terms-conditions', label: 'Terms & Conditions', target: '_blank' },
     ],
@@ -61,18 +59,18 @@ module.exports = {
     {
       label: 'Resources',
       items: [
-        // { href: '/directory', label: 'Product Directory' },
-        // { href: '/videos', label: 'Videos' },
-        // { href: '/podcasts', label: 'Podcasts' },
-        // { href: '/webinars', label: 'Webinars' },
         { href: '/events', label: 'Events' },
       ],
     },
     {
       label: 'User Tools',
       items: [
-        // { href: 'https://www.landscapenetworkmediakit.com/', label: 'Advertise', target: '_blank' },
         { href: '/contact-us', label: 'Contact Us' },
+        {
+          href: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/fcp/document/2020/07/ForDSSPros_MediaKit_2020_LowRes.5f22c236c0523.pdf',
+          label: 'Media Kit',
+          target: '_blank',
+        },
         { href: '/page/privacy-policy', label: 'Privacy Policy', target: '_blank' },
         { href: '/page/terms-conditions', label: 'Terms & Conditions', target: '_blank' },
       ],
