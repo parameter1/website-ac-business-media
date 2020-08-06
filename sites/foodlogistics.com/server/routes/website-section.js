@@ -3,7 +3,7 @@ const section = require('@ac-business-media/refresh-theme/templates/website-sect
 const awards = require('@ac-business-media/refresh-theme/templates/website-section/awards');
 const events = require('@ac-business-media/refresh-theme/templates/website-section/events');
 const feed = require('@ac-business-media/refresh-theme/templates/website-section/feed');
-const podcasts = require('@ac-business-media/refresh-theme/templates/website-section/podcasts');
+const media = require('@ac-business-media/refresh-theme/templates/website-section/media');
 const webinars = require('@ac-business-media/refresh-theme/templates/website-section/webinars');
 const whitepapers = require('@ac-business-media/refresh-theme/templates/website-section/whitepapers');
 const contactUs = require('@ac-business-media/refresh-theme/templates/website-section/contact-us');
@@ -38,8 +38,12 @@ module.exports = (app) => {
     template: events,
     queryFragment,
   }));
-  app.get('/:alias(podcasts)', withWebsiteSection({
-    template: podcasts,
+  app.get('/:alias(podcasts|videos)', withWebsiteSection({
+    template: media,
+    queryFragment,
+  }));
+  app.get('/:alias(podcasts/*|videos/*)', withWebsiteSection({
+    template: feed,
     queryFragment,
   }));
   app.get('/:alias(webinars)', withWebsiteSection({
