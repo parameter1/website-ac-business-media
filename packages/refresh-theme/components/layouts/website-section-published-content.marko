@@ -59,6 +59,7 @@ $ delete loadMoreParams.queryFragment;
         </@section>
         <@section>
           <div class="row">
+          <if(resolved.get("logo.src"))>
             <div class="col-lg-8">
               <marko-web-website-section-name tag="h1" class="page-wrapper__title" obj=section />
               <marko-web-website-section-description class="page-wrapper__deck" obj=section />
@@ -69,6 +70,13 @@ $ delete loadMoreParams.queryFragment;
                 fluid=true
               />
             </div>
+          </if>
+          <else>
+            <div class="col-lg-12">
+              <marko-web-website-section-name tag="h1" class="page-wrapper__title" obj=section />
+              <marko-web-website-section-description class="page-wrapper__deck" obj=section />
+            </div>
+          </else>
           </div>
         </@section>
         <@section>
