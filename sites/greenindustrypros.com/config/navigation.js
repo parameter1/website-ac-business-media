@@ -15,6 +15,7 @@ module.exports = {
       { href: '/advertise', label: 'Advertise' },
       { href: '/directory', label: 'Directory' },
       { href: 'https://cms.megaphone.fm/channel/grassroots?selected=ACBMI1756535736', target: '_blank', label: 'Podcast' },
+      { href: '/videos', label: 'Videos' },
     ],
   },
   tertiary: {
@@ -66,6 +67,8 @@ module.exports = {
         { href: '/podcasts', label: 'Podcasts' },
         { href: 'https://acbm.dragonforms.com/loading.do?omedasite=GIP_NL_signup', label: 'Newsletters', target: '_blank' },
         { href: '/magazine', label: 'Magazines' },
+        { href: '/videos', label: 'Videos' },
+        { href: 'https://cms.megaphone.fm/channel/grassroots?selected=ACBMI1756535736', target: '_blank', label: 'Podcast' },
         // { href: '/specguide', label: 'Spec Guide' },
       ],
     },

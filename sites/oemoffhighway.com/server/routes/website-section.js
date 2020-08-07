@@ -4,6 +4,7 @@ const contactUs = require('@ac-business-media/refresh-theme/templates/website-se
 const events = require('@ac-business-media/refresh-theme/templates/website-section/events');
 const feed = require('@ac-business-media/refresh-theme/templates/website-section/feed');
 const mediaGalleries = require('@ac-business-media/refresh-theme/templates/website-section/media-galleries');
+const media = require('@ac-business-media/refresh-theme/templates/website-section/media');
 const webinars = require('@ac-business-media/refresh-theme/templates/website-section/webinars');
 const whitepapers = require('@ac-business-media/refresh-theme/templates/website-section/whitepapers');
 const queryFragment = require('@ac-business-media/refresh-theme/graphql/fragments/website-section-page');
@@ -41,11 +42,11 @@ module.exports = (app) => {
     template: whitepapers,
     queryFragment,
   }));
-  app.get('/:alias(media-center/videos/industry-videos)', withWebsiteSection({
-    template: feed,
+  app.get('/:alias(podcasts|videos)', withWebsiteSection({
+    template: media,
     queryFragment,
   }));
-  app.get('/:alias(media-center/videos/technology-news-tracker)', withWebsiteSection({
+  app.get('/:alias(podcasts/*|videos/*)', withWebsiteSection({
     template: feed,
     queryFragment,
   }));

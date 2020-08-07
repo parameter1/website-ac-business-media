@@ -12,7 +12,7 @@ const channels = [
 const resources = [
   { href: '/directory', label: 'New Equipment Directory' },
   { href: '/specguide', label: 'Spec Guides' },
-  { href: '/video', label: 'Video Network' },
+  { href: '/videos', label: 'Video Network' },
   { href: '/magazine', label: 'Magazine' },
   { href: '/events', label: 'Events' },
   { href: '/podcasts', label: 'Podcasts' },
