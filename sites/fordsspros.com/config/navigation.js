@@ -15,7 +15,7 @@ module.exports = {
       { href: '/events', label: 'Events' },
       { href: '/contact-us', label: 'Contact Us' },
       {
-        href: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/fcp/document/2020/07/ForDSSPros_MediaKit_2020_LowRes.5f22c236c0523.pdf',
+        href: 'https://img.fordsspros.com/files/base/acbm/fcp/document/2020/07/ForDSSPros_MediaKit_2020_LowRes.5f22c236c0523.pdf',
         label: 'Editorial Calendar',
         target: '_blank',
       },
@@ -35,7 +35,7 @@ module.exports = {
     items: [
       { href: '/contact-us', label: 'Contact Us' },
       {
-        href: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/fcp/document/2020/07/ForDSSPros_MediaKit_2020_LowRes.5f22c236c0523.pdf',
+        href: 'https://img.fordsspros.com/files/base/acbm/fcp/document/2020/07/ForDSSPros_MediaKit_2020_LowRes.5f22c236c0523.pdf',
         label: 'Editorial Calendar',
         target: '_blank',
       },
@@ -67,7 +67,7 @@ module.exports = {
       items: [
         { href: '/contact-us', label: 'Contact Us' },
         {
-          href: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/fcp/document/2020/07/ForDSSPros_MediaKit_2020_LowRes.5f22c236c0523.pdf',
+          href: 'https://img.fordsspros.com/files/base/acbm/fcp/document/2020/07/ForDSSPros_MediaKit_2020_LowRes.5f22c236c0523.pdf',
           label: 'Editorial Calendar',
           target: '_blank',
         },
