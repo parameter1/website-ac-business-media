@@ -27,7 +27,7 @@ module.exports = {
     { provider: 'linkedin', href: 'https://www.linkedin.com/company/fordsspros/', target: '_blank' },
     { provider: 'twitter', href: 'https://twitter.com/fordsspros', target: '_blank' },
     { provider: 'facebook', href: 'https://www.facebook.com/fordsspros', target: '_blank' },
-    { provider: 'instagram', href: 'https://www.instagram.com/fordsspros/', target: '_blank' },
+    // { provider: 'instagram', href: 'https://www.instagram.com/fordsspros/', target: '_blank' },
   ],
   radix: {
     enabled: false,
