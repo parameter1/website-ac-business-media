@@ -71,7 +71,7 @@ $ const adSlots = ({ aliases }) => ({
               queryFragment: promotionQueryFragment,
             }
           >
-            <default-theme-card-deck-flow cols=3 nodes=nodes>
+            <default-theme-card-deck-flow cols=2 nodes=nodes>
               <@slot|{ node }|>
                 <refresh-theme-content-card-node
                   node=node
@@ -79,7 +79,7 @@ $ const adSlots = ({ aliases }) => ({
                   with-dates=false
                   with-attribution=false
                 >
-                  <@image width=340 />
+                  <@image width=680 />
                 </refresh-theme-content-card-node>
               </@slot>
             </default-theme-card-deck-flow>
