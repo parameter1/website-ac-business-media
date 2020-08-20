@@ -132,6 +132,20 @@ module.exports = {
         ],
       },
     },
+    {
+      when: ['/profit-matters'],
+      secondary: { items: channels },
+      tertiary: { items: tertiaryItems },
+      primary: {
+        items: [
+          { href: '/profit-matters?contentTypes=Blog', label: 'Blogs' },
+          { href: '/profit-matters?contentTypes=Podcast', label: 'Podcasts' },
+          { href: '/profit-matters?contentTypes=Webinar', label: 'Webinars' },
+          { href: '/profit-matters?contentTypes=Video', label: 'Videos' },
+          { href: '/profit-matters?contentTypes=Article', label: 'Articles' },
+        ],
+      },
+    },
   ],
 
   footer: {
