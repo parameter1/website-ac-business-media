@@ -1,6 +1,6 @@
 {
   "name": "@ac-business-media/fordsspros.com",
-  "version": "1.20.16",
+  "version": "1.20.17",
   "author": "Brandon Krigbaum <brandonbk@gmail.com>",
   "repository": "https://github.com/base-cms-websites/ac-business-media/tree/master/sites/fordsspros.com",
   "license": "MIT",
@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@ac-business-media/package-directory": "^1.20.10",
-    "@ac-business-media/refresh-theme": "^1.20.14",
+    "@ac-business-media/refresh-theme": "^1.20.17",
     "@base-cms/marko-core": "^1.30.2",
     "@base-cms/marko-web": "^1.32.0",
     "@base-cms/object-path": "^1.25.0",
