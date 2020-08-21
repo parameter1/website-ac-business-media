@@ -3,6 +3,8 @@ import hierarchyAliases from "@base-cms/marko-web/utils/hierarchy-aliases";
 import queryFragment from "../../graphql/fragments/content-list";
 import latestQueryFragment from "../../graphql/fragments/content-latest";
 
+$ const { titleize, pluralize } = require('@base-cms/inflector');
+
 $ const { GAM } = out.global;
 $ const contentTypes = get(out, "global.req.query.contentTypes");
 $ const excludeContentTypes = ["Company", "Contact", "Promotion"];
@@ -28,12 +30,15 @@ $ const adSlots = ({ aliases }) => ({
   $ const queryName = query.name || "website-scheduled-content";
   $ const includeContentTypes = contentTypes.split("|");
   $ const queryParams = query.params || { sectionId: id, limit: 12, includeContentTypes };
+  $ const contentTypeTitles = includeContentTypes.map(val => pluralize(titleize(val)));
+  $ const suffix = ': ' + contentTypeTitles.join(', ');
 
   <refresh-theme-website-section-published-content-layout
     id=id
     alias=alias
     name=name
     page-node=pageNode
+    page-suffix=suffix
   >
     <@query
       name=queryName
