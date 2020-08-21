@@ -9,7 +9,8 @@ $ const {
   id,
   alias,
   name,
-  pageNode
+  pageNode,
+  pageSuffix
 } = input;
 
 $ const adSlots = ({ aliases }) => ({
@@ -49,6 +50,7 @@ $ delete loadMoreParams.queryFragment;
 
     <marko-web-resolve-page|{ data: section, resolved }| node=pageNode>
       $ const aliases = hierarchyAliases(section);
+      $ if (pageSuffix) section.name += pageSuffix;
       <marko-web-page-wrapper>
         <@section>
           <marko-web-gam-display-ad

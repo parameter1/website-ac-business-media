@@ -30,6 +30,7 @@
     "@id": "string",
     "@name": "string",
     "@alias": "string",
-    "@page-node": "object"
+    "@page-node": "object",
+    "@page-suffix": "string"
   }
 }
