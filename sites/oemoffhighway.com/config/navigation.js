@@ -73,6 +73,7 @@ module.exports = {
         { href: '/trends', label: 'Trends' },
         { href: '/events', label: 'Industry Events' },
         { href: '/videos', label: 'Videos' },
+        { href: '/media-center', label: 'Media Center' },
         // { href: '/podcasts', label: 'Podcasts' },
         { href: '/specguide', label: 'Spec Guides' },
         { href: '/media-center/whitepapers-ebooks', label: 'White Papers & eBooks' },
