@@ -24,6 +24,13 @@ module.exports = {
   tertiary: {
     items: [
       {
+        href: 'https://acbusiness.dragonforms.com/loading.do?omedasite=ForDSSPros_prefs&version=1&page=1',
+        label: 'Newsletter',
+        icon: 'mail',
+        forceLabel: true,
+        target: '_blank',
+      },
+      {
         href: '/search',
         label: 'Search',
         icon: 'search',
