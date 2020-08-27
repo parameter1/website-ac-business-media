@@ -1096,6 +1096,11 @@ module.exports = [
       href: '/trucks/trucks-accessories/service-fuel-trucks',
     },
     {
+      id: 65325,
+      name: 'Slingers',
+      href: '/trucks/trucks-accessories/slingers',
+    },
+    {
       id: 54542,
       name: 'Tarps & Racks',
       href: '/trucks/trucks-accessories/tarps-racks',
