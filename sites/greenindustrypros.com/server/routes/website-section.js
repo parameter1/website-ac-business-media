@@ -1,7 +1,7 @@
 const { withWebsiteSection } = require('@base-cms/marko-web/middleware');
 const section = require('@ac-business-media/refresh-theme/templates/website-section');
 const podcasts = require('@ac-business-media/refresh-theme/templates/website-section/podcasts');
-const publishedVideos = require('@ac-business-media/refresh-theme/templates/website-section/videos');
+const publishedVideos = require('@ac-business-media/refresh-theme/templates/website-section/published-videos');
 const contactUs = require('@ac-business-media/refresh-theme/templates/website-section/contact-us');
 const queryFragment = require('@ac-business-media/refresh-theme/graphql/fragments/website-section-page');
 
