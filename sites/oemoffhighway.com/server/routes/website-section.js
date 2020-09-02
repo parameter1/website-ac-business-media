@@ -3,6 +3,7 @@ const section = require('@ac-business-media/refresh-theme/templates/website-sect
 const contactUs = require('@ac-business-media/refresh-theme/templates/website-section/contact-us');
 const events = require('@ac-business-media/refresh-theme/templates/website-section/events');
 const feed = require('@ac-business-media/refresh-theme/templates/website-section/feed');
+const publishedVideos = require('@ac-business-media/refresh-theme/templates/website-section/published-videos');
 const mediaGalleries = require('@ac-business-media/refresh-theme/templates/website-section/media-galleries');
 const media = require('@ac-business-media/refresh-theme/templates/website-section/media');
 const webinars = require('@ac-business-media/refresh-theme/templates/website-section/webinars');
@@ -40,6 +41,10 @@ module.exports = (app) => {
   }));
   app.get('/:alias(media-center/whitepapers-ebooks)', withWebsiteSection({
     template: whitepapers,
+    queryFragment,
+  }));
+  app.get('/:alias(videos/library)', withWebsiteSection({
+    template: publishedVideos,
     queryFragment,
   }));
   app.get('/:alias(podcasts|videos)', withWebsiteSection({
