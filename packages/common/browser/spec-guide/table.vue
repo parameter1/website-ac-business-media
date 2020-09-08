@@ -56,7 +56,12 @@
               :key="`${col.key}-row-${index}`"
               class="text-center"
             >
-              {{ row[col.key].displayValue }}
+              <template v-if="row[col.key].htmlValue">
+                <span v-html="row[col.key].htmlValue" />
+              </template>
+              <template v-else>
+                {{ row[col.key].displayValue }}
+              </template>
             </td>
           </tr>
         </tbody>
