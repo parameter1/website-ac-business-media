@@ -47,5 +47,13 @@ module.exports = {
     tracktwheelw: {
       label: 'Track (T) / Wheeled (W)',
     },
+    link: {
+      label: 'Link',
+      hidden: true,
+    },
+    featured: {
+      label: 'Featured',
+      hidden: true,
+    },
   },
 };

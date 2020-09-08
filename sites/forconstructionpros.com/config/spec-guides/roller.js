@@ -58,5 +58,13 @@ module.exports = {
       range: ['minimumcentrifugalforcelbs', 'maximumcentrifugalforcelbs'],
       type: 'number',
     },
+    link: {
+      label: 'Link',
+      hidden: true,
+    },
+    featured: {
+      label: 'Featured',
+      hidden: true,
+    },
   },
 };
