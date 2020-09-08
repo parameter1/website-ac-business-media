@@ -202,7 +202,7 @@ export default {
      */
     visibleColumnList() {
       const { columnList, selectedMeasure, selectedMeasureKey } = this;
-      if (!selectedMeasure) return columnList.slice();
+      if (!selectedMeasure) return columnList.filter(col => !col.hidden).slice();
       const visible = columnList
         .filter(col => ((!col.measure || col.measure === selectedMeasureKey) && !col.hidden));
       return visible;
