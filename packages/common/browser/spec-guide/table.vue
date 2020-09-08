@@ -57,6 +57,7 @@
               class="text-center"
             >
               <template v-if="row[col.key].htmlValue">
+                <!-- eslint-disable-next-line vue/no-v-html -->
                 <span v-html="row[col.key].htmlValue" />
               </template>
               <template v-else>
