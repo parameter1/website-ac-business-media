@@ -326,6 +326,20 @@ export default {
     /**
      *
      */
+    getCompanyHtmlValue(col, row) {
+      const { key } = col;
+      const value = get(row, key);
+      const companyLink = this.getDisplayValue({ key: 'link' }, row);
+      const featured = this.getDisplayValue({ key: 'featured' }, row);
+      if (featured && companyLink) {
+        return `<a href="${companyLink}" target="_blank"><strong>${value.raw}</strong></a>`;
+      }
+      return false;
+    },
+
+    /**
+     *
+     */
     filterByRegex({ key, phrase }) {
       const { rows } = this;
       if (!phrase) return rows;
