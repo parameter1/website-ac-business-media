@@ -56,13 +56,7 @@
               :key="`${col.key}-row-${index}`"
               class="text-center"
             >
-              <template v-if="row[col.key].htmlValue">
-                <!-- eslint-disable-next-line vue/no-v-html -->
-                <span v-html="row[col.key].htmlValue" />
-              </template>
-              <template v-else>
-                {{ row[col.key].displayValue }}
-              </template>
+              {{ row[col.key].displayValue }}
             </td>
           </tr>
         </tbody>
@@ -202,9 +196,8 @@ export default {
      */
     visibleColumnList() {
       const { columnList, selectedMeasure, selectedMeasureKey } = this;
-      if (!selectedMeasure) return columnList.filter(col => !col.hidden).slice();
-      const visible = columnList
-        .filter(col => ((!col.measure || col.measure === selectedMeasureKey) && !col.hidden));
+      if (!selectedMeasure) return columnList.slice();
+      const visible = columnList.filter(col => !col.measure || col.measure === selectedMeasureKey);
       return visible;
     },
 
@@ -330,20 +323,6 @@ export default {
     /**
      *
      */
-    getCompanyHtmlValue(col, row) {
-      const { key } = col;
-      const value = get(row, key);
-      const companyLink = this.getDisplayValue({ key: 'link' }, row);
-      const featured = this.getDisplayValue({ key: 'featured' }, row);
-      if (featured && companyLink) {
-        return `<a href="${companyLink}" target="_blank"><strong>${value.raw}</strong></a>`;
-      }
-      return false;
-    },
-
-    /**
-     *
-     */
     filterByRegex({ key, phrase }) {
       const { rows } = this;
       if (!phrase) return rows;
@@ -461,10 +440,6 @@ export default {
           this.columnList.forEach((col) => {
             const displayValue = this.getDisplayValue(col, newRow);
             newRow[col.key].displayValue = displayValue;
-            if (col.key === 'company') {
-              const companyHtmlValue = this.getCompanyHtmlValue(col, newRow);
-              if (companyHtmlValue) newRow[col.key].htmlValue = companyHtmlValue;
-            }
           });
           return newRow;
         }) : [];

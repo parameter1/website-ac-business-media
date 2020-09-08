@@ -104,13 +104,5 @@ module.exports = {
     company: {
       label: 'Company',
     },
-    link: {
-      label: 'Link',
-      hidden: true,
-    },
-    featured: {
-      label: 'Featured',
-      hidden: true,
-    },
   },
 };
