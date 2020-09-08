@@ -457,6 +457,10 @@ export default {
           this.columnList.forEach((col) => {
             const displayValue = this.getDisplayValue(col, newRow);
             newRow[col.key].displayValue = displayValue;
+            if (col.key === 'company') {
+              const companyHtmlValue = this.getCompanyHtmlValue(col, newRow);
+              if (companyHtmlValue) newRow[col.key].htmlValue = companyHtmlValue;
+            }
           });
           return newRow;
         }) : [];
