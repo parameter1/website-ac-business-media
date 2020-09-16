@@ -27,6 +27,10 @@ module.exports = (app) => {
     template: contactUs,
     queryFragment,
   }));
+  app.get('/:alias(awards/*)', withWebsiteSection({
+    template: feed,
+    queryFragment,
+  }));
   app.get('/:alias(awards)', withWebsiteSection({
     template: awards,
     queryFragment,
