@@ -303,8 +303,8 @@ $ const injectAds = ["article", "news", "press-release", "blog"].includes(type) 
     </marko-web-page-container>
   </@below-page>
   <@foot>
-    <marko-web-resolve-page|{ data: section }| node=pageNode>
-      <refresh-theme-fixed-ad-bottom aliases=hierarchyAliases(section) />
+    <marko-web-resolve-page|{ data: content }| node=pageNode>
+      <refresh-theme-fixed-ad-bottom aliases=hierarchyAliases(content.primarySection) />
     </marko-web-resolve-page>
   </@foot>
 </marko-web-content-page-layout>
