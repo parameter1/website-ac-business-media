@@ -3,11 +3,9 @@ module.exports = {
     items: [
       { href: '/warehousing', label: 'Warehousing' },
       { href: '/transportation', label: 'Transport' },
-      { href: '/technology', label: 'Tech' },
+      { href: '/technology', label: 'Software & Technology' },
       { href: '/safety', label: 'Safety & Security' },
       { href: '/sustainability', label: 'Sustainability' },
-      { href: '/cold-chain', label: 'Cold Chain' },
-      { href: '/3pl-4pl', label: '3PL/4PL' },
       { href: '/risk-compliance', label: 'Risk/Compliance' },
       { href: '/ocean-ports-carriers', label: 'Maritime' },
       { href: '/scn-summit', label: 'SCN Summit' },
@@ -64,13 +62,12 @@ module.exports = {
       items: [
         { href: '/warehousing', label: 'Warehousing' },
         { href: '/transportation', label: 'Transport' },
-        { href: '/technology', label: 'Tech' },
+        { href: '/technology', label: 'Software & Technology' },
         { href: '/safety', label: 'Safety & Security' },
         { href: '/sustainability', label: 'Sustainability' },
-        { href: '/cold-chain', label: 'Cold Chain' },
-        { href: '/3pl-4pl', label: '3PL/4PL' },
         { href: '/risk-compliance', label: 'Risk/Compliance' },
         { href: '/ocean-ports-carriers', label: 'Maritime' },
+        { href: '/scn-summit', label: 'SCN Summit' },
       ],
     },
     {
