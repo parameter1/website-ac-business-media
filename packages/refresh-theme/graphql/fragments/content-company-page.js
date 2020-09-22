@@ -8,7 +8,7 @@ fragment ContentCompanyPageFragment on Content {
   name
   teaser(input: { useFallback: false, maxLength: null })
   body
-
+  published
   siteContext {
     path
   }
