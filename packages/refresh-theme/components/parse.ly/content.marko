@@ -5,7 +5,7 @@ $ const image = getAsObject(input, "content.primaryImage");
 $ const primarySection = getAsObject(input, "content.primarySection");
 $ const authors = getAsArray(content, "authors.edges").map(edge => get(edge, "node.name"));
 $ const taxonomy = getAsArray(content, "taxonomy.edges").map(edge => get(edge, "node.name"));
-$ const datePublished = (new Date(content.published)).toISOString()
+$ const datePublished = (new Date(content.published)).toISOString();
 $ const payload = {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
