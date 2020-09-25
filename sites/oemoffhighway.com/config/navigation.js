@@ -15,7 +15,7 @@ module.exports = {
       { href: '/specguide', label: 'Spec Guides' },
       { href: '/trends', label: 'Trends' },
       { href: '/videos', label: 'Videos' },
-      { href: '/podcasts', label: 'Podcasts' },
+      { href: 'https://cms.megaphone.fm/channel/oemupdate?selected=ACBMI3051469857', label: 'Podcast', target: '_blank' },
       { href: '/events', label: 'Events' },
       { href: 'https://www.oemoffhighwaymediakit.com/', label: 'Advertise', target: '_blank' },
       { href: '/magazine', label: 'Magazine' },
