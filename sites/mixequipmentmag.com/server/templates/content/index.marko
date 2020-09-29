@@ -16,6 +16,7 @@ $ const displayPublishedDate = ["event", "webinar"].includes(type) ? false : tru
   </@head>
   <@page>
     <marko-web-resolve-page|{ data: content, resolved }| node=pageNode>
+      <refresh-theme-events-track-content node=content />
       $ const section = resolved.getAsObject("primarySection");
       $ const aliases = hierarchyAliases(section);
       <marko-web-page-wrapper class="my-block">
