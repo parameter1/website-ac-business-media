@@ -30,6 +30,7 @@ fragment ContentPageFragment on Content {
   primarySection {
     id
     name
+    fullName
     alias
     canonicalPath
     hierarchy {
@@ -54,6 +55,12 @@ fragment ContentPageFragment on Content {
   gating {
     surveyType
     surveyId
+  }
+  createdBy {
+    id
+    username
+    firstName
+    lastName
   }
   ... on ContentVideo {
     embedCode
