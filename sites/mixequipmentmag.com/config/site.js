@@ -1,9 +1,7 @@
 const navigation = require('./navigation');
-const events = require('./events');
 
 module.exports = {
   navigation,
-  events,
   company: 'Astec Industries, Inc',
   logos: {
     navbar: {
