@@ -1,0 +1,35 @@
+import { getAsArray } from "@base-cms/object-path";
+import convert from "@base-cms/marko-web-native-x/utils/convert-ad-to-content";
+
+$ const {
+  config,
+  name,
+  aliases,
+  sectionName,
+} = input;
+$ const indices = getAsArray(input, 'indices');
+$ const nodes = getAsArray(input, 'nodes');
+$ if (!indices.length && typeof input.index !== 'undefined') {
+  indices.push(input.index);
+}
+$ const placement = config.getPlacement({ name, aliases });
+$ const num = indices.length;
+$ const { uri, id } = placement;
+$ const opts = { ...placement.opts, n: num };
+$ let n = 0;
+
+$ const injectAds = (nodes, ads) => nodes.map((node, i) => {
+  if (!indices.includes(i) || !ads[n]) return node;
+  const ad = ads[n];
+  n++;
+  return { ...convert(ad, { sectionName }), attributes: ad.attributes };
+});
+
+<if(config && num > 0 && uri && id)>
+  <marko-web-native-x-fetch-elements|{ ads }| uri=uri id=id opts=opts>
+    <${input.renderBody} nodes=injectAds(nodes, ads) />
+  </marko-web-native-x-fetch-elements>
+</if>
+<else>
+  <${input.renderBody} nodes=nodes />
+</else>
