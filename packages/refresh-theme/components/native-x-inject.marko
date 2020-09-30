@@ -16,7 +16,7 @@ $ const opts = { ...placement.opts, n: num };
 $ let n = 0;
 
 $ const injectAds = (nodes, ads) => nodes.map((node, i) => {
-  if (!indices.includes(i) || !ads[n]) return node;
+  if (!indices.includes(i) || !ads[n] || !ads[n].hasCampaign) return node;
   const ad = ads[n];
   n++;
   return { ...convert(ad, { sectionName }), attributes: ad.attributes };
