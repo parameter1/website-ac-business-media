@@ -9,9 +9,6 @@ $ const {
 } = input;
 $ const indices = getAsArray(input, 'indices');
 $ const nodes = getAsArray(input, 'nodes');
-$ if (!indices.length && typeof input.index !== 'undefined') {
-  indices.push(input.index);
-}
 $ const placement = config.getPlacement({ name, aliases });
 $ const num = indices.length;
 $ const { uri, id } = placement;
