@@ -218,12 +218,13 @@ $ const injectAds = ["article", "news", "press-release", "blog"].includes(type) 
                 slots=adSlots({ aliases })
               />
 
+              $ const latestIndices = site.get('nativeX.content.latest-in.indices') || [0];
               <refresh-theme-latest-in-section-block
                 content-id=id
                 section-id=section.id
                 section-name=section.name
               >
-                <@native-x indices=[0] name="default" aliases=aliases />
+                <@native-x indices=latestIndices name="default" aliases=aliases />
               </refresh-theme-latest-in-section-block>
 
               <leaders-contextual content-id=id />
@@ -278,6 +279,7 @@ $ const injectAds = ["article", "news", "press-release", "blog"].includes(type) 
           <@section>
             <div class="row">
               <div class="col-lg-8 infinite-scroll-target">
+                $ const scrollIndices = site.get('nativeX.content.load-more.indices') || [];
                 <refresh-theme-content-infinite-scroll-block
                   id=id
                   type=type
@@ -286,7 +288,9 @@ $ const injectAds = ["article", "news", "press-release", "blog"].includes(type) 
                   aliases=aliases
                   limit=12
                   skip=(["company", "contact"].includes(type) ? 0 : 4)
-                />
+                >
+                  <@native-x indices=scrollIndices name="default" aliases=aliases />
+                </refresh-theme-content-infinite-scroll-block>
               </div>
               <aside class="col-lg-4 page-rail">
                 <refresh-theme-follow-us-block />

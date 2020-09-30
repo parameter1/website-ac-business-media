@@ -11,4 +11,12 @@ module.exports = {
     'risk-compliance': '5b56094ea4ac010001bbc4f8',
     'ocean-ports-carriers': '5b56095b2a488f0001ecf2c0',
   },
+  content: {
+    'latest-in': {
+      indices: [0, 2],
+    },
+    'load-more': {
+      indices: [5, 11],
+    },
+  },
 };
