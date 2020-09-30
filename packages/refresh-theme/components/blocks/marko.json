@@ -62,6 +62,14 @@
     "<native-x>": {
       "@indices": {
         "type": "array",
+        "default-value": []
+      },
+      "@name": "string",
+      "@aliases": "array"
+    },
+    "<native-x-load-more>": {
+      "@indices": {
+        "type": "array",
         "default-value": [0]
       },
       "@name": "string",

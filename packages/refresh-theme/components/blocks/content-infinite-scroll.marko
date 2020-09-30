@@ -1,3 +1,4 @@
+import { getAsObject } from "@base-cms/object-path";
 import defaultValue from "@base-cms/marko-core/utils/default-value";
 import queryFragment from "../../graphql/fragments/content-latest";
 
@@ -87,7 +88,8 @@ $ delete loadMoreQueryParams.queryFragment;
   />
 </marko-web-query>
 
-<refresh-theme-latest-content-load-more-block max-pages=4 native-x=input.nativeX>
+$ const nativeX = getAsObject(input, "nativeXLoadMore");
+<refresh-theme-latest-content-load-more-block max-pages=4 native-x=nativeX>
   <@query
     name=attrs.queryName
     params=loadMoreQueryParams

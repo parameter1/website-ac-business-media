@@ -11,11 +11,16 @@ module.exports = {
     'professional-development': '5b5609ee2a488f0001ecf2ca',
   },
   content: {
-    'latest-in': {
+    latestIn: {
       indices: [0, 2],
     },
-    'load-more': {
-      indices: [5, 11],
+    latest: {
+      initial: {
+        indices: [5, 11],
+      },
+      loadMore: {
+        indices: [11],
+      },
     },
   },
 };

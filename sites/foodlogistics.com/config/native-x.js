@@ -12,11 +12,16 @@ module.exports = {
     'ocean-ports-carriers': '5b56095b2a488f0001ecf2c0',
   },
   content: {
-    'latest-in': {
+    latestIn: {
       indices: [0, 2],
     },
-    'load-more': {
-      indices: [5, 11],
+    latest: {
+      initial: {
+        indices: [5, 11],
+      },
+      loadMore: {
+        indices: [11],
+      },
     },
   },
 };
