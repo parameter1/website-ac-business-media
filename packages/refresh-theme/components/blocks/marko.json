@@ -5,7 +5,10 @@
     "<page>": {},
     "<adunit>": {},
     "<native-x>": {
-      "@index": "number",
+      "@indices": {
+        "type": "array",
+        "default-value": [0]
+      },
       "@name": "string",
       "@aliases": "array"
     },
@@ -24,7 +27,10 @@
   "<refresh-theme-recommended-block>": {
     "template": "./recommended.marko",
     "<native-x>": {
-      "@index": "number",
+      "@indices": {
+        "type": "array",
+        "default-value": [0]
+      },
       "@name": "string",
       "@aliases": "array"
     },
@@ -40,7 +46,10 @@
   "<refresh-theme-latest-in-section-block>": {
     "template": "./latest-in-section.marko",
     "<native-x>": {
-      "@index": "number",
+      "@indices": {
+        "type": "array",
+        "default-value": [0]
+      },
       "@name": "string",
       "@aliases": "array"
     },

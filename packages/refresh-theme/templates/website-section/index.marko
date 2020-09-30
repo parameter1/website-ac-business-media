@@ -108,7 +108,7 @@ $ const adSlots = ({ aliases }) => ({
 
           <@section modifiers=["card-deck"]>
             <refresh-theme-recommended-block>
-              <@native-x index=2 name="default" aliases=aliases />
+              <@native-x indices=[2] name="default" aliases=aliases />
             </refresh-theme-recommended-block>
           </@section>
 
@@ -192,7 +192,7 @@ $ const adSlots = ({ aliases }) => ({
                     }
                   >
                     <refresh-theme-latest-content-list-flow nodes=nodes with-header=false>
-                      <@native-x index=0 name="default" aliases=aliases />
+                      <@native-x indices=[0] name="default" aliases=aliases />
                     </refresh-theme-latest-content-list-flow>
                   </marko-web-query>
 
@@ -212,7 +212,7 @@ $ const adSlots = ({ aliases }) => ({
                       ...GAM.getAdUnit({ name: "infinite-interstitial", aliases })
                       modifiers=["max-width-300", "margin-auto-x"]
                     />
-                    <@native-x index=0 name="default" aliases=aliases />
+                    <@native-x indices=[0] name="default" aliases=aliases />
                   </refresh-theme-latest-content-load-more-block>
                 </div>
 
