@@ -83,10 +83,11 @@ $ delete loadMoreQueryParams.queryFragment;
     nodes=nodes
     with-header=true
     header=attrs.header
+    native-x=input.nativeX
   />
 </marko-web-query>
 
-<refresh-theme-latest-content-load-more-block max-pages=4>
+<refresh-theme-latest-content-load-more-block max-pages=4 native-x=input.nativeX>
   <@query
     name=attrs.queryName
     params=loadMoreQueryParams
@@ -96,5 +97,4 @@ $ delete loadMoreQueryParams.queryFragment;
     ...GAM.getAdUnit({ name: "infinite-interstitial", aliases })
     modifiers=["max-width-300", "margin-auto-x"]
   />
-  <@native-x indices=[0] name="default" aliases=aliases />
 </refresh-theme-latest-content-load-more-block>

@@ -59,6 +59,14 @@
   },
   "<refresh-theme-content-infinite-scroll-block>": {
     "template":  "./content-infinite-scroll.marko",
+    "<native-x>": {
+      "@indices": {
+        "type": "array",
+        "default-value": [0]
+      },
+      "@name": "string",
+      "@aliases": "array"
+    },
     "@id": "number",
     "@type": "string",
     "@name": "string",
