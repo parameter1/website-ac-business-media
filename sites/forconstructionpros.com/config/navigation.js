@@ -69,11 +69,10 @@ module.exports = {
       primary: {
         items: [
           { href: '/rental/construction', label: 'Construction' },
-          { href: '/rental/lifting-equipment', label: 'Lifting Equipment' },
-          { href: '/rental/lifting-equipment/telescopic-handler', label: 'Telescopic Lifts' },
-          { href: '/rental/lifting-equipment/boom-lift', label: 'Boom Lifts' },
-          { href: '/rental/lifting-equipment/crane', label: 'Crane' },
           { href: '/rental/general-tool', label: 'General Tool' },
+          { href: '/rental/lifting-equipment', label: 'Lifting Equipment' },
+          { href: '/rental/power', label: 'Power' },
+          { href: '/rental/rental-business', label: 'Rental Business' },
         ],
       },
     },
