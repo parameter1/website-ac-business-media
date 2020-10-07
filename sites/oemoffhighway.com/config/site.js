@@ -3,6 +3,7 @@ const gam = require('./gam');
 const nativeX = require('./native-x');
 const specGuides = require('./spec-guides');
 const dragonForms = require('./dragon-forms');
+const events = require('./events');
 
 module.exports = {
   gam,
@@ -10,6 +11,7 @@ module.exports = {
   dragonForms,
   navigation,
   specGuides,
+  events,
   company: 'AC Business Media, LLC',
   logos: {
     navbar: {

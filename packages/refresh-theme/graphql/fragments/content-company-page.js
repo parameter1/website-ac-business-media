@@ -12,6 +12,18 @@ fragment ContentCompanyPageFragment on Content {
   siteContext {
     path
   }
+  primarySection {
+    id
+    name
+    fullName
+    alias
+  }
+  createdBy {
+    id
+    username
+    firstName
+    lastName
+  }
   ... on ContentCompany {
 
     address1

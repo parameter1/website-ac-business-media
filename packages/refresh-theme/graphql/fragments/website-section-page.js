@@ -4,6 +4,7 @@ module.exports = gql`
 fragment WebsiteSectionPageFragment on WebsiteSection {
   id
   name
+  fullName
   description
   hierarchy {
     id
