@@ -68,11 +68,12 @@ module.exports = {
       tertiary: { items: tertiaryItems },
       primary: {
         items: [
-          { href: '/rental/lifting-equipment', label: 'Lifting' },
+          { href: '/rental/construction', label: 'Construction' },
+          { href: '/rental/lifting-equipment', label: 'Lifting Equipment' },
           { href: '/rental/lifting-equipment/telescopic-handler', label: 'Telescopic Lifts' },
           { href: '/rental/lifting-equipment/boom-lift', label: 'Boom Lifts' },
           { href: '/rental/lifting-equipment/crane', label: 'Crane' },
-          { href: '/rental/inventory', label: 'Inventory' },
+          { href: '/rental/general-tool', label: 'General Tool' },
         ],
       },
     },
