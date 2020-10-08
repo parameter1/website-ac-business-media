@@ -13,7 +13,7 @@ const resources = [
   { href: '/directory', label: 'New Equipment Directory' },
   { href: '/specguide', label: 'Spec Guides' },
   { href: '/videos', label: 'Video Network' },
-  { href: '/magazine', label: 'Magazine' },
+  { href: '/magazine', label: 'Magazines' },
   { href: '/events', label: 'Events' },
   { href: '/podcasts', label: 'Podcasts' },
   { href: 'https://www.constructionnetworkmediakit.com/', label: 'Advertise', target: '_blank' },
@@ -23,7 +23,7 @@ const resources = [
 const tertiaryItems = [
   {
     href: '/magazine',
-    label: 'Magazine',
+    label: 'Magazines',
     icon: 'book',
     forceLabel: true,
   },
