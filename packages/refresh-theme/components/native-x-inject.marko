@@ -1,4 +1,5 @@
 import { getAsArray } from "@base-cms/object-path";
+import defaultValue from "@base-cms/marko-core/utils/default-value";
 import convert from "@base-cms/marko-web-native-x/utils/convert-ad-to-content";
 
 $ const {
@@ -7,13 +8,14 @@ $ const {
   aliases,
   sectionName,
 } = input;
-$ const indices = getAsArray(input, 'indices');
+$ const indices = defaultValue(input.indices, [0]);
 $ const nodes = getAsArray(input, 'nodes');
 $ const placement = config.getPlacement({ name, aliases });
 $ const num = indices.length;
 $ const { uri, id } = placement;
 $ const opts = { ...placement.opts, n: num };
 $ let n = 0;
+$ console.log('inject', { indices, placement });
 
 $ const injectAds = (nodes, ads) => nodes.map((node, i) => {
   if (!indices.includes(i) || !ads[n] || !ads[n].hasCampaign) return node;

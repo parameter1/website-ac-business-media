@@ -1,4 +1,5 @@
 import hierarchyAliases from "@base-cms/marko-web/utils/hierarchy-aliases";
+import defaultValue from "@base-cms/marko-core/utils/default-value";
 import { getAsObject, get } from "@base-cms/object-path";
 import queryFragment from "../../graphql/fragments/content-list";
 
@@ -218,7 +219,7 @@ $ const injectAds = ["article", "news", "press-release", "blog"].includes(type) 
                 slots=adSlots({ aliases })
               />
 
-              $ const latestIn = site.get('nativeX.content.latestIn.indices') || [0];
+              $ const latestIn = defaultValue(site.get('nativeX.content.latestIn.indices'), [0]);
               <refresh-theme-latest-in-section-block
                 content-id=id
                 section-id=section.id
@@ -279,8 +280,8 @@ $ const injectAds = ["article", "news", "press-release", "blog"].includes(type) 
           <@section>
             <div class="row">
               <div class="col-lg-8 infinite-scroll-target">
-                $ const scrollInitial = site.get('nativeX.content.latest.initial.indices') || [];
-                $ const scrollMore = site.get('nativeX.content.latest.loadMore.indices') || [0];
+                $ const scrollInitial = defaultValue(site.get('nativeX.content.latest.initial.indices'), []);
+                $ const scrollMore = defaultValue(site.get('nativeX.content.latest.loadMore.indices'), [0]);
                 <refresh-theme-content-infinite-scroll-block
                   id=id
                   type=type

@@ -6,10 +6,7 @@
       "<title>": {}
     },
     "<native-x>": {
-      "@indices": {
-        "type": "array",
-        "default-value": [0]
-      },
+      "@indices": "array",
       "@name": "string",
       "@aliases": "array"
     },
@@ -24,10 +21,7 @@
     "template": "./content-hero.marko",
     "<list>": {},
     "<native-x>": {
-      "@indices": {
-        "type": "array",
-        "default-value": [0]
-      },
+      "@indices": "array",
       "@name": "string",
       "@aliases": "array"
     },
@@ -41,10 +35,7 @@
       "<title>": {}
     },
     "<native-x>": {
-      "@indices": {
-        "type": "array",
-        "default-value": [0]
-      },
+      "@indices": "array",
       "@name": "string",
       "@aliases": "array"
     },
@@ -59,10 +50,7 @@
     "template": "./latest-content-list.marko",
     "<adunit>": {},
     "<native-x>": {
-      "@indices": {
-        "type": "array",
-        "default-value": [0]
-      },
+      "@indices": "array",
       "@name": "string",
       "@aliases": "array"
     },

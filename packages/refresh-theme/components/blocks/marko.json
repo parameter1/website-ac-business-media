@@ -5,10 +5,7 @@
     "<page>": {},
     "<adunit>": {},
     "<native-x>": {
-      "@indices": {
-        "type": "array",
-        "default-value": [0]
-      },
+      "@indices": "array",
       "@name": "string",
       "@aliases": "array"
     },
@@ -27,10 +24,7 @@
   "<refresh-theme-recommended-block>": {
     "template": "./recommended.marko",
     "<native-x>": {
-      "@indices": {
-        "type": "array",
-        "default-value": [0]
-      },
+      "@indices": "array",
       "@name": "string",
       "@aliases": "array"
     },
@@ -46,10 +40,7 @@
   "<refresh-theme-latest-in-section-block>": {
     "template": "./latest-in-section.marko",
     "<native-x>": {
-      "@indices": {
-        "type": "array",
-        "default-value": [0]
-      },
+      "@indices": "array",
       "@name": "string",
       "@aliases": "array"
     },
@@ -60,18 +51,12 @@
   "<refresh-theme-content-infinite-scroll-block>": {
     "template":  "./content-infinite-scroll.marko",
     "<native-x>": {
-      "@indices": {
-        "type": "array",
-        "default-value": []
-      },
+      "@indices": "array",
       "@name": "string",
       "@aliases": "array"
     },
     "<native-x-load-more>": {
-      "@indices": {
-        "type": "array",
-        "default-value": [0]
-      },
+      "@indices": "array",
       "@name": "string",
       "@aliases": "array"
     },
