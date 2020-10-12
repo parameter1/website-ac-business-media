@@ -17,8 +17,8 @@ $ const opts = { ...placement.opts, n: adsToRequest };
 $ let n = 0;
 
 $ const injectAds = (nodes, ads) => nodes.map((node, i) => {
-  if (!indices.includes(i) || !ads[n] || !ads[n].hasCampaign) return node;
   const ad = ads[n];
+  if (!indices.includes(i) || !ad || !ad.hasCampaign) return node;
   n += 1;
   return { ...convert(ad, { sectionName }), attributes: ad.attributes };
 });
