@@ -133,7 +133,7 @@ $ const injectAds = ["article", "news", "press-release", "blog"].includes(type) 
                   <marko-web-page-image
                     obj=content.primaryImage
                     modifiers=["fluid-16by9"]
-                    options={ w: 512, h: 288, fit: 'crop' }
+                    options={ w: 512, h: 288, fit: "crop" }
                   />
                 </else>
               </else-if>
@@ -219,7 +219,7 @@ $ const injectAds = ["article", "news", "press-release", "blog"].includes(type) 
                 slots=adSlots({ aliases })
               />
 
-              $ const latestIn = defaultValue(site.get('nativeX.content.latestIn.indices'), [0]);
+              $ const latestIn = defaultValue(site.get("nativeX.content.latestIn.indices"), [0]);
               <refresh-theme-latest-in-section-block
                 content-id=id
                 section-id=section.id
@@ -280,8 +280,8 @@ $ const injectAds = ["article", "news", "press-release", "blog"].includes(type) 
           <@section>
             <div class="row">
               <div class="col-lg-8 infinite-scroll-target">
-                $ const scrollInitial = defaultValue(site.get('nativeX.content.latest.initial.indices'), []);
-                $ const scrollMore = defaultValue(site.get('nativeX.content.latest.loadMore.indices'), [0]);
+                $ const scrollInitial = defaultValue(site.get("nativeX.content.latest.initial.indices"), []);
+                $ const scrollMore = defaultValue(site.get("nativeX.content.latest.loadMore.indices"), [0]);
                 <refresh-theme-content-infinite-scroll-block
                   id=id
                   type=type
