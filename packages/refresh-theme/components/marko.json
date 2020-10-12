@@ -10,7 +10,7 @@
   "<refresh-theme-native-x-inject>": {
     "template": "./native-x-inject.marko",
     "@limit": "number",
-    "@indices": "array",
+    "@indexes": "array",
     "@index": "number",
     "@name": "string",
     "@section-name": "string",

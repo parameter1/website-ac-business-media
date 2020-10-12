@@ -6,7 +6,7 @@
       "<title>": {}
     },
     "<native-x>": {
-      "@indices": "array",
+      "@indexes": "array",
       "@name": "string",
       "@aliases": "array"
     },
@@ -21,7 +21,7 @@
     "template": "./content-hero.marko",
     "<list>": {},
     "<native-x>": {
-      "@indices": "array",
+      "@indexes": "array",
       "@name": "string",
       "@aliases": "array"
     },
@@ -35,7 +35,7 @@
       "<title>": {}
     },
     "<native-x>": {
-      "@indices": "array",
+      "@indexes": "array",
       "@name": "string",
       "@aliases": "array"
     },
@@ -50,7 +50,7 @@
     "template": "./latest-content-list.marko",
     "<adunit>": {},
     "<native-x>": {
-      "@indices": "array",
+      "@indexes": "array",
       "@name": "string",
       "@aliases": "array"
     },

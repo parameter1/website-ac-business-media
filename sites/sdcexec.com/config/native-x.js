@@ -12,14 +12,14 @@ module.exports = {
   },
   content: {
     latestIn: {
-      indices: [0, 2],
+      indexes: [0, 2],
     },
     latest: {
       initial: {
-        indices: [5, 11],
+        indexes: [5, 11],
       },
       loadMore: {
-        indices: [11],
+        indexes: [11],
       },
     },
   },

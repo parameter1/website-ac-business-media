@@ -225,7 +225,7 @@ $ const injectAds = ["article", "news", "press-release", "blog"].includes(type) 
                 section-name=section.name
               >
                 <@native-x
-                  indices=defaultValue(site.get("nativeX.content.latestIn.indices"), [0])
+                  indexes=defaultValue(site.get("nativeX.content.latestIn.indexes"), [0])
                   name="default"
                   aliases=aliases
                 />
@@ -252,7 +252,7 @@ $ const injectAds = ["article", "news", "press-release", "blog"].includes(type) 
         <if(displayRecommended)>
           <@section modifiers=["card-deck"]>
             <refresh-theme-recommended-block>
-              <@native-x indices=[2] name="default" aliases=aliases />
+              <@native-x indexes=[2] name="default" aliases=aliases />
             </refresh-theme-recommended-block>
           </@section>
         </if>
@@ -293,12 +293,12 @@ $ const injectAds = ["article", "news", "press-release", "blog"].includes(type) 
                   skip=(["company", "contact"].includes(type) ? 0 : 4)
                 >
                   <@native-x
-                    indices=defaultValue(site.get("nativeX.content.latest.initial.indices"), [])
+                    indexes=defaultValue(site.get("nativeX.content.latest.initial.indexes"), [])
                     name="default"
                     aliases=aliases
                   />
                   <@native-x-load-more
-                    indices=defaultValue(site.get("nativeX.content.latest.loadMore.indices"), [0])
+                    indexes=defaultValue(site.get("nativeX.content.latest.loadMore.indexes"), [0])
                     name="default"
                     aliases=aliases
                   />

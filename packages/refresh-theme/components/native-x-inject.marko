@@ -8,17 +8,17 @@ $ const {
   aliases,
   sectionName,
 } = input;
-$ const indices = defaultValue(input.indices, [0]);
+$ const indexes = defaultValue(input.indexes, [0]);
 $ const nodes = getAsArray(input, "nodes");
 $ const placement = config.getPlacement({ name, aliases });
-$ const adsToRequest = indices.length;
+$ const adsToRequest = indexes.length;
 $ const { uri, id } = placement;
 $ const opts = { ...placement.opts, n: adsToRequest };
 $ let n = 0;
 
 $ const injectAds = (nodes, ads) => nodes.map((node, i) => {
   const ad = ads[n];
-  if (!indices.includes(i) || !ad || !ad.hasCampaign) return node;
+  if (!indexes.includes(i) || !ad || !ad.hasCampaign) return node;
   n += 1;
   return { ...convert(ad, { sectionName }), attributes: ad.attributes };
 });
