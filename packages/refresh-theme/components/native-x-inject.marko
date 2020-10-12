@@ -15,12 +15,11 @@ $ const num = indices.length;
 $ const { uri, id } = placement;
 $ const opts = { ...placement.opts, n: num };
 $ let n = 0;
-$ console.log('inject', { indices, placement });
 
 $ const injectAds = (nodes, ads) => nodes.map((node, i) => {
   if (!indices.includes(i) || !ads[n] || !ads[n].hasCampaign) return node;
   const ad = ads[n];
-  n++;
+  n += 1;
   return { ...convert(ad, { sectionName }), attributes: ad.attributes };
 });
 
