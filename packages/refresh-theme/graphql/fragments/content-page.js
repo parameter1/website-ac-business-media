@@ -10,6 +10,7 @@ fragment ContentPageFragment on Content {
   siteContext {
     path
     canonicalUrl
+    url
   }
   company {
     id
