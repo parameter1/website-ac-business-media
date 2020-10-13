@@ -1,3 +1,4 @@
+import { getAsObject } from "@base-cms/object-path";
 import defaultValue from "@base-cms/marko-core/utils/default-value";
 import queryFragment from "../../graphql/fragments/content-latest";
 
@@ -83,10 +84,12 @@ $ delete loadMoreQueryParams.queryFragment;
     nodes=nodes
     with-header=true
     header=attrs.header
+    native-x=input.nativeX
   />
 </marko-web-query>
 
-<refresh-theme-latest-content-load-more-block max-pages=4>
+$ const nativeX = getAsObject(input, "nativeXLoadMore");
+<refresh-theme-latest-content-load-more-block max-pages=4 native-x=nativeX>
   <@query
     name=attrs.queryName
     params=loadMoreQueryParams
@@ -96,5 +99,4 @@ $ delete loadMoreQueryParams.queryFragment;
     ...GAM.getAdUnit({ name: "infinite-interstitial", aliases })
     modifiers=["max-width-300", "margin-auto-x"]
   />
-  <@native-x index=0 name="default" aliases=aliases />
 </refresh-theme-latest-content-load-more-block>

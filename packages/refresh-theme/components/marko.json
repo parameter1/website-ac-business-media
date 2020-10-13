@@ -7,6 +7,17 @@
     "./nodes/marko.json",
     "./parse.ly/marko.json"
   ],
+  "<refresh-theme-native-x-inject>": {
+    "template": "./native-x-inject.marko",
+    "@limit": "number",
+    "@indexes": "array",
+    "@index": "number",
+    "@name": "string",
+    "@section-name": "string",
+    "@aliases": "array",
+    "@nodes": "array",
+    "@config": "object"
+  },
   "<refresh-theme-document>": {
     "template": "./document.marko",
     "<head>": {},

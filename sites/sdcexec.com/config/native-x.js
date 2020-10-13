@@ -10,4 +10,17 @@ module.exports = {
     '3pl-4pl': '5b5609e22a488f0001ecf2c9',
     'professional-development': '5b5609ee2a488f0001ecf2ca',
   },
+  content: {
+    latestIn: {
+      indexes: [0, 2],
+    },
+    latest: {
+      initial: {
+        indexes: [5, 11],
+      },
+      loadMore: {
+        indexes: [11],
+      },
+    },
+  },
 };

@@ -5,32 +5,24 @@ $ const { nativeX: nxConfig } = out.global;
 $ const nativeX = getAsObject(input, "nativeX");
 $ const image = getAsObject(input, "node.image");
 
-<default-theme-card-deck-flow
-  tag=input.tag
-  class=input.class
-  modifiers=input.modifiers
-  attrs=input.attrs
-  cols=defaultValue(input.cols, 3)
-  nodes=input.nodes
->
-  <@slot|{ node, index }|>
-    <marko-web-native-x-render|{ node: nxNode, linkAttrs, containerAttrs }|
-      ...nativeX
-      when=(index === nativeX.index)
-      node=node
-      config=nxConfig
-    >
+<refresh-theme-native-x-inject|{ nodes: injected }| nodes=input.nodes ...nativeX config=nxConfig>
+  <default-theme-card-deck-flow
+    tag=input.tag
+    class=input.class
+    modifiers=input.modifiers
+    attrs=input.attrs
+    cols=defaultValue(input.cols, 3)
+    nodes=injected
+  >
+    <@slot|{ node, index }|>
       <refresh-theme-content-card-node
         ...input.node
-        node=nxNode
-        attrs=containerAttrs
-        link-attrs=linkAttrs
+        node=node
+        attrs=getAsObject(node, "attributes.container")
+        link-attrs=getAsObject(node, "attributes.link")
       >
-        <@image
-          width=340
-          ...image
-        />
+        <@image width=340 ...image />
       </refresh-theme-content-card-node>
-    </marko-web-native-x-render>
-  </@slot>
-</default-theme-card-deck-flow>
+    </@slot>
+  </default-theme-card-deck-flow>
+</refresh-theme-native-x-inject>
