@@ -72,8 +72,7 @@ $ const adSlots = ({ aliases }) => ({
               queryFragment: promotionQueryFragment,
             }
           >
-            $ const nodesCount = nodes.length;
-            <default-theme-card-deck-flow cols=nodesCount nodes=nodes>
+            <default-theme-card-deck-flow cols=3 nodes=nodes>
               <@slot|{ node }|>
                 <refresh-theme-content-card-node
                   node=node
