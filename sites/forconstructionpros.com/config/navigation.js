@@ -22,7 +22,7 @@ const resources = [
 
 const tertiaryItems = [
   {
-    href: '/magazine',
+    href: '/page/Subscribe-Links',
     label: 'Magazines',
     icon: 'book',
     forceLabel: true,
