@@ -779,7 +779,7 @@ $theme-related-content-border-color: #dee2e6;
     @include marko-web-node-list-border(border-bottom);
 
     > a {
-      margin-right: 15px;
+      margin-right: 14px;
       &:last-child {
         margin-right: 0;
       }
