@@ -16,11 +16,11 @@
   },
   "dependencies": {
     "@ac-business-media/refresh-theme": "^1.24.4",
-    "@base-cms/marko-core": "^1.38.0",
-    "@base-cms/marko-web": "^1.37.0",
+    "@base-cms/marko-core": "^1.46.1",
+    "@base-cms/marko-web": "^1.46.1",
     "@base-cms/object-path": "^1.37.0",
     "@base-cms/utils": "^1.37.0",
-    "@base-cms/web-cli": "^1.37.0",
+    "@base-cms/web-cli": "^1.46.1",
     "graphql": "^14.5.4",
     "graphql-tag": "^2.10.1"
   }

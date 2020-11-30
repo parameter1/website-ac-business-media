@@ -6,6 +6,13 @@ module.exports = ({
   accountId = '21772951814',
   basePath,
   pathMaps = [],
+  stickyBottomTemplate = {
+    size: [[320, 50], [300, 50]],
+    sizeMapping: [
+      { viewport: [576, 0], size: [] },
+      { viewport: [320, 0], size: [[300, 50], [320, 50]] },
+    ],
+  },
 } = {}) => {
   const config = new GAMConfiguration(accountId, { basePath });
 
@@ -18,13 +25,7 @@ module.exports = ({
         { viewport: [320, 0], size: [[300, 50], [320, 50], [300, 100]] },
       ],
     })
-    .setTemplate('LB-STICKY-BOTTOM', {
-      size: [[320, 50], [300, 50]],
-      sizeMapping: [
-        { viewport: [576, 0], size: [] },
-        { viewport: [320, 0], size: [[300, 50], [320, 50]] },
-      ],
-    })
+    .setTemplate('LB-STICKY-BOTTOM', stickyBottomTemplate)
     .setTemplate('RAIL1', { size: [[300, 250]] })
     .setTemplate('RAIL2', { size: [[300, 600]] })
     .setTemplate('IN-CONTENT', {
