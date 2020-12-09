@@ -136,6 +136,18 @@ jobs:
     #   install: skip
     #   env: [ENVIRONMENT=production RANCHER_CLUSTERID=c-rc5kp]
 
+    - stage: production
+      name: safesecureopenings.com
+      script: npx @base-cms/website-deployment-tool deploy safesecureopenings.com websites
+      install: skip
+      env: [ENVIRONMENT=production RANCHER_CLUSTERID=c-njflm]
+
+    # - stage: staging
+    #   name: safesecureopenings.com
+    #   script: npx @base-cms/website-deployment-tool deploy safesecureopenings.com websites
+    #   install: skip
+    #   env: [ENVIRONMENT=production RANCHER_CLUSTERID=c-rc5kp]
+
     #############################
     ### ^^^ ADD SITES HERE ^^^ ##
     #############################
