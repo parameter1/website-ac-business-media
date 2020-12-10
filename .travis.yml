@@ -2,6 +2,22 @@ language: node_js
 node_js: "10.15"
 cache: yarn
 
+_production-job: &production-job
+  stage: production
+  name: SERVICE_NAME
+  script: scripts/deploy.js SERVICE_NAME
+  install: skip
+  env:
+    - "ENVIRONMENT=production RANCHER_CLUSTERID=c-njflm"
+
+_staging-job: &staging-job
+  stage: staging
+  name: SERVICE_NAME
+  script: scripts/deploy.js SERVICE_NAME
+  install: skip
+  env:
+    - "ENVIRONMENT=staging RANCHER_CLUSTERID=c-njflm"
+
 stages:
   - name: test
 
@@ -12,154 +28,96 @@ stages:
   - name: production-finished
     if: tag =~ /^v\d+\.\d+\.\d+$/
 
-  # - name: staging-started
-  #   if: tag is present
-  # - name: staging
-  #   if: tag is present
-  # - name: staging-finished
-  #   if: tag is present
+  - name: staging-started
+    if: tag is present
+  - name: staging
+    if: tag is present
+  - name: staging-finished
+    if: tag is present
 
 jobs:
   include:
     - stage: test
       env: [NODE_ENV=test]
 
-    - stage: production-started
+    - <<: *production-job
+      stage: production-started
       name: Deployment Started
       script: npx @base-cms/website-deployment-tool notify-started
-      install: skip
-      env: [ENVIRONMENT=production RANCHER_CLUSTERID=c-njflm]
-
-    # - stage: staging-started
-    #   name: Deployment Started
-    #   script: npx @base-cms/website-deployment-tool notify-started
-    #   install: skip
-    #   env: [ENVIRONMENT=staging RANCHER_CLUSTERID=c-rc5kp]
+    - <<: *staging-job
+      stage: staging-started
+      name: Deployment Started
+      script: npx @base-cms/website-deployment-tool notify-started
 
     #############################
     ### vvv ADD SITES HERE vvv ##
     #############################
 
-    - stage: production
+    - <<: *production-job
       name: greenindustrypros.com
       script: npx @base-cms/website-deployment-tool deploy greenindustrypros.com websites
-      install: skip
-      env: [ENVIRONMENT=production RANCHER_CLUSTERID=c-njflm]
-
-    # - stage: staging
+    # - <<: *staging-job
     #   name: greenindustrypros.com
-    #   script: npx @base-cms/website-deployment-tool deploy greenindustrypros.com websites
-    #   install: skip
-    #   env: [ENVIRONMENT=production RANCHER_CLUSTERID=c-rc5kp]
+    #   script: npx @base-cms/website-deployment-tool deploy greenindustrypros.com staging-websites
 
-    - stage: production
+    - <<: *production-job
       name: sdcexec.com
       script: npx @base-cms/website-deployment-tool deploy sdcexec.com websites
-      install: skip
-      env: [ENVIRONMENT=production RANCHER_CLUSTERID=c-njflm]
-
-    # - stage: staging
+    # - <<: *staging-job
     #   name: sdcexec.com
-    #   script: npx @base-cms/website-deployment-tool deploy sdcexec.com websites
-    #   install: skip
-    #   env: [ENVIRONMENT=production RANCHER_CLUSTERID=c-rc5kp]
+    #   script: npx @base-cms/website-deployment-tool deploy sdcexec.com staging-websites
 
-    - stage: production
+    - <<: *production-job
       name: mixequipmentmag.com
       script: npx @base-cms/website-deployment-tool deploy mixequipmentmag.com websites
-      install: skip
-      env: [ENVIRONMENT=production RANCHER_CLUSTERID=c-njflm]
-
-    # - stage: staging
+    # - <<: *staging-job
     #   name: mixequipmentmag.com
-    #   script: npx @base-cms/website-deployment-tool deploy mixequipmentmag.com websites
-    #   install: skip
-    #   env: [ENVIRONMENT=production RANCHER_CLUSTERID=c-rc5kp]
+    #   script: npx @base-cms/website-deployment-tool deploy mixequipmentmag.com staging-websites
 
-    - stage: production
+    - <<: *production-job
       name: foodlogistics.com
       script: npx @base-cms/website-deployment-tool deploy foodlogistics.com websites
-      install: skip
-      env: [ENVIRONMENT=production RANCHER_CLUSTERID=c-njflm]
-
-    # - stage: staging
+    # - <<: *staging-job
     #   name: foodlogistics.com
-    #   script: npx @base-cms/website-deployment-tool deploy foodlogistics.com websites
-    #   install: skip
-    #   env: [ENVIRONMENT=production RANCHER_CLUSTERID=c-rc5kp]
+    #   script: npx @base-cms/website-deployment-tool deploy foodlogistics.com staging-websites
 
-    - stage: production
+    - <<: *production-job
       name: oemoffhighway.com
       script: npx @base-cms/website-deployment-tool deploy oemoffhighway.com websites
-      install: skip
-      env: [ENVIRONMENT=production RANCHER_CLUSTERID=c-njflm]
-
-    # - stage: staging
+    # - <<: *staging-job
     #   name: oemoffhighway.com
-    #   script: npx @base-cms/website-deployment-tool deploy oemoffhighway.com websites
-    #   install: skip
-    #   env: [ENVIRONMENT=production RANCHER_CLUSTERID=c-rc5kp]
+    #   script: npx @base-cms/website-deployment-tool deploy oemoffhighway.com staging-websites
 
-    - stage: production
+    - <<: *production-job
       name: dmnews.com
       script: npx @base-cms/website-deployment-tool deploy dmnews.com websites
-      install: skip
-      env: [ENVIRONMENT=production RANCHER_CLUSTERID=c-njflm]
-
-    # - stage: staging
+    # - <<: *staging-job
     #   name: dmnews.com
-    #   script: npx @base-cms/website-deployment-tool deploy dmnews.com websites
-    #   install: skip
-    #   env: [ENVIRONMENT=production RANCHER_CLUSTERID=c-rc5kp]
+    #   script: npx @base-cms/website-deployment-tool deploy dmnews.com staging-websites
 
-    - stage: production
+    - <<: *production-job
       name: forconstructionpros.com
       script: npx @base-cms/website-deployment-tool deploy forconstructionpros.com websites
-      install: skip
-      env: [ENVIRONMENT=production RANCHER_CLUSTERID=c-njflm]
-
-    # - stage: staging
+    # - <<: *staging-job
     #   name: forconstructionpros.com
-    #   script: npx @base-cms/website-deployment-tool deploy forconstructionpros.com websites
-    #   install: skip
-    #   env: [ENVIRONMENT=production RANCHER_CLUSTERID=c-rc5kp]
+    #   script: npx @base-cms/website-deployment-tool deploy forconstructionpros.com staging-websites
 
-    - stage: production
+    - <<: *production-job
       name: fordsspros.com
       script: npx @base-cms/website-deployment-tool deploy fordsspros.com websites
-      install: skip
-      env: [ENVIRONMENT=production RANCHER_CLUSTERID=c-njflm]
-
-    # - stage: staging
-    #   name: fordsspros.com
-    #   script: npx @base-cms/website-deployment-tool deploy fordsspros.com websites
-    #   install: skip
-    #   env: [ENVIRONMENT=production RANCHER_CLUSTERID=c-rc5kp]
-
-    - stage: production
+    - <<: *staging-job
       name: safesecureopenings.com
-      script: npx @base-cms/website-deployment-tool deploy safesecureopenings.com websites
-      install: skip
-      env: [ENVIRONMENT=production RANCHER_CLUSTERID=c-njflm]
-
-    # - stage: staging
-    #   name: safesecureopenings.com
-    #   script: npx @base-cms/website-deployment-tool deploy safesecureopenings.com websites
-    #   install: skip
-    #   env: [ENVIRONMENT=production RANCHER_CLUSTERID=c-rc5kp]
+      script: npx @base-cms/website-deployment-tool deploy safesecureopenings.com staging-websites
 
     #############################
     ### ^^^ ADD SITES HERE ^^^ ##
     #############################
 
-    - stage: production-finished
+    - <<: *production-job
+      stage: production-finished
       name: Deployment Finished
       script: npx @base-cms/website-deployment-tool notify-finished
-      install: skip
-      env: [ENVIRONMENT=production RANCHER_CLUSTERID=c-njflm]
-
-    # - stage: staging-finished
-    #   name: Deployment Finished
-    #   script: npx @base-cms/website-deployment-tool notify-finished
-    #   install: skip
-    #   env: [ENVIRONMENT=staging RANCHER_CLUSTERID=c-rc5kp]
+    - <<: *staging-job
+      stage: staging-finished
+      name: Deployment Finished
+      script: npx @base-cms/website-deployment-tool notify-finished
