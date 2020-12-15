@@ -28,8 +28,7 @@ module.exports = {
   socialMediaLinks: [
     { provider: 'linkedin', href: 'https://www.linkedin.com/company/fordsspros/', target: '_blank' },
     { provider: 'twitter', href: 'https://twitter.com/fordsspros', target: '_blank' },
-    { provider: 'facebook', href: 'https://www.facebook.com/fordsspros', target: '_blank' },
-    // { provider: 'instagram', href: 'https://www.instagram.com/fordsspros/', target: '_blank' },
+    { provider: 'facebook', href: 'https://www.facebook.com/SafeSecureOpenings', target: '_blank' },
   ],
   radix: {
     enabled: false,
@@ -65,7 +64,7 @@ module.exports = {
     enabled: true,
     directSend: true,
     sendTo: 'jsage@acbusinessmedia.com',
-    sendFrom: 'GreenIndustryPros.com <noreply@baseplatform.io>',
+    sendFrom: 'Safe & Secure Openings <noreply@baseplatform.io>',
     logo: 'https://img.safesecureopenings.com/files/base/acbm/fcp/image/static/sso/Logo-Final.png?h=60&auto=format,compress&q=70',
     bgColor: '#164f77',
   },

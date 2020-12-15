@@ -24,7 +24,7 @@ module.exports = {
   tertiary: {
     items: [
       {
-        href: 'https://acbusiness.dragonforms.com/ForDSSpros_prefs',
+        href: 'https://acbusiness.dragonforms.com/loading.do?omedasite=SSO_prefs&version=1&page=1',
         label: 'Newsletter',
         icon: 'mail',
         forceLabel: true,

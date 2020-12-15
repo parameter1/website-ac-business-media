@@ -103,11 +103,11 @@ jobs:
     #   script: npx @base-cms/website-deployment-tool deploy forconstructionpros.com staging-websites-tauron
 
     - <<: *production-job
-      name: fordsspros.com
-      script: npx @base-cms/website-deployment-tool deploy fordsspros.com websites
-    - <<: *staging-job
       name: safesecureopenings.com
-      script: npx @base-cms/website-deployment-tool deploy safesecureopenings.com staging-websites-tauron
+      script: npx @base-cms/website-deployment-tool deploy safesecureopenings.com websites
+    # - <<: *staging-job
+    #   name: safesecureopenings.com
+    #   script: npx @base-cms/website-deployment-tool deploy safesecureopenings.com staging-websites-tauron
 
     #############################
     ### ^^^ ADD SITES HERE ^^^ ##
