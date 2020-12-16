@@ -14,11 +14,6 @@ module.exports = {
     items: [
       { href: '/events', label: 'Events' },
       { href: '/contact-us', label: 'Contact Us' },
-      {
-        href: 'https://img.safesecureopenings.com/files/base/acbm/fcp/document/2020/07/ForDSSPros_MediaKit_2020_LowRes.5f22c236c0523.pdf',
-        label: 'Editorial Calendar',
-        target: '_blank',
-      },
     ],
   },
   tertiary: {
@@ -41,11 +36,6 @@ module.exports = {
   footer: {
     items: [
       { href: '/contact-us', label: 'Contact Us' },
-      {
-        href: 'https://img.safesecureopenings.com/files/base/acbm/fcp/document/2020/07/ForDSSPros_MediaKit_2020_LowRes.5f22c236c0523.pdf',
-        label: 'Editorial Calendar',
-        target: '_blank',
-      },
       { href: '/page/privacy-policy', label: 'Privacy Policy', target: '_blank' },
       { href: '/page/terms-conditions', label: 'Terms & Conditions', target: '_blank' },
     ],
@@ -73,11 +63,6 @@ module.exports = {
       label: 'User Tools',
       items: [
         { href: '/contact-us', label: 'Contact Us' },
-        {
-          href: 'https://img.safesecureopenings.com/files/base/acbm/fcp/document/2020/07/ForDSSPros_MediaKit_2020_LowRes.5f22c236c0523.pdf',
-          label: 'Editorial Calendar',
-          target: '_blank',
-        },
         { href: '/page/privacy-policy', label: 'Privacy Policy', target: '_blank' },
         { href: '/page/terms-conditions', label: 'Terms & Conditions', target: '_blank' },
       ],
