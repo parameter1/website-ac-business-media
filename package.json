@@ -1,7 +1,7 @@
 {
   "name": "@ac-business-media/websites",
   "description": "Websites for AC Business Media",
-  "repository": "https://github.com/base-cms-websites/ac-business-media.git",
+  "repository": "https://github.com/parameter1/ac-business-media-websites.git",
   "author": "Brandon Krigbaum <brandonbk@gmail.com>",
   "license": "MIT",
   "private": true,

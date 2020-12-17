@@ -2,7 +2,7 @@
   "name": "@ac-business-media/safesecureopenings.com",
   "version": "1.26.1",
   "author": "Brandon Krigbaum <brandonbk@gmail.com>",
-  "repository": "https://github.com/base-cms-websites/ac-business-media/tree/master/sites/safesecureopenings.com",
+  "repository": "https://github.com/parameter1/ac-business-media-websites/tree/master/sites/safesecureopenings.com",
   "license": "MIT",
   "private": true,
   "scripts": {

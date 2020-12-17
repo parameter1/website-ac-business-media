@@ -8,7 +8,7 @@ exports.config = {
   /**
    * Array of application names.
    */
-  app_name: ['base-cms-websites/ac-business-media'],
+  app_name: ['parameter1/ac-business-media-websites'],
   /**
    * Your New Relic license key.
    */
