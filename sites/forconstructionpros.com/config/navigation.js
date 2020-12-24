@@ -59,6 +59,7 @@ module.exports = {
           { href: '/equipment/fleet-maintenance', label: 'Fleet Maintenance' },
           { href: '/equipment/attachments', label: 'Attachments' },
           { href: '/equipment/compaction', label: 'Compaction' },
+          { href: '/equipment/crane', label: 'Crane' },
         ],
       },
     },
