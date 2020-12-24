@@ -60,7 +60,7 @@ services:
     environment:
       <<: *env
 
-  greenindustrypros.com:
+  gip:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/greenindustrypros.com
@@ -76,7 +76,7 @@ services:
       - "9710:80"
       - "19710:19710"
 
-  sdcexec.com:
+  sdc:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/sdcexec.com
@@ -92,7 +92,7 @@ services:
       - "9711:80"
       - "19711:19711"
 
-  mixequipmentmag.com:
+  mem:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/mixequipmentmag.com
@@ -108,7 +108,7 @@ services:
       - "9712:80"
       - "19712:19712"
 
-  foodlogistics.com:
+  fl:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/foodlogistics.com
@@ -124,7 +124,7 @@ services:
       - "9713:80"
       - "19713:19713"
 
-  oemoffhighway.com:
+  oem:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/oemoffhighway.com
@@ -140,7 +140,7 @@ services:
       - "9714:80"
       - "19714:19714"
 
-  dmnews.com:
+  dmn:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/dmnews.com
@@ -156,7 +156,7 @@ services:
       - "9715:80"
       - "19715:19715"
 
-  forconstructionpros.com:
+  fcp:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/forconstructionpros.com
@@ -172,7 +172,7 @@ services:
       - "9716:80"
       - "19716:19716"
 
-  fordsspros.com:
+  dss:
     <<: *node
     <<: *site-cmd
     working_dir: /root/sites/fordsspros.com
