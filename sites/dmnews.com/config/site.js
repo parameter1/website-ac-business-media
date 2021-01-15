@@ -54,7 +54,7 @@ module.exports = {
   inquiry: {
     enabled: true,
     directSend: true,
-    sendTo: 'jsage@acbusinessmedia.com',
+    sendTo: 'requestmoreinfo@acbusinessmedia.com',
     sendFrom: 'DMNews.com <noreply@baseplatform.io>',
     logo: 'https://img.dmnews.com/files/base/acbm/static/DMNLogoWhite.png?h=60&auto=format,compress&q=70',
     bgColor: '#28ace2',
