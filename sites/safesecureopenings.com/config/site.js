@@ -63,7 +63,7 @@ module.exports = {
   inquiry: {
     enabled: true,
     directSend: true,
-    sendTo: 'jsage@acbusinessmedia.com',
+    sendTo: 'requestmoreinfo@acbusinessmedia.com',
     sendFrom: 'Safe & Secure Openings <noreply@baseplatform.io>',
     logo: 'https://img.safesecureopenings.com/files/base/acbm/fcp/image/static/sso/Logo-Final.png?h=60&auto=format,compress&q=70',
     bgColor: '#164f77',

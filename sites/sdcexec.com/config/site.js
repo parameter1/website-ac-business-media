@@ -66,7 +66,7 @@ module.exports = {
   inquiry: {
     enabled: true,
     directSend: true,
-    sendTo: 'jsage@acbusinessmedia.com',
+    sendTo: 'requestmoreinfo@acbusinessmedia.com',
     sendFrom: 'Supply & Demand Chain Executive <noreply@baseplatform.io>',
     logo: 'https://img.sdcexec.com/files/base/acbm/sdce/image/static/logo/site_logo_og.png?h=60&auto=format,compress&q=70',
     bgColor: '#ec131c',

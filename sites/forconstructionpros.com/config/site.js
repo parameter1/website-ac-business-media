@@ -67,7 +67,7 @@ module.exports = {
   inquiry: {
     enabled: true,
     directSend: true,
-    sendTo: 'jsage@acbusinessmedia.com',
+    sendTo: 'requestmoreinfo@acbusinessmedia.com',
     sendFrom: 'ForConstructionPros.com <noreply@baseplatform.io>',
     logo: 'https://img.forconstructionpros.com/files/base/acbm/fcp/image/static/logo/site_logo.png?h=45&auto=format,compress&q=70&bg=000000&pad=5',
     bgColor: '#000',

@@ -66,7 +66,7 @@ module.exports = {
   inquiry: {
     enabled: true,
     directSend: true,
-    sendTo: 'jsage@acbusinessmedia.com',
+    sendTo: 'requestmoreinfo@acbusinessmedia.com',
     sendFrom: 'Food Logistics <noreply@baseplatform.io>',
     logo: 'https://img.foodlogistics.com/files/base/acbm/fl/image/static/logo/site_logo_large.png?h=60&auto=format,compress&q=70',
     bgColor: '#1a93f9',
