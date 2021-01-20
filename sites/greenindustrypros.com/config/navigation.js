@@ -16,6 +16,7 @@ module.exports = {
       { href: '/directory', label: 'Directory' },
       { href: 'https://cms.megaphone.fm/channel/grassroots?selected=ACBMI1756535736', target: '_blank', label: 'Podcast' },
       { href: '/videos', label: 'Videos' },
+      { href: 'https://app.squarestack.com/channelpartner/greenapps', label: 'GreenApps', target: '_blank' },
     ],
   },
   tertiary: {
@@ -69,6 +70,7 @@ module.exports = {
         { href: '/magazine', label: 'Magazines' },
         { href: '/videos', label: 'Videos' },
         { href: 'https://cms.megaphone.fm/channel/grassroots?selected=ACBMI1756535736', target: '_blank', label: 'Podcast' },
+        { href: 'https://app.squarestack.com/channelpartner/greenapps', label: 'GreenApps', target: '_blank' },
         // { href: '/specguide', label: 'Spec Guide' },
       ],
     },
