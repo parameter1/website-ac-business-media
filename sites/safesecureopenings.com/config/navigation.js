@@ -13,6 +13,11 @@ module.exports = {
   secondary: {
     items: [
       { href: '/events', label: 'Events' },
+      {
+        href: 'https://img.safesecureopenings.com/files/base/acbm/fcp/document/2021/01/SSOpenings_MediaKit_2021_low_res.600cc64b1d183.pdf',
+        target: '_blank',
+        label: 'Editorial Calendar',
+      },
       { href: '/contact-us', label: 'Contact Us' },
     ],
   },
@@ -35,6 +40,11 @@ module.exports = {
   },
   footer: {
     items: [
+      {
+        href: 'https://img.safesecureopenings.com/files/base/acbm/fcp/document/2021/01/SSOpenings_MediaKit_2021_low_res.600cc64b1d183.pdf',
+        target: '_blank',
+        label: 'Editorial Calendar',
+      },
       { href: '/contact-us', label: 'Contact Us' },
       { href: '/page/privacy-policy', label: 'Privacy Policy', target: '_blank' },
       { href: '/page/terms-conditions', label: 'Terms & Conditions', target: '_blank' },
