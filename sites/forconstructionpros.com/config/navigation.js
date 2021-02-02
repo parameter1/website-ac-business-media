@@ -3,10 +3,10 @@ const channels = [
   { href: '/rental', label: 'Rental' },
   { href: '/concrete', label: 'Concrete' },
   { href: '/asphalt', label: 'Asphalt' },
+  { href: '/pavement-maintenance', label: 'Pavement' },
   { href: '/business', label: 'Business' },
   { href: '/construction-technology', label: 'Technology' },
   { href: '/profit-matters', label: 'Profit Matters' },
-  { href: '/infrastructure', label: 'Infrastructure' },
 ];
 
 const resources = [
@@ -92,7 +92,7 @@ module.exports = {
       },
     },
     {
-      when: ['/asphalt', '/pavement-maintenance'],
+      when: ['/asphalt'],
       secondary: { items: channels },
       tertiary: { items: tertiaryItems },
       primary: {
@@ -102,7 +102,6 @@ module.exports = {
           { href: '/asphalt/recycling', label: 'Recycling' },
           { href: '/asphalt/pavers', label: 'Pavers' },
           { href: '/asphalt/material-transfer-vehicles', label: 'MTV\'s' },
-          { href: '/pavement-maintenance', label: 'Pavement Maintenance' },
         ],
       },
     },
@@ -130,6 +129,18 @@ module.exports = {
           { href: '/construction-technology/personnel-management', label: 'Personnel Management' },
           { href: '/construction-technology/equipment-monitoring-logistics', label: 'Equipment Monitoring' },
           { href: '/construction-technology/machine-grade-control-gps-laser-other', label: 'Machine Grade Control, GPS, Laser & Other' },
+        ],
+      },
+    },
+    {
+      when: ['/pavement-maintenance'],
+      secondary: { items: channels },
+      tertiary: { items: tertiaryItems },
+      primary: {
+        items: [
+          { href: '/pavement-maintenance/sweepers', label: 'Sweepers' },
+          { href: '/pavement-maintenance/marking-striping', label: 'Marking & Striping' },
+          { href: '/pavement-maintenance/preservation-maintenance', label: 'Preservation' },
         ],
       },
     },
@@ -165,10 +176,10 @@ module.exports = {
         { href: '/rental', label: 'Rental' },
         { href: '/concrete', label: 'Concrete' },
         { href: '/asphalt', label: 'Asphalt' },
+        { href: '/pavement-maintenance', label: 'Pavement' },
         { href: '/business', label: 'Business' },
         { href: '/construction-technology', label: 'Technology' },
         { href: '/profit-matters', label: 'Profit Matters' },
-        { href: '/infrastructure', label: 'Infrastructure' },
       ],
     },
     {
