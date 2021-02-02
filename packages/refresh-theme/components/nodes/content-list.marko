@@ -117,8 +117,15 @@ $ const { linkAttrs } = input;
     <if(withAttribution || withDates)>
       <@footer>
         <if(withAttribution)>
-          <@left>
-            <attribution content=content />
+          <@left|{ blockName }|>
+            <if(isWebinar)>
+              <marko-web-content-sponsors|{ node }| block-name=blockName obj=content>
+                <marko-web-content-name tag="span" block-name=blockName obj=node link=true />
+              </marko-web-content-sponsors>
+            </if>
+            <else>
+              <attribution content=content />
+            </else>
           </@left>
         </if>
         <if(withDates && !isEvent)>

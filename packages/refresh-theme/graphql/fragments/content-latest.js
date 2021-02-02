@@ -56,6 +56,15 @@ fragment WebsiteContentLatestFragment on Content {
   }
   ... on ContentWebinar {
     startDate
+    sponsors {
+      edges {
+        node {
+          id
+          name
+          canonicalPath
+        }
+      }
+    }
     linkUrl
   }
   ... on ContentEvent {

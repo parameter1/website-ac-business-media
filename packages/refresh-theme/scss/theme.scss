@@ -358,6 +358,12 @@ $theme-related-content-border-color: #dee2e6;
 .page-attribution {
   display: flex;
 
+  &__content-sponsors {
+    &::before {
+      content: "Sponsored By: ";
+    }
+  }
+
   &__content-authors {
     &::before {
       content: "By";
@@ -516,6 +522,24 @@ $theme-related-content-border-color: #dee2e6;
     font-weight: $font-weight-bold;
     text-transform: uppercase;
   }
+
+  &__content-sponsors {
+    font-size: 14px;
+    &::before {
+      content: "Sponsored By: ";
+      color: $black;
+    }
+    #{ $self } {
+      &__content-name:after {
+        content: ", ";
+      }
+      &__content-name:last-child:after {
+        content: "";
+      }
+    }
+
+  }
+  .page-attribution
 
   &__footer-left,
   &__footer-right {
