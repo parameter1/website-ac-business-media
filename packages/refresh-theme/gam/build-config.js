@@ -1,6 +1,6 @@
-const GAMConfiguration = require('@base-cms/marko-web-gam/config');
-const { asArray } = require('@base-cms/utils');
-const { get, getAsObject } = require('@base-cms/object-path');
+const GAMConfiguration = require('@parameter1/base-cms-marko-web-gam/config');
+const { asArray } = require('@parameter1/base-cms-utils');
+const { get, getAsObject } = require('@parameter1/base-cms-object-path');
 
 module.exports = ({
   accountId = '21772951814',

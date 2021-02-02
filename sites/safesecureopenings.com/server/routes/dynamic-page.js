@@ -1,4 +1,4 @@
-const { withDynamicPage } = require('@base-cms/marko-web/middleware');
+const { withDynamicPage } = require('@parameter1/base-cms-marko-web/middleware');
 const page = require('@ac-business-media/refresh-theme/templates/dynamic-page');
 const queryFragment = require('@ac-business-media/refresh-theme/graphql/fragments/dynamic-page');
 

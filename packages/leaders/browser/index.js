@@ -1,4 +1,4 @@
-import Leaders from '@base-cms/marko-web-leaders/browser';
+import Leaders from '@parameter1/base-cms-marko-web-leaders/browser';
 
 const GTMTrackLeaders = () => import(/* webpackChunkName: "gtm-track-leaders" */ './gtm-track-leaders.vue');
 const LeadersCompanyWebsiteLink = () => import(/* webpackChunkName: "leaders-company-website-link" */ './company-website-link.vue');

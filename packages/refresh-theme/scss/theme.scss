@@ -166,14 +166,14 @@ $theme-item-footer-font-size: 12px !default;
 $theme-newsletter-block-bg-color: #212121 !default;
 $theme-newsletter-block-button-bg-color: #c83e31 !default;
 
-@import "../../node_modules/@base-cms/marko-web-theme-default/scss/theme";
+@import "../../node_modules/@parameter1/base-cms-marko-web-theme-default/scss/theme";
 
 $pswp__root-z-index: $theme-site-header-z-index + 1 !default;
-@import "../../node_modules/@base-cms/marko-web-photoswipe/scss/main";
+@import "../../node_modules/@parameter1/base-cms-marko-web-photoswipe/scss/main";
 
-@import "../../node_modules/@base-cms/marko-web-gam/scss/fixed-ad-bottom";
-@import "../../node_modules/@base-cms/marko-web-social-sharing/scss/buttons";
-@import "../../node_modules/@base-cms/marko-web-reveal-ad/scss/reveal-ad";
+@import "../../node_modules/@parameter1/base-cms-marko-web-gam/scss/fixed-ad-bottom";
+@import "../../node_modules/@parameter1/base-cms-marko-web-social-sharing/scss/buttons";
+@import "../../node_modules/@parameter1/base-cms-marko-web-reveal-ad/scss/reveal-ad";
 // @todo this should be removed once contact us is in core
 @import "../../node_modules/@ac-business-media/package-common/scss/contact-us-form";
 @import "../../node_modules/@ac-business-media/package-common/scss/directory";
@@ -526,21 +526,19 @@ $theme-related-content-border-color: #dee2e6;
   &__content-sponsors {
     font-size: 14px;
     &::before {
-      content: "Sponsored By: ";
       color: $black;
+      content: "Sponsored By: ";
     }
     #{ $self } {
-      &__content-name:after {
+      &__content-name::after {
         content: ", ";
       }
-      &__content-name:last-child:after {
+      &__content-name:last-child::after {
         content: "";
       }
     }
 
   }
-  .page-attribution
-
   &__footer-left,
   &__footer-right {
     &:empty {

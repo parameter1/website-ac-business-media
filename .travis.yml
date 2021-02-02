@@ -43,11 +43,11 @@ jobs:
     - <<: *production-job
       stage: production-started
       name: Deployment Started
-      script: npx @base-cms/website-deployment-tool notify-started
+      script: npx @parameter1/base-cms-website-deployment-tool notify-started
     - <<: *staging-job
       stage: staging-started
       name: Deployment Started
-      script: npx @base-cms/website-deployment-tool notify-started
+      script: npx @parameter1/base-cms-website-deployment-tool notify-started
 
     #############################
     ### vvv ADD SITES HERE vvv ##
@@ -55,59 +55,59 @@ jobs:
 
     - <<: *production-job
       name: greenindustrypros.com
-      script: npx @base-cms/website-deployment-tool deploy greenindustrypros.com websites
+      script: npx @parameter1/base-cms-website-deployment-tool deploy greenindustrypros.com websites
     # - <<: *staging-job
     #   name: greenindustrypros.com
-    #   script: npx @base-cms/website-deployment-tool deploy greenindustrypros.com staging-websites-tauron
+    #   script: npx @parameter1/base-cms-website-deployment-tool deploy greenindustrypros.com staging-websites-tauron
 
     - <<: *production-job
       name: sdcexec.com
-      script: npx @base-cms/website-deployment-tool deploy sdcexec.com websites
+      script: npx @parameter1/base-cms-website-deployment-tool deploy sdcexec.com websites
     # - <<: *staging-job
     #   name: sdcexec.com
-    #   script: npx @base-cms/website-deployment-tool deploy sdcexec.com staging-websites-tauron
+    #   script: npx @parameter1/base-cms-website-deployment-tool deploy sdcexec.com staging-websites-tauron
 
     - <<: *production-job
       name: mixequipmentmag.com
-      script: npx @base-cms/website-deployment-tool deploy mixequipmentmag.com websites
+      script: npx @parameter1/base-cms-website-deployment-tool deploy mixequipmentmag.com websites
     # - <<: *staging-job
     #   name: mixequipmentmag.com
-    #   script: npx @base-cms/website-deployment-tool deploy mixequipmentmag.com staging-websites-tauron
+    #   script: npx @parameter1/base-cms-website-deployment-tool deploy mixequipmentmag.com staging-websites-tauron
 
     - <<: *production-job
       name: foodlogistics.com
-      script: npx @base-cms/website-deployment-tool deploy foodlogistics.com websites
+      script: npx @parameter1/base-cms-website-deployment-tool deploy foodlogistics.com websites
     # - <<: *staging-job
     #   name: foodlogistics.com
-    #   script: npx @base-cms/website-deployment-tool deploy foodlogistics.com staging-websites-tauron
+    #   script: npx @parameter1/base-cms-website-deployment-tool deploy foodlogistics.com staging-websites-tauron
 
     - <<: *production-job
       name: oemoffhighway.com
-      script: npx @base-cms/website-deployment-tool deploy oemoffhighway.com websites
+      script: npx @parameter1/base-cms-website-deployment-tool deploy oemoffhighway.com websites
     # - <<: *staging-job
     #   name: oemoffhighway.com
-    #   script: npx @base-cms/website-deployment-tool deploy oemoffhighway.com staging-websites-tauron
+    #   script: npx @parameter1/base-cms-website-deployment-tool deploy oemoffhighway.com staging-websites-tauron
 
     - <<: *production-job
       name: dmnews.com
-      script: npx @base-cms/website-deployment-tool deploy dmnews.com websites
+      script: npx @parameter1/base-cms-website-deployment-tool deploy dmnews.com websites
     # - <<: *staging-job
     #   name: dmnews.com
-    #   script: npx @base-cms/website-deployment-tool deploy dmnews.com staging-websites-tauron
+    #   script: npx @parameter1/base-cms-website-deployment-tool deploy dmnews.com staging-websites-tauron
 
     - <<: *production-job
       name: forconstructionpros.com
-      script: npx @base-cms/website-deployment-tool deploy forconstructionpros.com websites
+      script: npx @parameter1/base-cms-website-deployment-tool deploy forconstructionpros.com websites
     # - <<: *staging-job
     #   name: forconstructionpros.com
-    #   script: npx @base-cms/website-deployment-tool deploy forconstructionpros.com staging-websites-tauron
+    #   script: npx @parameter1/base-cms-website-deployment-tool deploy forconstructionpros.com staging-websites-tauron
 
     - <<: *production-job
       name: safesecureopenings.com
-      script: npx @base-cms/website-deployment-tool deploy safesecureopenings.com websites
+      script: npx @parameter1/base-cms-website-deployment-tool deploy safesecureopenings.com websites
     # - <<: *staging-job
     #   name: safesecureopenings.com
-    #   script: npx @base-cms/website-deployment-tool deploy safesecureopenings.com staging-websites-tauron
+    #   script: npx @parameter1/base-cms-website-deployment-tool deploy safesecureopenings.com staging-websites-tauron
 
     #############################
     ### ^^^ ADD SITES HERE ^^^ ##
@@ -116,8 +116,8 @@ jobs:
     - <<: *production-job
       stage: production-finished
       name: Deployment Finished
-      script: npx @base-cms/website-deployment-tool notify-finished
+      script: npx @parameter1/base-cms-website-deployment-tool notify-finished
     - <<: *staging-job
       stage: staging-finished
       name: Deployment Finished
-      script: npx @base-cms/website-deployment-tool notify-finished
+      script: npx @parameter1/base-cms-website-deployment-tool notify-finished
