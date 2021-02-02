@@ -1988,6 +1988,18 @@
     portal-vue "^2.1.7"
     vue "^2.6.12"
 
+"@parameter1/base-cms-leaders-program@^2.3.6":
+  version "2.3.6"
+  resolved "https://registry.yarnpkg.com/@parameter1/base-cms-leaders-program/-/base-cms-leaders-program-2.3.6.tgz#4ecac83d13c737765f6f2e81be4d4e675260f335"
+  integrity sha512-DwgynBfyk85wDNgHDe61FShDUxmkKkyvP8Gw6q4XL/mstcsIuGsbYgSDw+Xh8FsK500XNjCaX8PcOv4evkOfOQ==
+  dependencies:
+    core-js "^3.8.2"
+    graphql "^14.7.0"
+    graphql-tag "^2.11.0"
+    object-path "^0.11.4"
+    portal-vue "^2.1.7"
+    vue "^2.6.12"
+
 "@parameter1/base-cms-marko-compiler@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@parameter1/base-cms-marko-compiler/-/base-cms-marko-compiler-2.0.0.tgz#f03fa5a79e86b7473c4ab187005e42d57fe0b547"
@@ -2064,6 +2076,15 @@
   integrity sha512-nE55X7cGrlk0U4HRSospiSlduLxVQxHx6w6hthDRO9ALguI3XsyWB+qtGl318uvuzuJumJvGdjbLm40gpmi1UA==
   dependencies:
     "@parameter1/base-cms-leaders-program" "^2.0.0"
+    graphql "^14.7.0"
+    graphql-tag "^2.11.0"
+
+"@parameter1/base-cms-marko-web-leaders@^2.3.6":
+  version "2.3.6"
+  resolved "https://registry.yarnpkg.com/@parameter1/base-cms-marko-web-leaders/-/base-cms-marko-web-leaders-2.3.6.tgz#111976764593c9642c10620a991df976908a9ad3"
+  integrity sha512-V03pgnfDaHSjXdt+SrwkmjrbmjIkcXfUU1bGnIsLTuibBf0Le5JBjmI/QtBISdKdIApsTvQKwhu2OP8t4Y5vRw==
+  dependencies:
+    "@parameter1/base-cms-leaders-program" "^2.3.6"
     graphql "^14.7.0"
     graphql-tag "^2.11.0"
 
