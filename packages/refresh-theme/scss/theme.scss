@@ -526,21 +526,19 @@ $theme-related-content-border-color: #dee2e6;
   &__content-sponsors {
     font-size: 14px;
     &::before {
-      content: "Sponsored By: ";
       color: $black;
+      content: "Sponsored By: ";
     }
     #{ $self } {
-      &__content-name:after {
+      &__content-name::after {
         content: ", ";
       }
-      &__content-name:last-child:after {
+      &__content-name:last-child::after {
         content: "";
       }
     }
 
   }
-  .page-attribution
-
   &__footer-left,
   &__footer-right {
     &:empty {
