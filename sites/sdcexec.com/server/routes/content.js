@@ -1,4 +1,4 @@
-const { withContent } = require('@base-cms/marko-web/middleware');
+const { withContent } = require('@parameter1/base-cms-marko-web/middleware');
 const content = require('@ac-business-media/refresh-theme/templates/content');
 // const contact = require('@ac-business-media/refresh-theme/templates/content/contact');
 const company = require('@ac-business-media/refresh-theme/templates/content/company');

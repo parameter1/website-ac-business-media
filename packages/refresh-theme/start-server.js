@@ -1,10 +1,10 @@
 require('./datadog');
 const newrelic = require('newrelic');
-const { startServer } = require('@base-cms/marko-web');
-const { set, get, getAsObject } = require('@base-cms/object-path');
-const cleanResponse = require('@base-cms/marko-core/middleware/clean-marko-response');
+const { startServer } = require('@parameter1/base-cms-marko-web');
+const { set, get, getAsObject } = require('@parameter1/base-cms-object-path');
+const cleanResponse = require('@parameter1/base-cms-marko-core/middleware/clean-marko-response');
 const contactUsHandler = require('@ac-business-media/package-common/contact-us');
-const loadInquiry = require('@base-cms/marko-web-inquiry');
+const loadInquiry = require('@parameter1/base-cms-marko-web-inquiry');
 const sharedRedirectHandler = require('./redirect-handler');
 
 const buildGAMConfig = require('./gam/build-config');
