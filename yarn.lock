@@ -1976,22 +1976,10 @@
   dependencies:
     inflected "^2.1.0"
 
-"@parameter1/base-cms-leaders-program@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@parameter1/base-cms-leaders-program/-/base-cms-leaders-program-2.0.0.tgz#6a56be4e68170de63a808e36b60722e18e3914cb"
-  integrity sha512-0y4rCvKDJGgtq4aaPfwJsij7AXFTAZJc86To9+vqSKKNgk/cEnxFnyjpc2Zx6UbSX94UMpl5WJ0/chE5Lno3GQ==
-  dependencies:
-    core-js "^3.8.2"
-    graphql "^14.7.0"
-    graphql-tag "^2.11.0"
-    object-path "^0.11.4"
-    portal-vue "^2.1.7"
-    vue "^2.6.12"
-
-"@parameter1/base-cms-leaders-program@^2.3.6":
-  version "2.3.6"
-  resolved "https://registry.yarnpkg.com/@parameter1/base-cms-leaders-program/-/base-cms-leaders-program-2.3.6.tgz#4ecac83d13c737765f6f2e81be4d4e675260f335"
-  integrity sha512-DwgynBfyk85wDNgHDe61FShDUxmkKkyvP8Gw6q4XL/mstcsIuGsbYgSDw+Xh8FsK500XNjCaX8PcOv4evkOfOQ==
+"@parameter1/base-cms-leaders-program@^2.3.7":
+  version "2.3.7"
+  resolved "https://registry.yarnpkg.com/@parameter1/base-cms-leaders-program/-/base-cms-leaders-program-2.3.7.tgz#f8f31698ea9bc08ed97ab81349e02d1121052fc4"
+  integrity sha512-RronSLC7ZhpbKGtfIqJEqB/DNZUR5gIfeCmVNiyTwfUiPFkOOSv7/NbcV9I/JS94p6x1xxP/PUAss0/r3J3g3w==
   dependencies:
     core-js "^3.8.2"
     graphql "^14.7.0"
@@ -2070,21 +2058,12 @@
     node-fetch "^2.6.1"
     vue-recaptcha "^1.3.0"
 
-"@parameter1/base-cms-marko-web-leaders@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@parameter1/base-cms-marko-web-leaders/-/base-cms-marko-web-leaders-2.0.0.tgz#f658399060527dbedb0bb507f2710c91449becec"
-  integrity sha512-nE55X7cGrlk0U4HRSospiSlduLxVQxHx6w6hthDRO9ALguI3XsyWB+qtGl318uvuzuJumJvGdjbLm40gpmi1UA==
+"@parameter1/base-cms-marko-web-leaders@^2.3.7":
+  version "2.3.7"
+  resolved "https://registry.yarnpkg.com/@parameter1/base-cms-marko-web-leaders/-/base-cms-marko-web-leaders-2.3.7.tgz#83cfd4ed75356a15e834c73c551ca5983ccf61f5"
+  integrity sha512-uCKU+Qj4KQMTCLAOw4HFjAp7ezui+MLzI9fFDSB20mtk4UE0qx/UNn+i4FCqERNI9h+U/682fMb3WTz3xdevMw==
   dependencies:
-    "@parameter1/base-cms-leaders-program" "^2.0.0"
-    graphql "^14.7.0"
-    graphql-tag "^2.11.0"
-
-"@parameter1/base-cms-marko-web-leaders@^2.3.6":
-  version "2.3.6"
-  resolved "https://registry.yarnpkg.com/@parameter1/base-cms-marko-web-leaders/-/base-cms-marko-web-leaders-2.3.6.tgz#111976764593c9642c10620a991df976908a9ad3"
-  integrity sha512-V03pgnfDaHSjXdt+SrwkmjrbmjIkcXfUU1bGnIsLTuibBf0Le5JBjmI/QtBISdKdIApsTvQKwhu2OP8t4Y5vRw==
-  dependencies:
-    "@parameter1/base-cms-leaders-program" "^2.3.6"
+    "@parameter1/base-cms-leaders-program" "^2.3.7"
     graphql "^14.7.0"
     graphql-tag "^2.11.0"
 
