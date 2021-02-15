@@ -1,16 +1,17 @@
+const topics = [
+  { href: '/warehousing', label: 'Warehousing' },
+  { href: '/transportation', label: 'Transportation' },
+  { href: '/sourcing-procurement', label: 'Procurement' },
+  { href: '/risk-compliance', label: 'Risk & Compliance' },
+  { href: '/software-technology', label: 'Software & Technology' },
+  { href: '/sustainability', label: 'Sustainability' },
+  { href: '/professional-development', label: 'Prof Development' },
+  { href: '/scn-summit', label: 'SCN Summit' },
+];
+
 module.exports = {
   primary: {
-    items: [
-      { href: '/warehousing', label: 'Warehousing' },
-      { href: '/transportation', label: 'Transport' },
-      { href: '/sourcing-procurement', label: 'Procurement' },
-      { href: '/risk-compliance', label: 'Risk/Compliance' },
-      { href: '/software-technology', label: 'Technology' },
-      { href: '/sustainability', label: 'Sustainability' },
-      { href: '/3pl-4pl', label: '3PL/4PL' },
-      { href: '/professional-development', label: 'Prof Development' },
-      { href: '/scn-summit', label: 'SCN Summit' },
-    ],
+    items: topics,
   },
   secondary: {
     items: [
@@ -59,16 +60,7 @@ module.exports = {
   menu: [
     {
       label: 'Topics',
-      items: [
-        { href: '/warehousing', label: 'Warehousing' },
-        { href: '/transportation', label: 'Transport' },
-        { href: '/sourcing-procurement', label: 'Procurement' },
-        { href: '/risk-compliance', label: 'Risk/Compliance' },
-        { href: '/software-technology', label: 'Technology' },
-        { href: '/sustainability', label: 'Sustainability' },
-        { href: '/3pl-4pl', label: '3PL/4PL' },
-        { href: '/professional-development', label: 'Prof Development' },
-      ],
+      items: topics,
     },
     {
       label: 'Resources',
