@@ -1,15 +1,16 @@
+const topics = [
+  { href: '/warehousing', label: 'Warehousing' },
+  { href: '/transportation', label: 'Transportation' },
+  { href: '/technology', label: 'Software & Technology' },
+  { href: '/safety', label: 'Safety & Security' },
+  { href: '/sustainability', label: 'Sustainability' },
+  { href: '/risk-compliance', label: 'Risk & Compliance' },
+  { href: '/scn-summit', label: 'SCN Summit' },
+];
+
 module.exports = {
   primary: {
-    items: [
-      { href: '/warehousing', label: 'Warehousing' },
-      { href: '/transportation', label: 'Transport' },
-      { href: '/technology', label: 'Software & Technology' },
-      { href: '/safety', label: 'Safety & Security' },
-      { href: '/sustainability', label: 'Sustainability' },
-      { href: '/risk-compliance', label: 'Risk/Compliance' },
-      { href: '/ocean-ports-carriers', label: 'Maritime' },
-      { href: '/scn-summit', label: 'SCN Summit' },
-    ],
+    items: topics,
   },
   secondary: {
     items: [
@@ -59,16 +60,7 @@ module.exports = {
   menu: [
     {
       label: 'Topics',
-      items: [
-        { href: '/warehousing', label: 'Warehousing' },
-        { href: '/transportation', label: 'Transport' },
-        { href: '/technology', label: 'Software & Technology' },
-        { href: '/safety', label: 'Safety & Security' },
-        { href: '/sustainability', label: 'Sustainability' },
-        { href: '/risk-compliance', label: 'Risk/Compliance' },
-        { href: '/ocean-ports-carriers', label: 'Maritime' },
-        { href: '/scn-summit', label: 'SCN Summit' },
-      ],
+      items: topics,
     },
     {
       label: 'Resources',
