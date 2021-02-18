@@ -27,7 +27,7 @@ module.exports = {
   },
   socialMediaLinks: [
     { provider: 'linkedin', href: 'https://www.linkedin.com/company/fordsspros/', target: '_blank' },
-    { provider: 'twitter', href: 'https://twitter.com/fordsspros', target: '_blank' },
+    { provider: 'twitter', href: 'https://twitter.com/ssopenings', target: '_blank' },
     { provider: 'facebook', href: 'https://www.facebook.com/SafeSecureOpenings', target: '_blank' },
   ],
   radix: {
