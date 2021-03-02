@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/no-v-html-->
 <template>
   <div ref="search" class="section-search" :class="{'open':openSuggestion}">
     <input

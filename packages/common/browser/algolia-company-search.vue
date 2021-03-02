@@ -1,49 +1,48 @@
-<!-- eslint-disable vue/no-v-html-->
 <template>
-  <ais-instant-search
-    :index-name="defaultIndex"
-    :search-client="searchClient"
-    class="company-search"
-  >
-    <ais-configure
-      query=""
-      :hits-per-page.camel="displayLimit"
-      :disjunctive-facets-refinements.camel="disjunctiveFacetsRefinements"
-    />
-    <ais-autocomplete>
-      <div
-        slot-scope="{ currentRefinement, indices, refine }"
-        class="refinement"
-      >
-        <input
-          type="text"
-          class="form-control"
-          :value="currentRefinement"
-          placeholder="Company"
-          :input-props="{
-            onInputChange: refine,
-            placeholder: 'Company',
-          }"
-          @input="refine($event.currentTarget.value)"
+  <div ref="companySearch" class="company-search">
+    <ais-instant-search
+      :index-name="defaultIndex"
+      :search-client="searchClient"
+    >
+      <ais-configure
+        :hits-per-page.camel="displayLimit"
+        :disjunctive-facets-refinements.camel="disjunctiveFacetsRefinements"
+      />
+      <ais-autocomplete>
+        <div
+          slot-scope="{ currentRefinement, indices, refine }"
+          class="refinement"
         >
-        <template v-if="currentRefinement">
-          <div
-            v-for="index in indices"
-            :key="index.indexId"
-            class="list-group"
+          <input
+            type="text"
+            class="form-control"
+            :value="currentRefinement"
+            placeholder="Company"
+            :input-props="{
+              onInputChange: refine,
+              placeholder: 'Company',
+            }"
+            @input="refine($event.currentTarget.value)"
           >
+          <template v-if="currentRefinement && showRefinements">
             <div
-              v-for="hit in index.hits"
-              :key="hit.objectID"
-              class="list-group-item"
+              v-for="index in indices"
+              :key="index.indexId"
+              class="list-group"
             >
-              <a :href="'/'+hit.objectID">{{ hit.name }}</a>
+              <div
+                v-for="hit in index.hits"
+                :key="hit.objectID"
+                class="list-group-item"
+              >
+                <a :href="'/'+hit.objectID">{{ hit.name }}</a>
+              </div>
             </div>
-          </div>
-        </template>
-      </div>
-    </ais-autocomplete>
-  </ais-instant-search>
+          </template>
+        </div>
+      </ais-autocomplete>
+    </ais-instant-search>
+  </div>
 </template>
 
 <script>
@@ -85,8 +84,8 @@ export default {
   },
 
   data() {
-    // :disjunctive-facets-refinements.camel="{ type: ['Company'],  }"
     return {
+      showRefinements: true,
       searchClient: algoliasearch(
         this.appId,
         this.apiKey,
@@ -98,11 +97,37 @@ export default {
     };
   },
 
+  mounted() {
+    this.addListeners();
+  },
+
+  beforeDestroy() {
+    this.removeListeners();
+  },
+
   methods: {
     onSelect(hit) {
       if (hit) {
         window.location = `/${hit.objectID}`;
       }
+    },
+
+    detectOutclick(event) {
+      const el = this.$refs.companySearch;
+      if (!el.contains(event.target) && el !== event.target) {
+        this.showRefinements = false;
+      } else {
+        this.showRefinements = true;
+      }
+    },
+
+    addListeners() {
+      document.addEventListener('click', this.detectOutclick.bind(this));
+      document.addEventListener('touchstart', this.detectOutclick.bind(this));
+    },
+    removeListeners() {
+      document.removeEventListener('click', this.detectOutclick.bind(this));
+      document.removeEventListener('touchstart', this.detectOutclick.bind(this));
     },
   },
 };
