@@ -2,5 +2,16 @@
   "taglib-imports": [
     "./directory/marko.json",
     "./spec-guide/marko.json"
-  ]
+  ],
+  "<common-company-search-block>": {
+    "template": "./company-search.marko",
+    "@site-id": "string",
+    "@app-id": "string",
+    "@api-key": "string",
+    "@display-limit": "number",
+    "@default-index": "string"
+  },
+  "<common-section-search-block>": {
+    "template": "./section-search.marko"
+  }
 }
