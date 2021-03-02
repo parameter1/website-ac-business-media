@@ -7,7 +7,7 @@
       type="text"
       placeholder="Category..."
     >
-    <div v-if="selection" class="list-group" style="width:100%">
+    <div v-if="selection" class="list-group">
       <div v-for="suggestion in matches" :key="suggestion" class="list-group-item">
         <a :href="'/'+sections[suggestion]">
           {{ suggestion }}
@@ -54,12 +54,10 @@ export default {
   },
 
   mounted() {
-    this.selection = '';
     this.addListeners();
   },
 
   beforeDestroy() {
-    this.selection = '';
     this.removeListeners();
   },
 
