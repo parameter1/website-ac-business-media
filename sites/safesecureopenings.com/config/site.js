@@ -13,15 +13,15 @@ module.exports = {
   company: 'AC Business Media, LLC',
   logos: {
     navbar: {
-      src: 'https://img.safesecureopenings.com/files/base/acbm/fcp/image/static/sso/Logo-Final.png?h=45&auto=format,compress&q=70',
+      src: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/fcp/image/static/sso/Logo-Final.png?h=45&auto=format,compress&q=70',
       srcset: [
-        'https://img.safesecureopenings.com/files/base/acbm/fcp/image/static/sso/Logo-Final.png?h=90&auto=format,compress&q=70 2x',
+        'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/fcp/image/static/sso/Logo-Final.png?h=90&auto=format,compress&q=70 2x',
       ],
     },
     footer: {
-      src: 'https://img.safesecureopenings.com/files/base/acbm/fcp/image/static/sso/Logo-Final.png?h=60&auto=format,compress&q=70',
+      src: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/fcp/image/static/sso/Logo-Final.png?h=60&auto=format,compress&q=70',
       srcset: [
-        'https://img.safesecureopenings.com/files/base/acbm/fcp/image/static/sso/Logo-Final.png?h=120&auto=format,compress&q=70 2x',
+        'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/fcp/image/static/sso/Logo-Final.png?h=120&auto=format,compress&q=70 2x',
       ],
     },
   },
@@ -56,7 +56,7 @@ module.exports = {
   contactUs: {
     branding: {
       bgColor: '#164f77',
-      logo: 'https://img.safesecureopenings.com/files/base/acbm/fcp/image/static/sso/Logo-Final.png?h=60&auto=format,compress&q=70',
+      logo: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/fcp/image/static/sso/Logo-Final.png?h=60&auto=format,compress&q=70',
     },
     to: 'jsage@acbusinessmedia.com',
   },
@@ -65,7 +65,7 @@ module.exports = {
     directSend: true,
     sendTo: 'requestmoreinfo@acbusinessmedia.com',
     sendFrom: 'Safe & Secure Openings <noreply@baseplatform.io>',
-    logo: 'https://img.safesecureopenings.com/files/base/acbm/fcp/image/static/sso/Logo-Final.png?h=60&auto=format,compress&q=70',
+    logo: 'https://p1-cms-assets-acbm.imgix.net/files/base/acbm/fcp/image/static/sso/Logo-Final.png?h=60&auto=format,compress&q=70',
     bgColor: '#164f77',
   },
 };
