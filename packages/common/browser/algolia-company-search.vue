@@ -61,10 +61,6 @@ export default {
     AisConfigure,
   },
 
-// ALGOLIA_API_KEY=6f1e32cabc7c30efc7410c478ca221a1
-// ALGOLIA_APP_ID=05JLREVGZ4
-// ALGOLIA_DEFAULT_INDEX=ascend_minex_platform_content
-
   props: {
     appId: {
       type: String,
