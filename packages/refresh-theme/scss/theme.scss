@@ -945,3 +945,11 @@ $theme-related-content-border-color: #dee2e6;
     border: none;
   }
 }
+
+.company-section-search {
+  .col-md-6 + .col-md-6 {
+    @include media-breakpoint-down(sm) {
+      margin-top: $block-spacer;
+    }
+  }
+}
