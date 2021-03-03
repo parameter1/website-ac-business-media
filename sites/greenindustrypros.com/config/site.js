@@ -13,15 +13,15 @@ module.exports = {
   company: 'AC Business Media, LLC',
   logos: {
     navbar: {
-      src: 'https://img.greenindustrypros.com/files/base/acbm/static/GIP_Logo2013_Reverse.png?h=45&auto=format,compress&q=70',
+      src: 'https://p1-cms-assets.imgix.net/files/base/acbm/static/GIP_Logo2013_Reverse.png?h=45&auto=format,compress&q=70',
       srcset: [
-        'https://img.greenindustrypros.com/files/base/acbm/static/GIP_Logo2013_Reverse.png?h=90&auto=format,compress&q=70 2x',
+        'https://p1-cms-assets.imgix.net/files/base/acbm/static/GIP_Logo2013_Reverse.png?h=90&auto=format,compress&q=70 2x',
       ],
     },
     footer: {
-      src: 'https://img.greenindustrypros.com/files/base/acbm/static/GIP_Logo2013_Reverse.png?h=60&auto=format,compress&q=70',
+      src: 'https://p1-cms-assets.imgix.net/files/base/acbm/static/GIP_Logo2013_Reverse.png?h=60&auto=format,compress&q=70',
       srcset: [
-        'https://img.greenindustrypros.com/files/base/acbm/static/GIP_Logo2013_Reverse.png?h=120&auto=format,compress&q=70 2x',
+        'https://p1-cms-assets.imgix.net/files/base/acbm/static/GIP_Logo2013_Reverse.png?h=120&auto=format,compress&q=70 2x',
       ],
     },
   },
@@ -58,7 +58,7 @@ module.exports = {
   contactUs: {
     branding: {
       bgColor: '#164f77',
-      logo: 'https://img.greenindustrypros.com/files/base/acbm/static/GIP_Logo2013_Reverse.png?h=60&auto=format,compress&q=70',
+      logo: 'https://p1-cms-assets.imgix.net/files/base/acbm/static/GIP_Logo2013_Reverse.png?h=60&auto=format,compress&q=70',
     },
     to: 'jsage@acbusinessmedia.com',
   },
@@ -67,7 +67,7 @@ module.exports = {
     directSend: true,
     sendTo: 'requestmoreinfo@acbusinessmedia.com',
     sendFrom: 'GreenIndustryPros.com <noreply@baseplatform.io>',
-    logo: 'https://img.greenindustrypros.com/files/base/acbm/static/GIP_Logo2013_Reverse.png?h=60&auto=format,compress&q=70',
+    logo: 'https://p1-cms-assets.imgix.net/files/base/acbm/static/GIP_Logo2013_Reverse.png?h=60&auto=format,compress&q=70',
     bgColor: '#164f77',
   },
 };

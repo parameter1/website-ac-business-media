@@ -11,15 +11,15 @@ module.exports = {
   company: 'AC Business Media, LLC',
   logos: {
     navbar: {
-      src: 'https://img.dmnews.com/files/base/acbm/static/DMNLogoWhite.png?h=45&auto=format,compress&q=70',
+      src: 'https://p1-cms-assets.imgix.net/files/base/acbm/static/DMNLogoWhite.png?h=45&auto=format,compress&q=70',
       srcset: [
-        'https://img.dmnews.com/files/base/acbm/static/DMNLogoWhite.png?h=90&auto=format,compress&q=70 2x',
+        'https://p1-cms-assets.imgix.net/files/base/acbm/static/DMNLogoWhite.png?h=90&auto=format,compress&q=70 2x',
       ],
     },
     footer: {
-      src: 'https://img.dmnews.com/files/base/acbm/static/DMNLogoWhite.png?h=60&auto=format,compress&q=70',
+      src: 'https://p1-cms-assets.imgix.net/files/base/acbm/static/DMNLogoWhite.png?h=60&auto=format,compress&q=70',
       srcset: [
-        'https://img.dmnews.com/files/base/acbm/static/DMNLogoWhite.png?h=120&auto=format,compress&q=70 2x',
+        'https://p1-cms-assets.imgix.net/files/base/acbm/static/DMNLogoWhite.png?h=120&auto=format,compress&q=70 2x',
       ],
     },
   },
@@ -47,7 +47,7 @@ module.exports = {
   contactUs: {
     branding: {
       bgColor: '#28ace2',
-      logo: 'https://img.dmnews.com/files/base/acbm/static/DMNLogoWhite.png?h=60&auto=format,compress&q=70',
+      logo: 'https://p1-cms-assets.imgix.net/files/base/acbm/static/DMNLogoWhite.png?h=60&auto=format,compress&q=70',
     },
     to: 'jsage@acbusinessmedia.com',
   },
@@ -56,7 +56,7 @@ module.exports = {
     directSend: true,
     sendTo: 'requestmoreinfo@acbusinessmedia.com',
     sendFrom: 'DMNews.com <noreply@baseplatform.io>',
-    logo: 'https://img.dmnews.com/files/base/acbm/static/DMNLogoWhite.png?h=60&auto=format,compress&q=70',
+    logo: 'https://p1-cms-assets.imgix.net/files/base/acbm/static/DMNLogoWhite.png?h=60&auto=format,compress&q=70',
     bgColor: '#28ace2',
   },
 };
