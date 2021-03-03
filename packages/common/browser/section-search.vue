@@ -4,7 +4,7 @@
       v-model="selection"
       class="form-control"
       type="text"
-      placeholder="Category..."
+      placeholder="Search Categories..."
     >
     <div v-if="selection" class="list-group">
       <div v-for="suggestion in matches" :key="suggestion" class="list-group-item">

@@ -17,10 +17,10 @@
             type="text"
             class="form-control"
             :value="currentRefinement"
-            placeholder="Company"
+            placeholder="Search Companies..."
             :input-props="{
               onInputChange: refine,
-              placeholder: 'Company',
+              placeholder: 'Search Companies...',
             }"
             @input="refine($event.currentTarget.value)"
           >
