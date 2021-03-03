@@ -14,7 +14,7 @@ module.exports = {
     items: [
       { href: '/events', label: 'Events' },
       {
-        href: 'https://p1-cms-assets.imgix.net/files/base/acbm/fcp/document/2021/01/SSOpenings_MediaKit_2021_low_res.600cc64b1d183.pdf',
+        href: 'https://img.safesecureopenings.com/files/base/acbm/fcp/document/2021/01/SSOpenings_MediaKit_2021_low_res.600cc64b1d183.pdf',
         target: '_blank',
         label: 'Editorial Calendar',
       },
@@ -41,7 +41,7 @@ module.exports = {
   footer: {
     items: [
       {
-        href: 'https://p1-cms-assets.imgix.net/files/base/acbm/fcp/document/2021/01/SSOpenings_MediaKit_2021_low_res.600cc64b1d183.pdf',
+        href: 'https://img.safesecureopenings.com/files/base/acbm/fcp/document/2021/01/SSOpenings_MediaKit_2021_low_res.600cc64b1d183.pdf',
         target: '_blank',
         label: 'Editorial Calendar',
       },

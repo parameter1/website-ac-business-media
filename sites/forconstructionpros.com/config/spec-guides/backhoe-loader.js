@@ -9,7 +9,7 @@ module.exports = {
   ],
   seeAlso: '<p>To learn about the components that go into your equipment, also visit the <a href="https://www.oemoffhighway.com/specguide" target="_blank" rel="nofollow"><strong><u>OEM Off-Highway Spec Guides</u></strong></a>.</p>',
   image: {
-    src: 'https://p1-cms-assets.imgix.net/files/base/acbm/fcp/image/static/backhoe.png',
+    src: 'https://img.forconstructionpros.com/files/base/acbm/fcp/image/static/backhoe.png',
   },
   downloadLink: '/21036185',
   sheetSrc: 'https://spreadsheets.google.com/feeds/list/1ylNVqjRuvRu9_JUgyOuWSPXeGn6FkIw7McjFdZzdv0M/1/public/values?alt=json',
