@@ -1,9 +1,12 @@
 import hierarchyAliases from "@parameter1/base-cms-marko-web/utils/hierarchy-aliases";
 import defaultValue from "@parameter1/base-cms-marko-core/utils/default-value";
-import { getAsObject, get } from "@parameter1/base-cms-object-path";
+import { getAsObject, getAsArray, get } from "@parameter1/base-cms-object-path";
 import queryFragment from "../../graphql/fragments/content-list";
 
-$ const { site, GAM } = out.global;
+$ const { site, GAM, algoliaConfig, req } = out.global;
+$ const showCompanySectionFilter = (algoliaConfig
+  && getAsArray(site, 'config.sectionSearchIds').length !== 0
+);
 $ const { id, type, pageNode } = data;
 
 $ const adSlots = ({ aliases }) => ({
@@ -64,7 +67,18 @@ $ const injectAds = ["article", "news", "press-release", "blog"].includes(type) 
             </div>
           </div>
         </@section>
-
+        <if(showCompanySectionFilter)>
+          <@section>
+            <div class="row">
+              <div class="col-md-6">
+                <common-company-search-block />
+              </div>
+              <div class="col-md-6">
+                <common-section-search-block />
+              </div>
+            </div>
+          </@section>
+        </if>
         <@section>
           <div class="row">
             <div class="col">
