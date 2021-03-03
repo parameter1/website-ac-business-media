@@ -75,36 +75,9 @@ module.exports = {
   sectionSearchIds: [
     54289, // Asphalt
     54300, // Business
+    54436, // Concrete
     54319, // Construction Technology
     54330, // Equipment
-    57342, // Sponsored by Volvo
-    54436, // Concrete
-    54497, // Rental
-    54546, // Blogs
-    54557, // Conexpo
-    54559, // Contractor's Best Friend
-    54560, // Video Network
-    54561, // Sustainability
-    54562, // Economics
-    54563, // Profit Matters
-    54564, // Events
-    54565, // Asphalt Industry Directory
-    // 54566, // Contact Us
-    // 54567, // Advertise
-    // 57287, // Directory
-    57295, // New Equipment
-    57296, // Features
-    // 54288, // Home
-    58971, // Webinars
-    54530, // Trucks
     54468, // Pavement Maintenance
-    57346, // Construction News
-    57411, // Downloadable Resources
-    57881, // Equipment Management
-    63029, // Podcasts
-    64032, // Infrastructure
-    64056, // COVID-19
-    67003, // Rental Rundown 2
-    // 69338, // Leaders
   ],
 };
