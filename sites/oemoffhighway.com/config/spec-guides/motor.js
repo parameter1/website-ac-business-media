@@ -7,7 +7,7 @@ module.exports = {
     'Sorting the information by any column to order the information the way you need it',
   ],
   image: {
-    src: 'https://p1-cms-assets.imgix.net/files/base/acbm/ooh/image/static/motor.png',
+    src: 'https://img.oemoffhighway.com/files/base/acbm/ooh/image/static/motor.png',
   },
   downloadLink: '/20839229',
   sheetSrc: 'https://spreadsheets.google.com/feeds/list/10EKomL-SVMZ4imnCaoO86t48T7ngVaopWXie04AveUo/6/public/values?alt=json',
