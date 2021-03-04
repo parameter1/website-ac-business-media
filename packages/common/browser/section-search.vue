@@ -8,7 +8,7 @@
     >
     <div v-if="selection" class="list-group">
       <div v-for="suggestion in matches" :key="suggestion" class="list-group-item">
-        <a :href="'/'+sections[suggestion]">
+        <a :href="'/'+sections[suggestion]" @click="emitAction()">
           {{ suggestion }}
         </a>
       </div>
@@ -76,6 +76,15 @@ export default {
       document.removeEventListener('click', this.detectOutclick.bind(this));
       document.removeEventListener('touchstart', this.detectOutclick.bind(this));
     },
+  },
+
+  emitAction() {
+    const payload = {
+      category: 'Header Search',
+      type: 'click',
+      label: 'Website Section Page',
+    };
+    this.$emit('action', payload);
   },
 
 };
