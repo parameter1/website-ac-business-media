@@ -8,39 +8,34 @@
         :hits-per-page.camel="displayLimit"
         :disjunctive-facets-refinements.camel="disjunctiveFacetsRefinements"
       />
-      <ais-autocomplete>
-        <div
-          slot-scope="{ currentRefinement, indices, refine }"
-          class="refinement"
-        >
+      <ais-search-box
+        v-model="phrase"
+        :show-loading-indicator="false"
+        :class-names="{
+          'ais-SearchBox-input': 'form-control',
+          'ais-SearchBox-submit': 'd-none',
+          'ais-SearchBox-reset': 'd-none',
+        }"
+      >
+        <div class="input-group">
           <input
+            v-model="phrase"
             type="text"
-            class="form-control"
-            :value="currentRefinement"
             placeholder="Search Companies..."
-            :input-props="{
-              onInputChange: refine,
-              placeholder: 'Search Companies...',
-            }"
-            @input="refine($event.currentTarget.value)"
+            class="form-control"
           >
-          <template v-if="currentRefinement && showRefinements">
-            <div
-              v-for="index in indices"
-              :key="index.indexId"
-              class="list-group"
-            >
-              <div
-                v-for="hit in index.hits"
-                :key="hit.objectID"
-                class="list-group-item"
-              >
-                <a :href="'/'+hit.objectID">{{ hit.name }}</a>
-              </div>
-            </div>
-          </template>
         </div>
-      </ais-autocomplete>
+      </ais-search-box>
+      <ais-hits v-if="showRefinements">
+        <div
+          slot-scope="{ items }"
+          class="list-group"
+        >
+          <div v-for="item in items" :key="item.objectID" class="list-group-item">
+            <a :href="'/'+item.objectID" @click="emitAction()">{{ item.name }}</a>
+          </div>
+        </div>
+      </ais-hits>
     </ais-instant-search>
   </div>
 </template>
@@ -48,7 +43,8 @@
 <script>
 import {
   AisInstantSearch,
-  AisAutocomplete,
+  AisHits,
+  AisSearchBox,
   AisConfigure,
 } from 'vue-instantsearch';
 import algoliasearch from 'algoliasearch/lite';
@@ -56,7 +52,8 @@ import algoliasearch from 'algoliasearch/lite';
 export default {
   components: {
     AisInstantSearch,
-    AisAutocomplete,
+    AisHits,
+    AisSearchBox,
     AisConfigure,
   },
 
@@ -85,16 +82,23 @@ export default {
 
   data() {
     return {
-      showRefinements: true,
+      clickout: true,
       searchClient: algoliasearch(
         this.appId,
         this.apiKey,
       ),
+      phrase: '',
       disjunctiveFacetsRefinements: {
         type: ['Company'],
         'websiteSchedules.siteIds': [this.siteId],
       },
     };
+  },
+
+  computed: {
+    showRefinements() {
+      return (this.phrase !== '' && !this.clickout);
+    },
   },
 
   mounted() {
@@ -115,9 +119,10 @@ export default {
     detectOutclick(event) {
       const el = this.$refs.companySearch;
       if (!el.contains(event.target) && el !== event.target) {
-        this.showRefinements = false;
+        this.clickout = true;
+        this.phrase = '';
       } else {
-        this.showRefinements = true;
+        this.clickout = false;
       }
     },
 
@@ -129,6 +134,16 @@ export default {
       document.removeEventListener('click', this.detectOutclick.bind(this));
       document.removeEventListener('touchstart', this.detectOutclick.bind(this));
     },
+
+    emitAction() {
+      const payload = {
+        category: 'Header Search',
+        type: 'click',
+        label: 'Company Profile Page',
+      };
+      this.$emit('action', payload);
+    },
+
   },
 };
 </script>
