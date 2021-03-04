@@ -1,7 +1,7 @@
 <template>
   <div ref="companySearch" class="company-search">
     <ais-instant-search
-      :index-name="defaultIndex"
+      :index-name="defaultIndex+'_company_name'"
       :search-client="searchClient"
     >
       <ais-configure
