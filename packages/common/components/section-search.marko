@@ -17,7 +17,7 @@ $ const getNames = (nodes, names = {}) => {
 }
 
 $ const { site } = out.global;
-$ const sectionIds = getAsArray(site, 'config.sectionSearchIds');
+$ const sectionIds = getAsArray(site, "config.sectionSearchIds");
 
 <if(sectionIds.length)>
   <marko-web-query|{ nodes }|
