@@ -22,7 +22,7 @@ $ const sectionIds = getAsArray(site, 'config.sectionSearchIds');
 <if(sectionIds.length)>
   <marko-web-query|{ nodes }|
     name="website-sections"
-    params={ includeIds: sectionIds, limit:100, queryFragment: categorySectionsFragment }
+    params={ includeIds: sectionIds, limit: 100, queryFragment: categorySectionsFragment }
   >
     $ const sections = getNames(nodes)
     $ const props = {
