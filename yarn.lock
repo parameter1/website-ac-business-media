@@ -2162,10 +2162,10 @@
     node-fetch "^2.6.1"
     vue-recaptcha "^1.3.0"
 
-"@parameter1/base-cms-marko-web-leaders@^2.5.0":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@parameter1/base-cms-marko-web-leaders/-/base-cms-marko-web-leaders-2.5.0.tgz#1a4c2b5653c46d737059d315c56bb29ccac39a07"
-  integrity sha512-65KtWO1qsv5quOpq5MAEEXWS+pg6xwEbLtQ0LwVdOYZgTZ4Y6Ne29S7lTQSoLnRsNqJqQ+QT7T1coVvSWd4Ulw==
+"@parameter1/base-cms-marko-web-leaders@^2.7.0":
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/@parameter1/base-cms-marko-web-leaders/-/base-cms-marko-web-leaders-2.7.0.tgz#58da715faea5e8fe97529517183254fb0e8b7a46"
+  integrity sha512-Yr08/yORsfzg+0qrDIoFnV7Dc6qPKHyKUUKCBusnrIVOH399o+i8etsEdRCtWtnkqO99JcJSQsMeB2dDvax/7w==
   dependencies:
     "@parameter1/base-cms-leaders-program" "^2.5.0"
     "@parameter1/base-cms-marko-web-icons" "^2.0.0"
@@ -2212,10 +2212,10 @@
   dependencies:
     "@parameter1/base-cms-utils" "^2.4.2"
 
-"@parameter1/base-cms-marko-web-theme-default@^2.5.0":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@parameter1/base-cms-marko-web-theme-default/-/base-cms-marko-web-theme-default-2.5.0.tgz#84e420d632aec71b2aaf4d97b6cfd4a5c1c971bf"
-  integrity sha512-TfP3t+bHTFuLWM0+CvGENISX6BUTxnNhEOY3Njf8l924uDp2bcSIgYU1EB1koQIlty26xCmZTRLelCan2/S40g==
+"@parameter1/base-cms-marko-web-theme-default@^2.7.0":
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/@parameter1/base-cms-marko-web-theme-default/-/base-cms-marko-web-theme-default-2.7.0.tgz#2461713f8fee74d4012565c37921125b00ceb18c"
+  integrity sha512-EgZNOVygtMINM5mxNE3Hw8gT5fiC5MZ8Q6DcyorJzn8SBNGj7WQ5dGSPxPPiCGAoB4w3C0oJ9mkl1AvI77EL1g==
   dependencies:
     "@parameter1/base-cms-marko-web-icons" "^2.0.0"
     "@parameter1/base-cms-object-path" "^2.5.0"
