@@ -2,5 +2,11 @@
   "taglib-imports": [
     "./directory/marko.json",
     "./spec-guide/marko.json"
-  ]
+  ],
+  "<common-company-search-block>": {
+    "template": "./company-search.marko"
+  },
+  "<common-section-search-block>": {
+    "template": "./section-search.marko"
+  }
 }

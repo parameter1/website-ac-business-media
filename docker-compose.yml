@@ -25,6 +25,9 @@ x-env-defaults: &env
   SENDGRID_API_KEY: ${SENDGRID_API_KEY-(unset)}
   SENDGRID_DEV_TO: contact@parameter1.com
   YARN_CACHE_FOLDER: /.yarn-cache
+  ALGOLIA_API_KEY: ${ALGOLIA_API_KEY}
+  ALGOLIA_APP_ID: ${ALGOLIA_APP_ID}
+  ALGOLIA_DEFAULT_INDEX: ${ALGOLIA_DEFAULT_INDEX}
 
 x-env-tauron: &env-tauron
   GRAPHQL_URI: ${GRAPHQL_URI-https://tauron.graphql.base.parameter1.com}

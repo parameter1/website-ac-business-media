@@ -72,4 +72,12 @@ module.exports = {
     logo: 'https://img.forconstructionpros.com/files/base/acbm/fcp/image/static/logo/site_logo.png?h=45&auto=format,compress&q=70&bg=000000&pad=5',
     bgColor: '#000',
   },
+  sectionSearchIds: [
+    54289, // Asphalt
+    54300, // Business
+    54436, // Concrete
+    54319, // Construction Technology
+    54330, // Equipment
+    54468, // Pavement Maintenance
+  ],
 };

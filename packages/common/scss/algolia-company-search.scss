@@ -1,0 +1,20 @@
+.company-search {
+  position: relative;
+  .form-control {
+    &:focus {
+      border-color: #ebebeb;
+      box-shadow: none;
+    }
+  }
+  .list-group {
+    @include box-shadow($theme-card-box-shadow);
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    background: $white;
+    padding: map-get($spacers, 2);
+    max-height: 10em;
+    overflow: scroll;
+    border: 1px solid #ebebeb;
+  }
+}

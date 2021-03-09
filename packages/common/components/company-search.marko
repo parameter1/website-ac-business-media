@@ -1,0 +1,8 @@
+$ const { algoliaConfig, config } = out.global;
+
+$ const props = {
+  siteId: config.website("id"),
+  ...algoliaConfig,
+};
+
+<marko-web-browser-component name="CommonAlgoliaCompanySearch" props=props />
