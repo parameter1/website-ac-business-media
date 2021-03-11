@@ -83,7 +83,8 @@ export default {
   data() {
     const filtersArray = [
       'status = 1',
-      `published < ${Date.now()}`,
+      `published < ${Date.now() / 1000}`,
+      `unpublished >= ${Date.now() / 1000}`,
       'type:"Company"',
       `(primarySiteId:"${this.siteId}" OR 'websiteSchedules.siteIds':"${this.siteId}")`,
     ];
