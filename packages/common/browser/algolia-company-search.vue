@@ -6,7 +6,7 @@
     >
       <ais-configure
         :hits-per-page.camel="displayLimit"
-        :disjunctive-facets-refinements.camel="disjunctiveFacetsRefinements"
+        :filters="filters"
       />
       <ais-search-box
         v-model="phrase"
@@ -90,8 +90,8 @@ export default {
       phrase: '',
       disjunctiveFacetsRefinements: {
         type: ['Company'],
-        primarySiteId: [this.siteId],
       },
+      filters: `type:"Company" AND (primarySiteId:"${this.siteId}" OR 'websiteSchedules.siteIds':"${this.siteId}")`,
     };
   },
 
