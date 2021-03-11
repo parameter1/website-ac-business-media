@@ -88,9 +88,6 @@ export default {
         this.apiKey,
       ),
       phrase: '',
-      disjunctiveFacetsRefinements: {
-        type: ['Company'],
-      },
       filters: `type:"Company" AND (primarySiteId:"${this.siteId}" OR 'websiteSchedules.siteIds':"${this.siteId}")`,
     };
   },
