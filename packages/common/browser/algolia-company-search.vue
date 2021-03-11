@@ -81,6 +81,12 @@ export default {
   },
 
   data() {
+    const filtersArray = [
+      'status = 1',
+      `published < ${Date.now()}`,
+      'type:"Company"',
+      `(primarySiteId:"${this.siteId}" OR 'websiteSchedules.siteIds':"${this.siteId}")`,
+    ];
     return {
       clickout: true,
       searchClient: algoliasearch(
@@ -88,7 +94,7 @@ export default {
         this.apiKey,
       ),
       phrase: '',
-      filters: `type:"Company" AND (primarySiteId:"${this.siteId}" OR 'websiteSchedules.siteIds':"${this.siteId}")`,
+      filters: filtersArray.join(' AND '),
     };
   },
 
