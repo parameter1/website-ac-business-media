@@ -90,7 +90,7 @@ export default {
       phrase: '',
       disjunctiveFacetsRefinements: {
         type: ['Company'],
-        // 'websiteSchedules.siteIds': [this.siteId],
+        primarySiteId: [this.siteId],
       },
     };
   },
