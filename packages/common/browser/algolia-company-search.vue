@@ -81,10 +81,11 @@ export default {
   },
 
   data() {
+    const now = Math.floor(new Date().getTime() / 1000);
     const filtersArray = [
       'status = 1',
-      `published < ${Date.now() / 1000}`,
-      `unpublished >= ${Date.now() / 1000}`,
+      `published < ${now}`,
+      `unpublished >= ${now}`,
       'type:"Company"',
       `(primarySiteId:"${this.siteId}" OR 'websiteSchedules.siteIds':"${this.siteId}")`,
     ];
