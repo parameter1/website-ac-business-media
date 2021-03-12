@@ -6,7 +6,7 @@
     >
       <ais-configure
         :hits-per-page.camel="displayLimit"
-        :disjunctive-facets-refinements.camel="disjunctiveFacetsRefinements"
+        :filters="filters"
       />
       <ais-search-box
         v-model="phrase"
@@ -81,6 +81,14 @@ export default {
   },
 
   data() {
+    const now = Math.floor(new Date().getTime() / 1000);
+    const filtersArray = [
+      'status = 1',
+      `published < ${now}`,
+      `unpublished > ${now}`,
+      'type:"Company"',
+      `(primarySiteId:"${this.siteId}" OR 'websiteSchedules.siteIds':"${this.siteId}")`,
+    ];
     return {
       clickout: true,
       searchClient: algoliasearch(
@@ -88,10 +96,7 @@ export default {
         this.apiKey,
       ),
       phrase: '',
-      disjunctiveFacetsRefinements: {
-        type: ['Company'],
-        primarySiteId: [this.siteId],
-      },
+      filters: filtersArray.join(' AND '),
     };
   },
 
