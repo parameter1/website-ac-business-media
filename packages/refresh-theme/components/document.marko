@@ -33,6 +33,7 @@ $ const isRadixEnabled = Boolean(radix.enabled && radix.appId);
     <marko-web-reveal-ad-listener select-all-targets=true />
     <marko-web-browser-component name="TriggerScreenChangeEvent" />
     <marko-web-gtm-track-bus-event on="screen_change" />
+    <marko-web-gtm-track-bus-event on="content-header-search" event-name="contentHeaderSearch" />
     <marko-web-gtm-track-load-more />
     <if(isRadixEnabled)>
       <marko-web-radix-inquiry-listener app-id=radix.appId url=radix.url submission-field-ids=radix.submissionFieldIds />
