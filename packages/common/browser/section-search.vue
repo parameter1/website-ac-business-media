@@ -78,7 +78,7 @@ export default {
     },
     emitAction() {
       const payload = {
-        category: 'Header Search',
+        category: 'Content Header Search',
         action: 'Click',
         label: 'Website Section Page',
       };

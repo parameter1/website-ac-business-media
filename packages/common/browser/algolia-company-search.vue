@@ -143,7 +143,7 @@ export default {
 
     emitAction() {
       const payload = {
-        category: 'Header Search',
+        category: 'Content Header Search',
         action: 'Click',
         label: 'Company Profile Page',
       };
