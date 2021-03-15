@@ -18,7 +18,7 @@
 
 <script>
 export default {
-
+  inject: ['EventBus'],
   props: {
     sections: {
       type: Object,
@@ -76,16 +76,14 @@ export default {
       document.removeEventListener('click', this.detectOutclick.bind(this));
       document.removeEventListener('touchstart', this.detectOutclick.bind(this));
     },
+    emitAction() {
+      const payload = {
+        category: 'Content Header Search',
+        action: 'Click',
+        label: 'Website Section Page',
+      };
+      this.EventBus.$emit('content-header-search', payload);
+    },
   },
-
-  emitAction() {
-    const payload = {
-      category: 'Header Search',
-      type: 'click',
-      label: 'Website Section Page',
-    };
-    this.$emit('action', payload);
-  },
-
 };
 </script>

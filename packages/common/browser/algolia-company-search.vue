@@ -56,6 +56,7 @@ export default {
     AisSearchBox,
     AisConfigure,
   },
+  inject: ['EventBus'],
 
   props: {
     appId: {
@@ -142,11 +143,11 @@ export default {
 
     emitAction() {
       const payload = {
-        category: 'Header Search',
-        type: 'click',
+        category: 'Content Header Search',
+        action: 'Click',
         label: 'Company Profile Page',
       };
-      this.$emit('action', payload);
+      this.EventBus.$emit('content-header-search', payload);
     },
 
   },
