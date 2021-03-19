@@ -5,8 +5,12 @@
     "./layouts/marko.json",
     "./leaders/marko.json",
     "./nodes/marko.json",
-    "./parse.ly/marko.json"
+    "./parse.ly/marko.json",
+    "./search/marko.json"
   ],
+  "<refresh-theme-pagination-controls>": {
+    "template": "./pagination-controls.marko"
+  },
   "<refresh-theme-native-x-inject>": {
     "template": "./native-x-inject.marko",
     "@limit": "number",

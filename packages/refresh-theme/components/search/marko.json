@@ -1,0 +1,27 @@
+{
+  "taglib-imports": [
+    "./section-facet/marko.json"
+  ],
+  "<refresh-theme-content-search-query>": {
+    "template": "./query.marko",
+    "@phrase": "string",
+    "@limit": "number",
+    "@skip": "number",
+    "@section-ids": "array",
+    "@supported-content-types": {
+      "type": "object",
+      "required": true
+    },
+    "@content-type": "string",
+    "@country": "string",
+    "@query-fragment": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "<refresh-theme-content-search-content-type-filter>": {
+    "template": "./content-type-filter.marko",
+    "@supported-content-types": "object",
+    "@active-type": "string"
+  }
+}
