@@ -9,6 +9,7 @@ import SocialSharing from '@parameter1/base-cms-marko-web-social-sharing/browser
 import PhotoSwipe from '@parameter1/base-cms-marko-web-photoswipe/browser';
 import RevealAd from '@parameter1/base-cms-marko-web-reveal-ad/browser';
 import Radix from '@parameter1/base-cms-marko-web-radix/browser';
+import AutoScroll from './auto-scroll.vue';
 
 export default (Browser) => {
   DefaultTheme(Browser);
@@ -22,4 +23,5 @@ export default (Browser) => {
   PhotoSwipe(Browser);
   RevealAd(Browser);
   Radix(Browser);
+  Browser.registerComponent('DirectoryAutoScroll', AutoScroll);
 };
