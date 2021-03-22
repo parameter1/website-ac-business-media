@@ -67,33 +67,32 @@ $ const apiKey = site.get("gcse.id");
             name="website-sections"
             params={ includeIds: sectionFilterIds, limit: 100, queryFragment: categorySectionsFragment }
           >
-
+            <div class="row">
+              <form method="GET" action=req.path class="search-form col">
+                <div class="form-group search-form__group md-block">
+                  <label for="search-phrase" class="sr-only">Enter search phrase</label>
+                  <input
+                    id="search-phrase"
+                    name="phrase"
+                    type="search"
+                    class="form-control"
+                    value=phrase
+                    placeholder="Enter search phrase..."
+                  >
+                </div>
+                <if(contentType)>
+                  <input type="hidden" name="contentType" value=contentType />
+                </if>
+                <if(sectionId)>
+                  <input type="hidden" name="sectionId" value=sectionId />
+                </if>
+                <button type="submit" class="btn btn-primary search-form__btn">
+                  Search
+                </button>
+              </form>
+            </div>
             <div class="row">
               <div class="col-md-4">
-                <div class="md-block">
-                  <form method="GET" action=req.path class="search-form">
-                    <div class="form-group search-form__group">
-                      <label for="search-phrase" class="sr-only">Enter search phrase</label>
-                      <input
-                        id="search-phrase"
-                        name="phrase"
-                        type="search"
-                        class="form-control"
-                        value=phrase
-                        placeholder="Enter search phrase..."
-                      >
-                    </div>
-                    <if(contentType)>
-                      <input type="hidden" name="contentType" value=contentType />
-                    </if>
-                    <if(sectionId)>
-                      <input type="hidden" name="sectionId" value=sectionId />
-                    </if>
-                    <button type="submit" class="btn btn-primary search-form__btn">
-                      Search
-                    </button>
-                  </form>
-                </div>
                 <div class="mb-block">
                   <refresh-theme-search-section-facets req=req title="Sections" sections=sectionNodes active-id=sectionId/>
                 </div>
@@ -124,7 +123,9 @@ $ const apiKey = site.get("gcse.id");
                       >
                         <@nodes nodes=nodes>
                           <@slot|{ node }|>
-                            <refresh-theme-content-list-node node=node with-teaser=true />
+                            <refresh-theme-content-list-node node=node with-teaser=true use-placeholder=false>
+                              <@image ar='16:9' width=240 />
+                            </refresh-theme-content-list-node>
                           </@slot>
                         </@nodes>
                       </marko-web-node-list>
