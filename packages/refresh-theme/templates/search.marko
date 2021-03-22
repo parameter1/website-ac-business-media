@@ -124,7 +124,7 @@ $ const apiKey = site.get("gcse.id");
                       >
                         <@nodes nodes=nodes>
                           <@slot|{ node }|>
-                            <refresh-theme-content-list-node node=node />
+                            <refresh-theme-content-list-node node=node with-teaser=true />
                           </@slot>
                         </@nodes>
                       </marko-web-node-list>
