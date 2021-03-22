@@ -1,3 +1,15 @@
+.page--search {
+  .search-form {
+    display: flex;
+    &__group {
+      margin-bottom: 0;
+      flex-grow: 1;
+    }
+    &__btn {
+      flex-shrink: 1;
+    }
+  }
+}
 .section-facets-toggle {
   display: flex;
   padding: 20px;
@@ -140,5 +152,22 @@
   }
   & #{ $self } #{ $self } .section-facets__list .section-facets__link {
     padding-left: map-get($spacers, block) * 2.5;
+  }
+}
+
+.pagination-controls {
+  $self: &;
+
+  display: flex;
+  justify-content: center;
+  padding-top: map-get($spacers, block);
+
+  &__prev {
+    margin-right: map-get($spacers, block);
+    + #{ slef } {
+      &__next {
+        margin-left: map-get($spacers, block);
+      }
+    }
   }
 }
