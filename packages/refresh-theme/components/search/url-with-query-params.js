@@ -7,7 +7,9 @@ const getUrlWithQueryParams = ({ req, keepParams = [], updateParams = {} }) => {
     if (!keepParams.includes(key)) delete query[key];
   });
   Object.keys(updateParams).forEach((key) => {
-    if (query[key] === updateParams[key]) {
+    // @ToDo: Figure out how to handle arrays & objects if need be.
+    // For now compare strings as all query values will be strings
+    if (query[key] === updateParams[key].toString()) {
       delete query[key];
     } else {
       query[key] = updateParams[key];
