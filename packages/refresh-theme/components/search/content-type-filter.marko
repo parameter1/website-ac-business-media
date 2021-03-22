@@ -5,7 +5,7 @@ $ const blockName = "content-type-facets";
 $ const keepParams = ["phrase", "contentType", "sectionId"];
 
 <div class=`${blockName}`>
-  <h3 class=`${blockName}__title`>Content Filters</h3>
+  <h3 class=`${blockName}__title`>${input.title}</h3>
   <div class=`${blockName}__list`>
     <for|key,value| in=supportedContentTypes>
       $ const linkClass = (key === activeType) ? `${blockName}__link ${blockName}__link--active` : `${blockName}__link ${blockName}__link`;

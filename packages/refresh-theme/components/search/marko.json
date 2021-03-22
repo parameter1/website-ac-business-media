@@ -22,6 +22,10 @@
   "<refresh-theme-content-search-content-type-filter>": {
     "template": "./content-type-filter.marko",
     "@supported-content-types": "object",
-    "@active-type": "string"
+    "@active-type": "string",
+    "@title": {
+      "type" : "string",
+      "default-value": "Content Type"
+    }
   }
 }
