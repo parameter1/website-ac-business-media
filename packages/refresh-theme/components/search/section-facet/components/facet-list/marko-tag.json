@@ -4,7 +4,7 @@
     "required": true
   },
   "@active-id": {
-    "type": "string",
+    "type": "number",
     "required": true
   },
   "@active-ids": {
