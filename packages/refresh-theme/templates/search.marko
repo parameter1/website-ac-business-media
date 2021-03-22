@@ -65,7 +65,7 @@ $ const apiKey = site.get("gcse.id");
         <@section>
           <marko-web-query|{ nodes: sectionNodes }|
             name="website-sections"
-            params={ includeIds: sectionFilterIds, limit: 100, queryFragment: categorySectionsFragment }
+            params={ includeIds: sectionFilterIds, limit: 100, queryFragment: categorySectionsFragment, sort: { field: 'name', order: 'asc' } }
           >
             <div class="row">
               <form method="GET" action=req.path class="search-form col">
