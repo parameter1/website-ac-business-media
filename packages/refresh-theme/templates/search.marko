@@ -14,8 +14,10 @@ $ const supportedContendTypes = {
   Blog: "Blogs",
   Company: "Companies",
   Document: "Documents",
+  MediaGallery: "Media Galleries",
   News: "News",
   PressRelease: "Press Releases",
+  Podcast: "Podcasts",
   Product: "Products",
   Video: "Videos",
   Webinar: "Webinars",
@@ -94,10 +96,10 @@ $ const apiKey = site.get("gcse.id");
             <div class="row">
               <div class="col-md-4">
                 <div class="mb-block">
-                  <refresh-theme-search-section-facets req=req title="Sections" sections=sectionNodes active-id=sectionId/>
+                  <refresh-theme-search-section-facets req=req title="Categories" sections=sectionNodes active-id=sectionId/>
                 </div>
                 <div class="md-block">
-                  <refresh-theme-content-search-content-type-filter supported-content-types=supportedContendTypes active-type=contentType />
+                  <refresh-theme-content-search-content-type-filter title="Types" supported-content-types=supportedContendTypes active-type=contentType />
                 </div>
               </div>
               <div class="col-md-8">
