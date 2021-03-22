@@ -4,9 +4,16 @@
     &__group {
       margin-bottom: 0;
       flex-grow: 1;
+      .form-control:focus {
+        box-shadow: none;
+      }
     }
-    &__btn {
+    .btn-primary {
       flex-shrink: 1;
+      &:focus,
+      &:active:focus {
+        box-shadow: none;
+      }
     }
   }
 }
