@@ -6,8 +6,10 @@ $ const { $algolia, apollo, config } = out.global;
 $ const now = Math.floor(Date.now() / 1000);
 $ const getfacetFilters = () => {
   const filters = [
-    `primarySiteId:${config.website("id")}`,
-    `websiteSchedules.siteIds:${config.website("id")}`
+    [
+      `primarySiteId:${config.website("id")}`,
+      `websiteSchedules.siteIds:${config.website("id")}`
+    ]
   ];
   if (input.sectionIds) {
     const sectionFilters = [];
