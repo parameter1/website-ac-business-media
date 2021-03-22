@@ -18,6 +18,7 @@ $ const isEvent = ["event", "webinar"].includes(content.type);
 $ const isUpcoming = content.startDate > Date.now();
 
 $ let aspectRatio = get(input, "image.ar", "1:1");
+$ const displayFallbackImage = get(input, "usePlaceholder", true);
 $ if (isEbook) aspectRatio = "3:4";
 
 $ const { linkAttrs } = input;
@@ -36,7 +37,7 @@ $ const { linkAttrs } = input;
       width=75
       align="top"
       fluid=false
-      use-placeholder=false
+      use-placeholder=displayFallbackImage
       ...input.image
       ar=aspectRatio
       src=primaryImage.src
