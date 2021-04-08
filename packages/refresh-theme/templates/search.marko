@@ -12,7 +12,7 @@ $ const description = `Search ${config.siteName()}`;
 // Algolia Search variables
 $ const algoliaSearchConfig = get(site, "config.algoliaSearch");
 $ const showFilteredAlgoliaSearch = get(algoliaSearchConfig, "filters.enabled");
-$ const showAlgoliaSearch = site.get(algoliaSearchConfig, "enabled");
+$ const showAlgoliaSearch = get(algoliaSearchConfig, "enabled");
 $ const { phrase = "", contentType, sectionId } = req.query;
 $ const perPage = 10;
 
