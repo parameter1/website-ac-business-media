@@ -5,6 +5,15 @@ const specGuides = require('./spec-guides');
 const dragonForms = require('./dragon-forms');
 const events = require('./events');
 
+const sectionSearchIds = [
+  54289, // Asphalt
+  54300, // Business
+  54436, // Concrete
+  54319, // Construction Technology
+  54330, // Equipment
+  54468, // Pavement Maintenance
+];
+
 module.exports = {
   gam,
   nativeX,
@@ -15,14 +24,7 @@ module.exports = {
     enabled: true,
     filters: {
       enabled: false,
-      sectionIds: [
-        54289, // Asphalt
-        54300, // Business
-        54436, // Concrete
-        54319, // Construction Technology
-        54330, // Equipment
-        54468, // Pavement Maintenance
-      ],
+      sectionIds: sectionSearchIds,
       contentTypes: {
         Article: 'Articles',
         Blog: 'Blogs',
@@ -39,6 +41,7 @@ module.exports = {
       },
     },
   },
+  sectionSearchIds,
   events,
   company: 'AC Business Media, LLC',
   logos: {
