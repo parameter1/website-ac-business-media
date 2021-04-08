@@ -5,30 +5,18 @@ import categorySectionsFragment from "../graphql/fragments/search-sections"
 import { getActiveSectionChildIds } from "../components/search/get-active-section-child-ids";
 
 $ const { config, site, GAM, algoliaConfig, pagination: p, req } = out.global;
-$ const sectionFilterIds = getAsArray(site, "config.sectionSearchIds")
-
-$ const showAlgoliaSearch = (algoliaConfig && sectionFilterIds.length !== 0);
-
-$ const supportedContendTypes = {
-  Article: "Articles",
-  Blog: "Blogs",
-  Company: "Companies",
-  Document: "Documents",
-  MediaGallery: "Media Galleries",
-  News: "News",
-  PressRelease: "Press Releases",
-  Podcast: "Podcasts",
-  Product: "Products",
-  Video: "Videos",
-  Webinar: "Webinars",
-  Whitepaper: "White Papers",
-};
-$ const { phrase = "", contentType, sectionId } = req.query;
-$ const perPage = 10;
-
 $ const type = "search";
 $ const title = "Search";
 $ const description = `Search ${config.siteName()}`;
+
+// Algolia Search variables
+$ const algoliaSearchConfig = get(site, "config.algoliaSearch");
+$ const showFilteredAlgoliaSearch = get(algoliaSearchConfig, "filters.enabled");
+$ const showAlgoliaSearch = site.get(algoliaSearchConfig, "enabled");
+$ const { phrase = "", contentType, sectionId } = req.query;
+$ const perPage = 10;
+
+// Google Custom Site Search ID
 $ const apiKey = site.get("gcse.id");
 
 <marko-web-default-page-layout type=type title=title description=description>
@@ -50,7 +38,9 @@ $ const apiKey = site.get("gcse.id");
       </@section>
 
 
-      <if(showAlgoliaSearch)>
+      <if(showFilteredAlgoliaSearch)>
+        $ const sectionFilterIds = getAsArray(algoliaSearchConfig, "filters.sectionIds")
+        $ const supportedContendTypes = getAsObject(algoliaSearchConfig, "filters.contentTypes");
         <@section>
           <div class="row">
             <div class="col">
@@ -145,6 +135,78 @@ $ const apiKey = site.get("gcse.id");
           </marko-web-query>
         </@section>
       </if>
+      <else-if(showAlgoliaSearch)>
+        <@section>
+          <div class="row">
+            <div class="col">
+              <default-theme-breadcrumbs-with-home>
+                <@item>${title}</@item>
+              </default-theme-breadcrumbs-with-home>
+              <h1 class="page-wrapper__title">
+                <if(p.page > 1)>${description}: Page ${p.page}</if>
+                <else>${description}</else>
+              </h1>
+            </div>
+          </div>
+        </@section>
+        <@section>
+          <div class="row">
+            <form method="GET" action=req.path class="search-form col">
+              <div class="form-group search-form__group md-block">
+                <label for="search-phrase" class="sr-only">Enter search phrase</label>
+                <input
+                  id="search-phrase"
+                  name="phrase"
+                  type="search"
+                  class="form-control"
+                  value=phrase
+                  placeholder="Enter search phrase..."
+                >
+              </div>
+              <button type="submit" class="btn btn-primary search-form__btn">
+                Search
+              </button>
+            </form>
+          </div>
+          <div class="row">
+            <div class="col">
+              <refresh-theme-content-search-query|{ nodes, totalCount }|
+                phrase=phrase
+                limit=perPage
+                skip=p.skip({ perPage })
+                query-fragment=queryFragment
+              >
+                <marko-web-page-wrapper>
+                  <@section modifiers=["search-results"]>
+                    ${new Intl.NumberFormat().format(totalCount)} Results
+                  </@section>
+                  <@section>
+                    <marko-web-node-list
+                      inner-justified=true
+                      flush-x=true
+                      flush-y=false
+                    >
+                      <@nodes nodes=nodes>
+                        <@slot|{ node }|>
+                          <refresh-theme-content-list-node node=node with-teaser=true use-placeholder=false>
+                            <@image ar='16:9' width=240 />
+                          </refresh-theme-content-list-node>
+                        </@slot>
+                      </@nodes>
+                    </marko-web-node-list>
+                    <refresh-theme-pagination-controls
+                      per-page=perPage
+                      total-count=totalCount
+                      path=req.path
+                      query={ phrase }
+                    />
+                  </@section>
+                </marko-web-page-wrapper>
+              </refresh-theme-content-search-query>
+            </div>
+          </div>
+        </@section>
+      </else-if>
       <else>
         <@section>
           <div class="row">
