@@ -9,8 +9,7 @@
     "@skip": "number",
     "@section-ids": "array",
     "@supported-content-types": {
-      "type": "object",
-      "required": true
+      "type": "object"
     },
     "@content-type": "string",
     "@country": "string",
