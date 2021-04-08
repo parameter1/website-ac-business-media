@@ -14,7 +14,7 @@ module.exports = {
   algoliaSearch: {
     enabled: true,
     filters: {
-      enabled: true,
+      enabled: false,
       sectionIds: [
         54289, // Asphalt
         54300, // Business
