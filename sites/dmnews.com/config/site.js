@@ -3,6 +3,15 @@ const gam = require('./gam');
 const nativeX = require('./native-x');
 const events = require('./events');
 
+const sectionSearchIds = [
+  58291, // Agencies
+  58304, // Content Marketing
+  58308, // Customer Experience
+  58312, // Data
+  58295, // Marketing Channels
+  58316, // Retail
+];
+
 module.exports = {
   gam,
   nativeX,
@@ -58,5 +67,30 @@ module.exports = {
     sendFrom: 'DMNews.com <noreply@baseplatform.io>',
     logo: 'https://img.dmnews.com/files/base/acbm/static/DMNLogoWhite.png?h=60&auto=format,compress&q=70',
     bgColor: '#28ace2',
+  },
+  // add back in to enable content page search inputs
+  // sectionSearchIds,
+  algoliaSearch: {
+    // set to true to enable simple algolia search
+    enabled: true,
+    filters: {
+      // set to true to enable algolia search with filters
+      enabled: false,
+      sectionIds: sectionSearchIds,
+      contentTypes: {
+        Article: 'Articles',
+        Blog: 'Blogs',
+        Company: 'Companies',
+        Document: 'Documents',
+        MediaGallery: 'Media Galleries',
+        News: 'News',
+        PressRelease: 'Press Releases',
+        Podcast: 'Podcasts',
+        Product: 'Products',
+        Video: 'Videos',
+        Webinar: 'Webinars',
+        Whitepaper: 'White Papers',
+      },
+    },
   },
 };
