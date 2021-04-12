@@ -22,7 +22,7 @@ module.exports = {
       { href: 'http://www.supplychainnetworkmediakit.com/', label: 'Advertise', target: '_blank' },
       { href: '/contact-us', label: 'Contact Us' },
       { href: '/webinars', label: 'Webinars' },
-      { href: '/podcast', label: 'Podcast' },
+      { href: '/podcast', label: 'Podcasts' },
       { href: 'https://sdcexec.tradepub.com/?pt=dir&page=sdcexec', label: 'Sponsored Research', target: '_blank' },
     ],
   },
