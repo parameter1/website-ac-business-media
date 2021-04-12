@@ -7,6 +7,7 @@ const feed = require('@ac-business-media/refresh-theme/templates/website-section
 const publishedVideos = require('@ac-business-media/refresh-theme/templates/website-section/published-videos');
 const media = require('@ac-business-media/refresh-theme/templates/website-section/media');
 const webinars = require('@ac-business-media/refresh-theme/templates/website-section/webinars');
+const podcasts = require('@ac-business-media/refresh-theme/templates/website-section/podcasts');
 const whitepapers = require('@ac-business-media/refresh-theme/templates/website-section/whitepapers');
 const queryFragment = require('@ac-business-media/refresh-theme/graphql/fragments/website-section-page');
 const leadersFragment = require('@ac-business-media/refresh-theme/graphql/fragments/leaders-section');
@@ -53,7 +54,7 @@ module.exports = (app) => {
     template: events,
     queryFragment,
   }));
-  app.get('/:alias(podcasts|videos)', withWebsiteSection({
+  app.get('/:alias(videos)', withWebsiteSection({
     template: media,
     queryFragment,
   }));
@@ -67,6 +68,10 @@ module.exports = (app) => {
   }));
   app.get('/:alias(webinars)', withWebsiteSection({
     template: webinars,
+    queryFragment,
+  }));
+  app.get('/:alias(podcasts)', withWebsiteSection({
+    template: podcasts,
     queryFragment,
   }));
   app.get('/:alias(sponsored-research)', withWebsiteSection({
