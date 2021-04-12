@@ -201,7 +201,7 @@ module.exports = {
     {
       label: 'User Tools',
       items: [
-        { href: '#', label: 'Newsletters', target: '_blank' },
+        { href: 'https://acbusiness.dragonforms.com/loading.do?omedasite=FCP_prefs_ProgReg', label: 'Newsletters', target: '_blank' },
         { href: 'https://www.constructionnetworkmediakit.com/', label: 'Advertise', target: '_blank' },
         { href: '/magazine', label: 'Current Issue' },
         { href: '/contact-us', label: 'Contact Us' },
