@@ -12,4 +12,17 @@ module.exports = {
     'construction-technology': '5b55e3162360050001b77351',
     trucks: '5b55e1a52360050001b77343',
   },
+  content: {
+    latestIn: {
+      indexes: [0, 2],
+    },
+    latest: {
+      initial: {
+        indexes: [5, 11],
+      },
+      loadMore: {
+        indexes: [11],
+      },
+    },
+  },
 };
