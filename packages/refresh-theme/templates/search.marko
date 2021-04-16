@@ -1,7 +1,8 @@
 import { warn } from "@parameter1/base-cms-utils";
 import { get } from "@parameter1/base-cms-object-path";
 
-$ const { config, site, GAM } = out.global;
+$ const { config, site, GAM, req } = out.global;
+$ const { page } = req.query;
 $ const type = "search";
 $ const title = "Search";
 $ const description = `Search ${config.siteName()}`;
@@ -35,7 +36,12 @@ $ const apiKey = site.get("gcse.id");
             <default-theme-breadcrumbs-with-home>
               <@item>${title}</@item>
             </default-theme-breadcrumbs-with-home>
-            <h1 class="page-wrapper__title">${description}</h1>
+            <h1 class="page-wrapper__title">
+              ${description}
+              <if(page)>
+                &nbsp;- Page ${page}
+              </if>
+            </h1>
           </div>
         </div>
       </@section>
