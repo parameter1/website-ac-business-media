@@ -10,6 +10,7 @@
     "test": "yarn lint"
   },
   "dependencies": {
+    "@ac-business-media/marko-web-algolia-site-search": "^0.0.0",
     "@ac-business-media/package-common": "^1.28.3",
     "@ac-business-media/package-directory": "^1.28.0",
     "@ac-business-media/package-leaders": "^1.28.0",
