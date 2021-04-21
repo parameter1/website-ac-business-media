@@ -4,16 +4,6 @@ const nativeX = require('./native-x');
 const dragonForms = require('./dragon-forms');
 const events = require('./events');
 
-const sectionSearchIds = [
-  57737, // Risk/Compliance
-  57733, // Safety & Security
-  63980, // SCN Summit
-  57732, // Software & Technology
-  57734, // Sustainability
-  57731, // Transportation
-  57730, // Warehousing
-];
-
 module.exports = {
   gam,
   nativeX,
@@ -88,31 +78,6 @@ module.exports = {
     calloutValue: 'Leading Providers',
     header: {
       imgSrc: 'https://img.foodlogistics.com/files/base/acbm/sdce/image/static/sdc-leaders.png?h=85&auto=format,compress&q=70',
-    },
-  },
-  // add back in to enable content page search inputs
-  // sectionSearchIds,
-  algoliaSearch: {
-    // set to true to enable simple algolia search
-    enabled: true,
-    filters: {
-      // set to true to enable algolia search with filters
-      enabled: false,
-      sectionIds: sectionSearchIds,
-      contentTypes: {
-        Article: 'Articles',
-        Blog: 'Blogs',
-        Company: 'Companies',
-        Document: 'Documents',
-        MediaGallery: 'Media Galleries',
-        News: 'News',
-        PressRelease: 'Press Releases',
-        Podcast: 'Podcasts',
-        Product: 'Products',
-        Video: 'Videos',
-        Webinar: 'Webinars',
-        Whitepaper: 'White Papers',
-      },
     },
   },
 };
