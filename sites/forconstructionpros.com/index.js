@@ -6,7 +6,6 @@ const algolia = require('@ac-business-media/refresh-theme/middleware/algolia');
 const routes = require('./server/routes');
 const siteConfig = require('./config/site');
 const coreConfig = require('./config/core');
-// reset head to before algolia
 
 const { env } = process;
 const { log } = console;
