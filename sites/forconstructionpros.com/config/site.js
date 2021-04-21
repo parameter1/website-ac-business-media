@@ -5,12 +5,43 @@ const specGuides = require('./spec-guides');
 const dragonForms = require('./dragon-forms');
 const events = require('./events');
 
+const sectionSearchIds = [
+  54289, // Asphalt
+  54300, // Business
+  54436, // Concrete
+  54319, // Construction Technology
+  54330, // Equipment
+  54468, // Pavement Maintenance
+];
+
 module.exports = {
   gam,
   nativeX,
   dragonForms,
   navigation,
   specGuides,
+  algoliaSearch: {
+    enabled: true,
+    filters: {
+      enabled: false,
+      sectionIds: sectionSearchIds,
+      contentTypes: {
+        Article: 'Articles',
+        Blog: 'Blogs',
+        Company: 'Companies',
+        Document: 'Documents',
+        MediaGallery: 'Media Galleries',
+        News: 'News',
+        PressRelease: 'Press Releases',
+        Podcast: 'Podcasts',
+        Product: 'Products',
+        Video: 'Videos',
+        Webinar: 'Webinars',
+        Whitepaper: 'White Papers',
+      },
+    },
+  },
+  sectionSearchIds,
   events,
   company: 'AC Business Media, LLC',
   logos: {
@@ -72,12 +103,4 @@ module.exports = {
     logo: 'https://img.forconstructionpros.com/files/base/acbm/fcp/image/static/logo/site_logo.png?h=45&auto=format,compress&q=70&bg=000000&pad=5',
     bgColor: '#000',
   },
-  sectionSearchIds: [
-    54289, // Asphalt
-    54300, // Business
-    54436, // Concrete
-    54319, // Construction Technology
-    54330, // Equipment
-    54468, // Pavement Maintenance
-  ],
 };
