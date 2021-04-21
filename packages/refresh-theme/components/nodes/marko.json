@@ -26,7 +26,6 @@
     "@image-position": "string",
     "@card": "boolean",
     "@full-height": "boolean",
-    "@use-placeholder": "boolean",
 
     "@with-teaser": "boolean",
     "@with-body": "boolean",

@@ -15,7 +15,6 @@
     "test": "yarn lint && yarn compile && yarn build"
   },
   "dependencies": {
-    "@ac-business-media/marko-web-algolia-site-search": "^0.0.0",
     "@ac-business-media/refresh-theme": "^1.28.3",
     "@parameter1/base-cms-marko-core": "^2.5.0",
     "@parameter1/base-cms-marko-web": "^2.5.0",
