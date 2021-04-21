@@ -4,6 +4,14 @@ const nativeX = require('./native-x');
 const dragonForms = require('./dragon-forms');
 const events = require('./events');
 
+const sectionSearchIds = [
+  59592, // Design & Installation
+  59599, // Irrigation & Water Management
+  59582, // Lawn Care & Renovation
+  59576, // Mowing & Maintenancet
+  59608, // Snow & Ice Management
+];
+
 module.exports = {
   gam,
   nativeX,
@@ -69,5 +77,30 @@ module.exports = {
     sendFrom: 'GreenIndustryPros.com <noreply@baseplatform.io>',
     logo: 'https://img.greenindustrypros.com/files/base/acbm/static/GIP_Logo2013_Reverse.png?h=60&auto=format,compress&q=70',
     bgColor: '#164f77',
+  },
+  // add back in to enable content page search inputs
+  // sectionSearchIds,
+  algoliaSearch: {
+    // set to true to enable simple algolia search
+    enabled: true,
+    filters: {
+      // set to true to enable algolia search with filters
+      enabled: false,
+      sectionIds: sectionSearchIds,
+      contentTypes: {
+        Article: 'Articles',
+        Blog: 'Blogs',
+        Company: 'Companies',
+        Document: 'Documents',
+        MediaGallery: 'Media Galleries',
+        News: 'News',
+        PressRelease: 'Press Releases',
+        Podcast: 'Podcasts',
+        Product: 'Products',
+        Video: 'Videos',
+        Webinar: 'Webinars',
+        Whitepaper: 'White Papers',
+      },
+    },
   },
 };
