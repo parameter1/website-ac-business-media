@@ -72,6 +72,15 @@ module.exports = {
     logo: 'https://img.forconstructionpros.com/files/base/acbm/fcp/image/static/logo/site_logo.png?h=45&auto=format,compress&q=70&bg=000000&pad=5',
     bgColor: '#000',
   },
+  leaders: {
+    enabled: true,
+    title: 'Leaders in Construction',
+    alias: 'leaders/2021',
+    calloutValue: 'Leading Companies',
+    header: {
+      imgSrc: 'https://img.forconstructionpros.com/files/base/acbm/fcp/image/static/fcp-leaders.jpeg?h=85&auto=format,compress&q=70',
+    },
+  },
   sectionSearchIds: [
     54289, // Asphalt
     54300, // Business

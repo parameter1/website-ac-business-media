@@ -36,6 +36,10 @@ $theme-site-navbar-primary-font-size-sm: 14px !default;
 $theme-site-navbar-secondary-font-size: 16px !default;
 $theme-site-navbar-secondary-font-size-sm: 16px !default;
 
+$leaders-primary-color: #212121;
+$leaders-primary-color-light: lighten($leaders-primary-color, 10%);
+$leaders-accent-color: #212121;
+
 @import "../../node_modules/@ac-business-media/refresh-theme/scss/theme";
 
 .spec-guide-button {
