@@ -7,11 +7,17 @@ const publishedVideos = require('@ac-business-media/refresh-theme/templates/webs
 const media = require('@ac-business-media/refresh-theme/templates/website-section/media');
 const webinars = require('@ac-business-media/refresh-theme/templates/website-section/webinars');
 const queryFragment = require('@ac-business-media/refresh-theme/graphql/fragments/website-section-page');
+const leadersFragment = require('@ac-business-media/refresh-theme/graphql/fragments/leaders-section');
+const leaders = require('@ac-business-media/refresh-theme/templates/website-section/leaders');
 
 const economics = require('../templates/website-section/economics');
 const directory = require('../templates/website-section/directory');
 
 module.exports = (app) => {
+  app.get('/:alias(leaders)', withWebsiteSection({
+    template: leaders,
+    queryFragment: leadersFragment,
+  }));
   app.get('/:alias(contact-us)', withWebsiteSection({
     template: contactUs,
     queryFragment,
