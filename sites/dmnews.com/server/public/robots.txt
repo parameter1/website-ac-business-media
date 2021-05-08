@@ -3,7 +3,7 @@
 
 User-agent: *
 Disallow: /
-Disallow: /__load-more
+Disallow: /__
 
 Sitemap: https://www.dmnews.com/sitemap.xml
 Sitemap: https://www.dmnews.com/sitemap-google-news.xml
