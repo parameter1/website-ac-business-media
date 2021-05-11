@@ -1,8 +1,7 @@
-import ContactUsForm from './contact-us-form.vue';
-import AutoScroll from './auto-scroll.vue';
-import CommonAlgoliaCompanySearch from './algolia-company-search.vue';
-import CommonSectionSearch from './section-search.vue';
-
+const ContactUsForm = () => import(/* webpackChunkName: "contact-us-form.vue" */ './contact-us-form.vue');
+const AutoScroll = () => import(/* webpackChunkName: "auto-scroll.vue" */ './auto-scroll.vue');
+const CommonAlgoliaCompanySearch = () => import(/* webpackChunkName: "algolia-company-search.vue" */ './algolia-company-search.vue');
+const CommonSectionSearch = () => import(/* webpackChunkName: "section-search.vue" */ './section-search.vue');
 const SpecGuideTable = () => import(/* webpackChunkName: "common-spec-guide-table" */ './spec-guide/table.vue');
 
 export default (Browser) => {
