@@ -18,6 +18,8 @@ x-env-defaults: &env
   DD_TRACE_ENABLED: ${DD_TRACE_ENABLED-0}
   DD_SERVICE: ${DD_SERVICE-@ac-business-media/websites}
   NODE_ENV: development
+  OMEDA_APP_ID: ${OMEDA_APP_ID-(unset)}
+  OMEDA_INPUT_ID: ${OMEDA_INPUT_ID-(unset)}
   # @todo the recaptcha values should be removed (?) once contact-us is moved to core.
   RECAPTCHA_SITE_KEY: ${RECAPTCHA_SITE_KEY-(unset)}
   RECAPTCHA_SECRET_KEY: ${RECAPTCHA_SECRET_KEY-(unset)}
