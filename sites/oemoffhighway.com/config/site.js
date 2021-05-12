@@ -13,6 +13,11 @@ module.exports = {
   specGuides,
   events,
   company: 'AC Business Media, LLC',
+  p1events: {
+    tenant: 'acbm',
+    enabled: true,
+    cookieDomain: process.env.NODE_ENV === 'production' ? 'oemoffhighway.com' : '',
+  },
   logos: {
     navbar: {
       src: 'https://img.oemoffhighway.com/files/base/acbm/static/OEM_Logo2019_Reversed_NoTag.png?h=45&auto=format,compress&q=70',

@@ -11,6 +11,11 @@ module.exports = {
   navigation,
   events,
   company: 'AC Business Media, LLC',
+  p1events: {
+    tenant: 'acbm',
+    enabled: true,
+    cookieDomain: process.env.NODE_ENV === 'production' ? 'greenindustrypros.com' : '',
+  },
   logos: {
     navbar: {
       src: 'https://img.greenindustrypros.com/files/base/acbm/static/GIP_Logo2013_Reverse.png?h=45&auto=format,compress&q=70',

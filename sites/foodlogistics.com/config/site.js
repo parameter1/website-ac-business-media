@@ -11,6 +11,11 @@ module.exports = {
   navigation,
   events,
   company: 'AC Business Media, LLC',
+  p1events: {
+    tenant: 'acbm',
+    enabled: true,
+    cookieDomain: process.env.NODE_ENV === 'production' ? 'foodlogistics.com' : '',
+  },
   logos: {
     navbar: {
       src: 'https://img.foodlogistics.com/files/base/acbm/fl/image/static/logo/site_logo_large.png?h=45&auto=format,compress&q=70',
