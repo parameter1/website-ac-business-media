@@ -16,11 +16,28 @@ $ const isRadixEnabled = Boolean(radix.enabled && radix.appId);
       <link rel="dns-prefetch" href=url>
     </for>
 
+    <marko-web-deferred-script-loader-init />
+
     <refresh-theme-events-init />
     <!-- <refresh-theme-gam-media-fuse id=site.get("mediaFuse.id") /> -->
-    <marko-web-gam-init />
-    <marko-web-gtm-init container-id=site.get("gtm.containerId") />
-    <marko-web-native-x-init uri=nativeX.getUri() enabled=nativeX.isEnabled() />
+    <marko-web-gam-init
+      on="load"
+      request-frame=true
+      target-tag="body"
+    />
+    <marko-web-gtm-init
+      container-id=site.get("gtm.containerId")
+      on="load"
+      request-frame=true
+      target-tag="body"
+    />
+    <marko-web-native-x-init
+      uri=nativeX.getUri()
+      enabled=nativeX.isEnabled()
+      on="load"
+      request-frame=true
+      target-tag="body"
+    />
     <${input.head} />
     <marko-web-gtm-start />
     <marko-web-gam-enable />
@@ -49,4 +66,7 @@ $ const isRadixEnabled = Boolean(radix.enabled && radix.appId);
       <marko-web-radix-identity-detector app-id=radix.appId url=radix.url />
     </if>
   </@below-container>
+  <@below-wrapper>
+    <marko-web-deferred-script-loader-load />
+  </@below-wrapper>
 </marko-web-document>
