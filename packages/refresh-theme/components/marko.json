@@ -48,16 +48,5 @@
       "@hierarchy": "array"
     },
     "<image>": {}
-  },
-  "<refresh-theme-events-init>": {
-    "template": "./events/init.marko"
-  },
-  "<refresh-theme-events-track-content>": {
-    "template": "./events/track-content.marko",
-    "@node": "object"
-  },
-  "<refresh-theme-events-track-website-section>": {
-    "template": "./events/track-website-section.marko",
-    "@node": "object"
   }
 }
