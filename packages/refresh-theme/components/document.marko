@@ -1,5 +1,6 @@
 import prefetch from "../prefetch";
 import parseIdentityId from "../utils/parse-sapience-identity";
+import omedaConfig from "../config/omeda";
 
 $ const { site, req, nativeX } = out.global;
 
@@ -16,11 +17,34 @@ $ const isRadixEnabled = Boolean(radix.enabled && radix.appId);
       <link rel="dns-prefetch" href=url>
     </for>
 
-    <refresh-theme-events-init />
+    <marko-web-deferred-script-loader-init />
+
+    <!-- init p1 website events -->
+    <marko-web-p1-events-init
+      on="load"
+      request-frame=true
+      target-tag="body"
+      identity-query-builder=`var id = query.oly_enc_id; if (id) { return 'omeda.${omedaConfig.brandKey}.customer*' + id + '~encoded'; };`;
+    />
     <!-- <refresh-theme-gam-media-fuse id=site.get("mediaFuse.id") /> -->
-    <marko-web-gam-init />
-    <marko-web-gtm-init container-id=site.get("gtm.containerId") />
-    <marko-web-native-x-init uri=nativeX.getUri() enabled=nativeX.isEnabled() />
+    <marko-web-gam-init
+      on="load"
+      request-frame=true
+      target-tag="body"
+    />
+    <marko-web-gtm-init
+      container-id=site.get("gtm.containerId")
+      on="load"
+      request-frame=true
+      target-tag="body"
+    />
+    <marko-web-native-x-init
+      uri=nativeX.getUri()
+      enabled=nativeX.isEnabled()
+      on="load"
+      request-frame=true
+      target-tag="body"
+    />
     <${input.head} />
     <marko-web-gtm-start />
     <marko-web-gam-enable />
@@ -49,4 +73,7 @@ $ const isRadixEnabled = Boolean(radix.enabled && radix.appId);
       <marko-web-radix-identity-detector app-id=radix.appId url=radix.url />
     </if>
   </@below-container>
+  <@below-wrapper>
+    <marko-web-deferred-script-loader-load />
+  </@below-wrapper>
 </marko-web-document>
