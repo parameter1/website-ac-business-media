@@ -5,6 +5,8 @@ const { set, get, getAsObject } = require('@parameter1/base-cms-object-path');
 const cleanResponse = require('@parameter1/base-cms-marko-core/middleware/clean-marko-response');
 const contactUsHandler = require('@ac-business-media/package-common/contact-us');
 const loadInquiry = require('@parameter1/base-cms-marko-web-inquiry');
+const omedaGraphQL = require('@parameter1/omeda-graphql-client-express');
+
 const sharedRedirectHandler = require('./redirect-handler');
 
 const buildGAMConfig = require('./gam/build-config');
@@ -13,6 +15,7 @@ const buildNativeXConfig = require('./native-x/build-config');
 const document = require('./components/document');
 const components = require('./components');
 const fragments = require('./fragments');
+const omedaConfig = require('./config/omeda');
 
 const routes = siteRoutes => (app) => {
   // Handle submissions on /__inquiry
@@ -47,6 +50,19 @@ module.exports = (options = {}) => {
       if (specGuideConfig.guides && Object.keys(specGuideConfig.guides).length) {
         set(app.locals, 'specGuides', specGuideConfig);
       }
+
+      // Use Omeda middleware
+      app.use(omedaGraphQL({
+        uri: 'https://graphql.omeda.parameter1.com/',
+        brandKey: omedaConfig.brandKey,
+        appId: omedaConfig.appId,
+        inputId: omedaConfig.inputId,
+      }));
+
+      // Setup IdentityX.
+      const identityXConfig = get(options, 'siteConfig.identityX');
+      set(app.locals, 'identityX', identityXConfig);
+
       // Force set all date formats.
       app.use((req, res, next) => {
         set(app.locals, 'markoCoreDate.format', 'MMMM D, YYYY');
