@@ -57,6 +57,10 @@ fragment ContentPageFragment on Content {
     surveyType
     surveyId
   }
+  userRegistration {
+    isRequired
+    accessLevels
+  }
   createdBy {
     id
     username
