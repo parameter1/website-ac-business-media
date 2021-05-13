@@ -36,10 +36,9 @@ export default (Browser) => {
     on: {
       'encrypted-id-found': (encryptedId) => {
         if (encryptedId && window.p1events) {
-          window.p1events('setIdentity', `omeda.${omedaConfig.brandKey}.customer*${encryptedId}~encrypted`);
+          window.p1events('setIdentity', `omeda.hcl.customer*${encryptedId}~encrypted`);
         }
       },
     },
   });
-
 };
