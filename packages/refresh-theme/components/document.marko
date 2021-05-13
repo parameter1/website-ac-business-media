@@ -32,12 +32,16 @@ $ const isRadixEnabled = Boolean(radix.enabled && radix.appId);
       request-frame=true
       target-tag="body"
     />
+
+    <!-- init gtm -->
     <marko-web-gtm-init
       container-id=site.get("gtm.containerId")
       on="load"
       request-frame=true
       target-tag="body"
     />
+
+    <!-- init native-x -->
     <marko-web-native-x-init
       uri=nativeX.getUri()
       enabled=nativeX.isEnabled()
@@ -45,6 +49,15 @@ $ const isRadixEnabled = Boolean(radix.enabled && radix.appId);
       request-frame=true
       target-tag="body"
     />
+
+    <!-- init omeda olytics -->
+    <marko-web-omeda-olytics-init
+      oid="ff112876a6b04b67b48eb3a4496c54f7"
+      on="load"
+      request-frame=true
+      target-tag="body"
+    />
+
     <${input.head} />
     <marko-web-gtm-start />
     <marko-web-gam-enable />
@@ -75,5 +88,6 @@ $ const isRadixEnabled = Boolean(radix.enabled && radix.appId);
   </@below-container>
   <@below-wrapper>
     <marko-web-deferred-script-loader-load />
+    <marko-web-browser-component name="OmedaRapidIdentityX" />
   </@below-wrapper>
 </marko-web-document>
