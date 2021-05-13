@@ -1,4 +1,5 @@
 const sharedPublicFiles = require('@ac-business-media/refresh-theme/routes/public-files');
+const identityX = require('@ac-business-media/refresh-theme/routes/identity-x');
 const asphaltIndustryDirectory = require('./asphalt-industry-directory');
 const content = require('./content');
 const dynamicPages = require('./dynamic-page');
@@ -11,6 +12,9 @@ const websiteSections = require('./website-section');
 module.exports = (app) => {
   // Shared Public Files
   sharedPublicFiles(app);
+
+  // Identity-X
+  identityX(app);
 
   // Homepage
   home(app);
