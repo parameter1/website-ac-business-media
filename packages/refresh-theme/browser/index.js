@@ -11,7 +11,7 @@ import PhotoSwipe from '@parameter1/base-cms-marko-web-photoswipe/browser';
 import RevealAd from '@parameter1/base-cms-marko-web-reveal-ad/browser';
 import Radix from '@parameter1/base-cms-marko-web-radix/browser';
 
-const OmedaRapidIdentityX  = () => import(/* webpackChunkName: "refresh-theme-rapid-identify" */ '@parameter1/base-cms-marko-web-omeda-identity-x/browser/rapid-identify.vue');
+const OmedaRapidIdentityX = () => import(/* webpackChunkName: "refresh-theme-rapid-identify" */ '@parameter1/base-cms-marko-web-omeda-identity-x/browser/rapid-identify.vue');
 
 export default (Browser) => {
   DefaultTheme(Browser);
