@@ -66,7 +66,11 @@ $ const isRadixEnabled = Boolean(radix.enabled && radix.appId);
     <marko-web-gam-targeting key-values=gamKeyValues />
   </@head>
   <@above-container>
+    <!-- Leaders -->
+    <marko-web-leaders-p1events-tracker />
+    <marko-web-leaders-gtm-tracker />
     <marko-web-leaders-dropdown-portal />
+
     <marko-web-reveal-ad-listener select-all-targets=true />
     <marko-web-browser-component name="TriggerScreenChangeEvent" />
     <marko-web-gtm-track-bus-event on="screen_change" />
