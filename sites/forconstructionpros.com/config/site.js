@@ -13,6 +13,11 @@ module.exports = {
   specGuides,
   events,
   company: 'AC Business Media, LLC',
+  p1events: {
+    tenant: 'acbm',
+    enabled: true,
+    cookieDomain: process.env.NODE_ENV === 'production' ? 'forconstructionpros.com' : '',
+  },
   logos: {
     navbar: {
       src: 'https://img.forconstructionpros.com/files/base/acbm/fcp/image/static/logo/site_logo.png?h=45&auto=format,compress&q=70',

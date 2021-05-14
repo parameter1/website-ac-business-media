@@ -33,7 +33,7 @@ module.exports = {
         target: '_blank',
       },
       {
-        href: 'https://acbm.dragonforms.com/loading.do?omedasite=GIP_NL_signup',
+        href: 'https://acbusiness.dragonforms.com/loading.do?omedasite=GIPROS_prefs',
         label: 'Newsletter (Sign Up)',
         icon: 'mail',
         forceLabel: true,
@@ -70,7 +70,7 @@ module.exports = {
       label: 'Resources',
       items: [
         { href: '/podcasts', label: 'Podcasts' },
-        { href: 'https://acbm.dragonforms.com/loading.do?omedasite=GIP_NL_signup', label: 'Newsletters', target: '_blank' },
+        { href: 'https://acbusiness.dragonforms.com/loading.do?omedasite=GIPROS_prefs', label: 'Newsletters', target: '_blank' },
         { href: '/magazine', label: 'Magazines' },
         { href: '/videos', label: 'Videos' },
         { href: 'https://cms.megaphone.fm/channel/grassroots?selected=ACBMI1756535736', target: '_blank', label: 'Podcast' },

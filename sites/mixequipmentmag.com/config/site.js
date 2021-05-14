@@ -3,6 +3,11 @@ const navigation = require('./navigation');
 module.exports = {
   navigation,
   company: 'Astec Industries, Inc',
+  p1events: {
+    tenant: 'acbm',
+    enabled: true,
+    cookieDomain: process.env.NODE_ENV === 'production' ? 'mixequipmentmag.com' : '',
+  },
   logos: {
     navbar: {
       src: 'https://p1-cms-assets.imgix.net/files/base/acbm/mixequipmentmag/image/static/mix-equipment-logo.svg?h=45&auto=format,compress&q=70',
