@@ -12,9 +12,6 @@ import RevealAd from '@parameter1/base-cms-marko-web-reveal-ad/browser';
 import Radix from '@parameter1/base-cms-marko-web-radix/browser';
 import OmedaRapidIdentityX from '@parameter1/base-cms-marko-web-omeda-identity-x/browser/rapid-identify.vue';
 
-const IdentityXAuthenticate = () => import(/* webpackChunkName: "refresh-theme-identity-x-authenticate" */ './identity-x/authenticate.vue');
-const IdentityXCommentStream = () => import(/* webpackChunkName: "refresh-theme-identity-x-comment-stream" */ './identity-x/comments/stream.vue');
-
 export default (Browser) => {
   DefaultTheme(Browser);
   Leaders(Browser);
@@ -27,10 +24,7 @@ export default (Browser) => {
   PhotoSwipe(Browser);
   RevealAd(Browser);
   Radix(Browser);
-  IdentityX(Browser, {
-    CustomAuthenticateComponent: IdentityXAuthenticate,
-    CustomCommentStreamComponent: IdentityXCommentStream,
-  });
+  IdentityX(Browser);
 
   Browser.register('OmedaRapidIdentityX', OmedaRapidIdentityX, {
     on: {
