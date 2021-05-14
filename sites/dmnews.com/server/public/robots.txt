@@ -4,6 +4,7 @@
 User-agent: *
 Disallow: /
 Disallow: /__
+Disallow: /print/content
 
 Sitemap: https://www.dmnews.com/sitemap.xml
 Sitemap: https://www.dmnews.com/sitemap-google-news.xml
