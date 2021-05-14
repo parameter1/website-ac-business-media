@@ -1,4 +1,7 @@
 {
+  "taglib-imports": [
+    "./content-page/marko.json"
+  ],
   "<refresh-theme-latest-content-load-more-block>": {
     "template": "./latest-content-load-more.marko",
     "<query>": {},

@@ -3,6 +3,7 @@ const gam = require('./gam');
 const nativeX = require('./native-x');
 const specGuides = require('./spec-guides');
 const dragonForms = require('./dragon-forms');
+const identityX = require('./identity-x');
 const events = require('./events');
 
 module.exports = {
@@ -11,6 +12,7 @@ module.exports = {
   dragonForms,
   navigation,
   specGuides,
+  identityX,
   events,
   company: 'AC Business Media, LLC',
   p1events: {

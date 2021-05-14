@@ -1,12 +1,14 @@
 const navigation = require('./navigation');
 const gam = require('./gam');
 const nativeX = require('./native-x');
+const identityX = require('./identity-x');
 const dragonForms = require('./dragon-forms');
 const events = require('./events');
 
 module.exports = {
   gam,
   nativeX,
+  identityX,
   dragonForms,
   navigation,
   events,
