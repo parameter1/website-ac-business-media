@@ -96,5 +96,12 @@
   },
   "<refresh-theme-newsletter-signup-block>": {
     "template": "./omeda-newsletter-signup.marko"
+  },
+  "<refresh-theme-featured-companies>": {
+    "template": "./featured-companies.marko",
+    "@content": {
+      "type": "object",
+      "required": true
+    }
   }
 }
