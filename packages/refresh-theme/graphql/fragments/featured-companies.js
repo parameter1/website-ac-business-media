@@ -8,9 +8,6 @@ fragment PMMIFeaturedCompaniesFragment on Content {
   typeTitled: type(input: { format: titleize })
   shortName
   canonicalPath
-  ... on ContentCompany {
-    website
-  }
 }
 
 `;
