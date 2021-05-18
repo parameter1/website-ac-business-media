@@ -5,7 +5,6 @@ module.exports = {
       alias: 'default',
       map: {
         lb1: 'default/lb1',
-        'lb-sticky-bottom': 'default/lb1',
         rail1: 'default/rail1',
         rail2: 'default/rail1',
         'infinite-rail': 'default/rail1',
@@ -18,7 +17,6 @@ module.exports = {
       alias: 'mowing-maintenance',
       map: {
         lb1: 'mowing-maintenance/lb1',
-        'lb-sticky-bottom': 'mowing-maintenance/lb1',
         rail1: 'mowing-maintenance/rail1',
         rail2: 'mowing-maintenance/rail1',
         'infinite-rail': 'mowing-maintenance/rail1',
@@ -31,7 +29,6 @@ module.exports = {
       alias: 'lawn-care-renovation',
       map: {
         lb1: 'lawn-care-renovation/lb1',
-        'lb-sticky-bottom': 'lawn-care-renovation/lb1',
         rail1: 'lawn-care-renovation/rail1',
         rail2: 'lawn-care-renovation/rail1',
         'infinite-rail': 'lawn-care-renovation/rail1',
@@ -44,7 +41,6 @@ module.exports = {
       alias: 'design-installation',
       map: {
         lb1: 'design-installation/lb1',
-        'lb-sticky-bottom': 'design-installation/lb1',
         rail1: 'design-installation/rail1',
         rail2: 'design-installation/rail1',
         'infinite-rail': 'design-installation/rail1',
@@ -57,7 +53,6 @@ module.exports = {
       alias: 'irrigation-water-management',
       map: {
         lb1: 'irrigation-water-management/lb1',
-        'lb-sticky-bottom': 'irrigation-water-management/lb1',
         rail1: 'irrigation-water-management/rail1',
         rail2: 'irrigation-water-management/rail1',
         'infinite-rail': 'irrigation-water-management/rail1',
@@ -70,7 +65,6 @@ module.exports = {
       alias: 'snow-ice-management',
       map: {
         lb1: 'snow-ice-management/lb1',
-        'lb-sticky-bottom': 'snow-ice-management/lb1',
         rail1: 'snow-ice-management/rail1',
         rail2: 'snow-ice-management/rail1',
         'infinite-rail': 'snow-ice-management/rail1',
