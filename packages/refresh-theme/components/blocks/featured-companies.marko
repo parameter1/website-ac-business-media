@@ -16,7 +16,7 @@ $ const { content } = input;
           <@body>
             <@title tag="h5">
               $ const link = {
-                  ...(node.canonicalPath && { href: node.canonicalPath, target: "_blank" }),
+                  ...(node.siteContext.path && { href: node.siteContext.path }),
                   attrs: eventLinkAttrs({
                     category: "Companies in this Article",
                     label: "Company Website",
