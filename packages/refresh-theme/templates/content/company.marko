@@ -55,7 +55,6 @@ $ const displayInquiry = (content) => {
         <div class="col-lg-8 mb-block">
           <refresh-theme-leaders-company-overview content=content class="mb-block" />
           <refresh-theme-leaders-company-details content=content class="mb-block" />
-
           <refresh-theme-leaders-company-featured-videos
             videos=resolved.getEdgeNodesFor("youtubeVideos")
             href=resolved.get("youtube.url")
@@ -63,6 +62,11 @@ $ const displayInquiry = (content) => {
           >
             <@company id=id name=resolved.get("name") />
           </refresh-theme-leaders-company-featured-videos>
+
+          <refresh-theme-leaders-company-key-contacts
+            contacts=resolved.getEdgeNodesFor("publicContacts")
+            class="mb-block"
+          />
 
           <refresh-theme-company-content-list-block company-id=id>
             <@header>Products & Press Releases</@header>
@@ -85,11 +89,11 @@ $ const displayInquiry = (content) => {
         </div>
 
         <div class="col-lg-4 mb-block page-rail">
-          <refresh-theme-leaders-company-key-contacts
-            contacts=resolved.getEdgeNodesFor("publicContacts")
+          <refresh-theme-leaders-company-premium-content
+            content=resolved.getEdgeNodesFor("promotions")
             class="mb-block"
-          />
-
+          >
+          </refresh-theme-leaders-company-premium-content>
           <if(displayInquiry(content))>
             <marko-web-node-list collapsible=false modifiers=["sticky-top"]>
               <@header>Request More Information</@header>

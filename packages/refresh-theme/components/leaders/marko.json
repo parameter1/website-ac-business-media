@@ -48,6 +48,16 @@
       "template": "./nodes/youtube-card.marko",
       "@node": "object",
       "@link-attrs": "object"
+    },
+    "refresh-theme-leaders-premium-content-card-node": {
+      "template": "./nodes/premium-content-card.marko",
+      "@node": "object"
+    },
+    "refresh-theme-leaders-company-premium-content": {
+      "template": "./company/premium-content.marko",
+      "@content": "array",
+      "@class": "string",
+      "@href": "string"
     }
   }
 }
