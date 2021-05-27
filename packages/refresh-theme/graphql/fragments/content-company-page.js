@@ -81,6 +81,41 @@ fragment ContentCompanyPageFragment on Content {
       }
     }
 
+
+    productUrls: externalLinks(input: { keys: ["company-products"] }) {
+            url
+          }
+    promotions: relatedContent(input: {
+            withSite: false,
+            queryTypes: [company],
+            includeContentTypes: [Promotion],
+            pagination: { limit: 3 },
+          }) {
+            edges {
+              node {
+                id
+                name
+                primaryImage{
+                  id
+                  src(input: {
+                    options: {
+                      auto: "format",
+                      fit: "crop",
+                      h: 180,
+                      w: 240,
+                    }
+                  })
+                  alt
+                  isLogo
+                }
+                ... on ContentPromotion {
+                  linkUrl
+                  linkText
+                }
+              }
+            }
+          }
+
     youtubeVideos(input: { pagination: { limit: 3 } }) {
       edges {
         node {
