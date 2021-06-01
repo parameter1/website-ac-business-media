@@ -220,6 +220,8 @@ $theme-item-footer-font-size: 12px !default;
 
 @import "../../node_modules/@parameter1/base-cms-marko-web-theme-default/scss/theme";
 @import "../../node_modules/@parameter1/base-cms-marko-web-social-sharing/scss/buttons";
+@import "../../node_modules/@parameter1/base-cms-marko-web-html-sitemap/scss/index";
+
 // @todo this should be remove once contact us is in core
 @import "../../node_modules/@ac-business-media/package-common/scss/contact-us-form";
 
@@ -646,5 +648,15 @@ body {
     color: rgb(204, 204, 204);
 
     content: "“";
+  }
+}
+
+.page {
+  &--sitemap {
+    .page-wrapper {
+      &__title {
+        color: #3e3b37;
+      }
+    }
   }
 }
