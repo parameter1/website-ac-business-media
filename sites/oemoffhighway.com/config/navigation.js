@@ -52,6 +52,7 @@ module.exports = {
       { href: 'https://www.oemoffhighwaymediakit.com/', label: 'Advertise', target: '_blank' },
       { href: '/page/privacy-policy', label: 'Privacy Policy', target: '_blank' },
       { href: '/page/terms-conditions', label: 'Terms & Conditions', target: '_blank' },
+      { href: '/site-map', label: 'Site Map' },
     ],
   },
   menu: [

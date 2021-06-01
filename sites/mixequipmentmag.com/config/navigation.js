@@ -28,6 +28,7 @@ module.exports = {
     items: [
       { href: '/page/legal-notice', label: 'Legal Notice' },
       { href: '/page/privacy-policy', label: 'Privacy Policy' },
+      { href: '/site-map', label: 'Site Map' },
     ],
   },
   menu: [
