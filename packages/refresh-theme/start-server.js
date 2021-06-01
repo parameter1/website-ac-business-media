@@ -6,6 +6,8 @@ const cleanResponse = require('@parameter1/base-cms-marko-core/middleware/clean-
 const contactUsHandler = require('@ac-business-media/package-common/contact-us');
 const loadInquiry = require('@parameter1/base-cms-marko-web-inquiry');
 const omedaGraphQL = require('@parameter1/omeda-graphql-client-express');
+const htmlSitemapPagination = require('@parameter1/base-cms-marko-web-html-sitemap/middleware/paginated');
+const htmlSitemapRoutes = require('@parameter1/base-cms-marko-web-html-sitemap/routes');
 
 const sharedRedirectHandler = require('./redirect-handler');
 
@@ -22,6 +24,8 @@ const routes = siteRoutes => (app) => {
   loadInquiry(app);
   // Handle contact submissions on /__contact-us
   contactUsHandler(app);
+  // HTML Sitemap
+  htmlSitemapRoutes(app);
   // Load site routes.
   siteRoutes(app);
 };
@@ -50,6 +54,9 @@ module.exports = (options = {}) => {
       if (specGuideConfig.guides && Object.keys(specGuideConfig.guides).length) {
         set(app.locals, 'specGuides', specGuideConfig);
       }
+
+      // Use paginated middleware
+      app.use(htmlSitemapPagination());
 
       // Use Omeda middleware
       app.use(omedaGraphQL({
