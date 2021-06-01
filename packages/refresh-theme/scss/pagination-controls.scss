@@ -1,0 +1,10 @@
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  &__prev {
+    margin-right: map-get($spacers, block);
+  }
+  &__next {
+    margin-left: map-get($spacers, block);
+  }
+}
