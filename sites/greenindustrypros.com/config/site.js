@@ -38,6 +38,7 @@ module.exports = {
     { provider: 'facebook', href: 'https://www.facebook.com/GreenIndustryPros', target: '_blank' },
     { provider: 'instagram', href: 'https://www.instagram.com/greenindustrypros/', target: '_blank' },
     { provider: 'flipboard', href: 'https://flipboard.com/@GreenIndustry', target: '_blank' },
+    { provider: 'youtube', href: 'https://www.youtube.com/c/greenindustrypros', target: '_blank' },
   ],
   radix: {
     enabled: true,
