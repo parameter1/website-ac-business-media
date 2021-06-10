@@ -74,7 +74,11 @@ module.exports = {
         { href: '/magazine', label: 'Magazines' },
         { href: '/videos', label: 'Videos' },
         { href: 'https://cms.megaphone.fm/channel/grassroots?selected=ACBMI1756535736', target: '_blank', label: 'Podcast' },
-        { href: 'https://app.squarestack.com/channelpartner/greenapps?utm_source=acb&utm_medium=online&utm_campaign=website&utm_term=menu&utm_content=menu&utm_channelpartner=greenapps', label: 'GreenApps', target: '_blank' },
+        {
+          href: 'https://app.squarestack.com/channelpartner/greenapps?utm_source=acb&utm_medium=online&utm_campaign=website&utm_term=menu&utm_content=menu&utm_channelpartner=greenapps',
+          label: 'GreenApps',
+          target: '_blank',
+        },
         // { href: '/specguide', label: 'Spec Guide' },
       ],
     },
