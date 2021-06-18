@@ -172,7 +172,7 @@ module.exports = {
         items: [
           { href: '/awards/women-in-supply-chain', label: 'Women In Supply Chain' },
           { href: '/awards/pros-to-know', label: 'Pros To Know' },
-          { href: '/awards/sdce-100', label: 'Top Supply Chain Projects' },
+          { href: '/awards/top-supply-chain-projects', label: 'Top Supply Chain Projects' },
           { href: '/awards/green-supply-chain', label: 'Green Supply Chain' },
         ],
       },
