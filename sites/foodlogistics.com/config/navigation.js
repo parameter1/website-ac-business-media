@@ -1,8 +1,8 @@
 const topics = [
   { href: '/warehousing', label: 'Warehousing' },
   { href: '/transportation', label: 'Transportation' },
-  { href: '/software-technology', label: 'Software & Tech' },
-  { href: '/safety-security', label: 'Safety' },
+  { href: '/technology', label: 'Software & Tech' },
+  { href: '/safety', label: 'Safety' },
   { href: '/sustainability', label: 'Sustainability' },
   { href: '/professional-development', label: 'Professional Development' },
   { href: '/scn-summit', label: 'SCN Summit' },
@@ -95,7 +95,7 @@ module.exports = {
       },
     },
     {
-      when: ['/software-technology'],
+      when: ['/technology'],
       secondary: { items: topics },
       tertiary: { items: tertiaryItems },
       primary: {
@@ -112,7 +112,7 @@ module.exports = {
       },
     },
     {
-      when: ['/safety-security'],
+      when: ['/safety'],
       secondary: { items: topics },
       tertiary: { items: tertiaryItems },
       primary: {
