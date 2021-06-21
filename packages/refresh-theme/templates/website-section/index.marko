@@ -9,6 +9,9 @@ $ const { GAM } = out.global;
 $ const contentTypes = get(out, "global.req.query.contentTypes");
 $ const excludeContentTypes = ["Company", "Contact", "Promotion"];
 
+$ if (data.id === 71608) {
+  data.id = 57252
+}
 $ const {
   id,
   alias,
