@@ -29,6 +29,12 @@ $website-section-colors: (
   "3pl-4pl": #cea14c,
 );
 
+$theme-site-navbar-primary-font-size: 12px !default;
+$theme-site-navbar-primary-font-size-sm: 12px !default;
+
+$theme-site-navbar-secondary-font-size: 14px !default;
+$theme-site-navbar-secondary-font-size-sm: 14px !default;
+
 $leaders-primary-color: #212121;
 $leaders-primary-color-light: lighten($leaders-primary-color, 10%);
 $leaders-accent-color: #212121;
