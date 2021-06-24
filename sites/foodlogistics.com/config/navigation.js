@@ -1,7 +1,7 @@
 const topics = [
   { href: '/warehousing', label: 'Warehousing' },
   { href: '/transportation', label: 'Transportation' },
-  { href: '/technology', label: 'Software & Tech' },
+  { href: '/software-technology', label: 'Software & Tech' },
   { href: '/safety', label: 'Safety' },
   { href: '/sustainability', label: 'Sustainability' },
   { href: '/professional-development', label: 'Professional Development' },
@@ -95,7 +95,7 @@ module.exports = {
       },
     },
     {
-      when: ['/technology'],
+      when: ['/software-technology'],
       secondary: { items: topics },
       tertiary: { items: tertiaryItems },
       primary: {
