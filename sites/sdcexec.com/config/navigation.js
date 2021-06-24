@@ -74,7 +74,7 @@ module.exports = {
       tertiary: { items: tertiaryItems },
       primary: {
         items: [
-          { href: '/3pl-4pl', label: '3PL/4PL' },
+          { href: '/transportation/3pl-4pl', label: '3PL/4PL' },
           { href: '/transportation/cold-chain', label: 'Cold Chain' },
           { href: '/transportation/last-mile', label: 'Last-Mile' },
           { href: '/transportation/wms-tms', label: 'WMS/TMS' },
