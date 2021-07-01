@@ -6,7 +6,7 @@ const topics = [
   { href: '/sustainability', label: 'Sustainability' },
   { href: '/sourcing-procurement', label: 'Procurement' },
   { href: '/professional-development', label: 'Prof Development' },
-  { href: 'https://www.scnsummit.com/', label: 'SCN Summit' },
+  { href: 'https://www.scnsummit.com/', label: 'SCN Summit', target: '_blank' },
 ];
 
 const resources = [
