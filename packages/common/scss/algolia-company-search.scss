@@ -11,10 +11,10 @@
     position: absolute;
     z-index: 2;
     width: 100%;
-    background: $white;
-    padding: map-get($spacers, 2);
     max-height: 10em;
+    padding: map-get($spacers, 2);
     overflow: scroll;
+    background: $white;
     border: 1px solid #ebebeb;
   }
 }
