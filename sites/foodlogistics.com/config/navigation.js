@@ -30,7 +30,7 @@ const tertiaryItems = [
     target: '_blank',
   },
   {
-    href: 'https://acbm.dragonforms.com/loading.do?omedasite=FLOG_NL_signup',
+    href: 'https://acbusiness.dragonforms.com/loading.do?omedasite=FLprefs&pk=managepref',
     label: 'Newsletter',
     icon: 'mail',
     forceLabel: true,
@@ -237,7 +237,7 @@ module.exports = {
     {
       label: 'User Tools',
       items: [
-        { href: 'https://acbm.dragonforms.com/loading.do?omedasite=FLOG_NL_signup', label: 'Newsletters', target: '_blank' },
+        { href: 'https://acbusiness.dragonforms.com/loading.do?omedasite=FLprefs&pk=managepref', label: 'Newsletters', target: '_blank' },
         { href: '/contact-us', label: 'Contact Us' },
         { href: 'https://www.supplychainnetworkmediakit.com/', label: 'Advertise', target: '_blank' },
         { href: '/page/privacy-policy', label: 'Privacy Policy', target: '_blank' },
