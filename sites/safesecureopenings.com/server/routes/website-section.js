@@ -3,6 +3,7 @@ const section = require('@ac-business-media/refresh-theme/templates/website-sect
 const podcasts = require('@ac-business-media/refresh-theme/templates/website-section/podcasts');
 const publishedVideos = require('@ac-business-media/refresh-theme/templates/website-section/published-videos');
 const contactUs = require('@ac-business-media/refresh-theme/templates/website-section/contact-us');
+const events = require('@ac-business-media/refresh-theme/templates/website-section/events');
 const queryFragment = require('@ac-business-media/refresh-theme/graphql/fragments/website-section-page');
 
 const directory = require('../templates/website-section/directory');
@@ -14,6 +15,10 @@ module.exports = (app) => {
   }));
   app.get('/:alias(contact-us)', withWebsiteSection({
     template: contactUs,
+    queryFragment,
+  }));
+  app.get('/:alias(events)', withWebsiteSection({
+    template: events,
     queryFragment,
   }));
   app.get('/:alias(podcasts)', withWebsiteSection({
