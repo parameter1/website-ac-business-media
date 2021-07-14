@@ -5,7 +5,7 @@ module.exports = {
       alias: 'default',
       map: {
         lb1: 'default/lb1',
-        'lb-sticky-bottom': 'default/lb1',
+        // 'lb-sticky-bottom': 'default/lb1',
         rail1: 'default/rail1',
         rail2: 'default/rail1',
         'infinite-rail': 'default/rail1',
@@ -18,7 +18,7 @@ module.exports = {
       alias: 'business',
       map: {
         lb1: 'business/lb1',
-        'lb-sticky-bottom': 'business/lb1',
+        // 'lb-sticky-bottom': 'business/lb1',
         rail1: 'business/rail1',
         rail2: 'business/rail1',
         'infinite-rail': 'business/rail1',
@@ -31,7 +31,7 @@ module.exports = {
       alias: 'access-control',
       map: {
         lb1: 'access-control/lb1',
-        'lb-sticky-bottom': 'access-control/lb1',
+        // 'lb-sticky-bottom': 'access-control/lb1',
         rail1: 'access-control/rail1',
         rail2: 'access-control/rail1',
         'infinite-rail': 'access-control/rail1',
@@ -44,7 +44,7 @@ module.exports = {
       alias: 'codes-standards',
       map: {
         lb1: 'codes-standards/lb1',
-        'lb-sticky-bottom': 'codes-standards/lb1',
+        // 'lb-sticky-bottom': 'codes-standards/lb1',
         rail1: 'codes-standards/rail1',
         rail2: 'codes-standards/rail1',
         'infinite-rail': 'codes-standards/rail1',
@@ -57,7 +57,7 @@ module.exports = {
       alias: 'construction-design',
       map: {
         lb1: 'construction-design/lb1',
-        'lb-sticky-bottom': 'construction-design/lb1',
+        // 'lb-sticky-bottom': 'construction-design/lb1',
         rail1: 'construction-design/rail1',
         rail2: 'construction-design/rail1',
         'infinite-rail': 'construction-design/rail1',
@@ -70,7 +70,7 @@ module.exports = {
       alias: 'healthcare',
       map: {
         lb1: 'healthcare/lb1',
-        'lb-sticky-bottom': 'healthcare/lb1',
+        // 'lb-sticky-bottom': 'healthcare/lb1',
         rail1: 'healthcare/rail1',
         rail2: 'healthcare/rail1',
         'infinite-rail': 'healthcare/rail1',
@@ -83,7 +83,7 @@ module.exports = {
       alias: 'security-safety',
       map: {
         lb1: 'security-safety/lb1',
-        'lb-sticky-bottom': 'security-safety/lb1',
+        // 'lb-sticky-bottom': 'security-safety/lb1',
         rail1: 'security-safety/rail1',
         rail2: 'security-safety/rail1',
         'infinite-rail': 'security-safety/rail1',
@@ -96,7 +96,7 @@ module.exports = {
       alias: 'sustainability',
       map: {
         lb1: 'sustainability/lb1',
-        'lb-sticky-bottom': 'sustainability/lb1',
+        // 'lb-sticky-bottom': 'sustainability/lb1',
         rail1: 'sustainability/rail1',
         rail2: 'sustainability/rail1',
         'infinite-rail': 'sustainability/rail1',

@@ -5,7 +5,7 @@ module.exports = {
       alias: 'default',
       map: {
         lb1: 'default/lb1',
-        'lb-sticky-bottom': 'default/lb1',
+        // 'lb-sticky-bottom': 'default/lb1',
         rail1: 'default/rail1',
         rail2: 'default/rail1',
         'infinite-rail': 'default/rail1',
@@ -18,7 +18,7 @@ module.exports = {
       alias: 'agencies',
       map: {
         lb1: 'agencies/lb1',
-        'lb-sticky-bottom': 'agencies/lb1',
+        // 'lb-sticky-bottom': 'agencies/lb1',
         rail1: 'agencies/rail1',
         rail2: 'agencies/rail1',
         'infinite-rail': 'agencies/rail1',
@@ -31,7 +31,7 @@ module.exports = {
       alias: 'marketing-channels',
       map: {
         lb1: 'marketing-channels/lb1',
-        'lb-sticky-bottom': 'marketing-channels/lb1',
+        // 'lb-sticky-bottom': 'marketing-channels/lb1',
         rail1: 'marketing-channels/rail1',
         rail2: 'marketing-channels/rail1',
         'infinite-rail': 'marketing-channels/rail1',
@@ -44,7 +44,7 @@ module.exports = {
       alias: 'content-marketing',
       map: {
         lb1: 'content-marketing/lb1',
-        'lb-sticky-bottom': 'content-marketing/lb1',
+        // 'lb-sticky-bottom': 'content-marketing/lb1',
         rail1: 'content-marketing/rail1',
         rail2: 'content-marketing/rail1',
         'infinite-rail': 'content-marketing/rail1',
@@ -57,7 +57,7 @@ module.exports = {
       alias: 'customer-experience',
       map: {
         lb1: 'customer-experience/lb1',
-        'lb-sticky-bottom': 'customer-experience/lb1',
+        // 'lb-sticky-bottom': 'customer-experience/lb1',
         rail1: 'customer-experience/rail1',
         rail2: 'customer-experience/rail1',
         'infinite-rail': 'customer-experience/rail1',
@@ -70,7 +70,7 @@ module.exports = {
       alias: 'data',
       map: {
         lb1: 'data/lb1',
-        'lb-sticky-bottom': 'data/lb1',
+        // 'lb-sticky-bottom': 'data/lb1',
         rail1: 'data/rail1',
         rail2: 'data/rail1',
         'infinite-rail': 'data/rail1',
@@ -83,7 +83,7 @@ module.exports = {
       alias: 'retail',
       map: {
         lb1: 'retail/lb1',
-        'lb-sticky-bottom': 'retail/lb1',
+        // 'lb-sticky-bottom': 'retail/lb1',
         rail1: 'retail/rail1',
         rail2: 'retail/rail1',
         'infinite-rail': 'retail/rail1',
