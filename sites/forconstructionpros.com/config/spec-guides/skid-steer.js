@@ -11,7 +11,7 @@ module.exports = {
   image: {
     src: 'https://img.forconstructionpros.com/files/base/acbm/fcp/image/static/skidsteerlarge.jpg',
   },
-  downloadLink: '/21070764',
+  downloadLink: '/21563130',
   sheetSrc: 'https://spreadsheets.google.com/feeds/list/12TC912nI227058ho8_zrLwYYzp7P2T7zZDCXO0ZTSZw/1/public/values?alt=json',
 
   columns: {
